@@ -1,545 +1,674 @@
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-<!-- ░█████╗░██████╗░██╗░░░██╗░█████╗░  ░██╗░░░░░░░██╗██╗░██████╗░██╗░░░██╗███╗░░██╗░█████╗░ -->
-<!-- ██╔══██╗██╔══██╗╚██╗░██╔╝██╔══██╗  ░██║░░██╗░░██║██║██╔════╝░██║░░░██║████╗░██║██╔══██╗ -->
-<!-- ███████║██████╔╝░╚████╔╝░███████║  ░╚██╗████╗██╔╝██║██║░░██╗░██║░░░██║██╔██╗██║███████║ -->
-<!-- ██╔══██║██╔══██╗░░╚██╔╝░░██╔══██║  ░░████╔═████║░██║██║░░╚██╗██║░░░██║██║╚████║██╔══██║ -->
-<!-- ██║░░██║██║░░██║░░░██║░░░██║░░██║  ░░╚██╔╝░╚██╔╝░██║╚██████╔╝╚██████╔╝██║░╚███║██║░░██║ -->
-<!-- ╚═╝░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝  ░░░╚═╝░░░╚═╝░░╚═╝░╚═════╝░░╚═════╝░╚═╝░░╚══╝╚═╝░░╚═╝ -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
+<!--                                                                                -->
+<!--     █████╗ ██████╗ ██╗   ██╗ █████╗     ██╗    ██╗ ██████╗ ███╗   ██╗ █████╗   -->
+<!--    ██╔══██╗██╔══██╗╚██╗ ██╔╝██╔══██╗    ██║    ██║██╔════╝ ████╗  ██║██╔══██╗  -->
+<!--    ███████║██████╔╝ ╚████╔╝ ███████║    ██║ █╗ ██║██║  ███╗██╔██╗ ██║███████║  -->
+<!--    ██╔══██║██╔══██╗  ╚██╔╝  ██╔══██║    ██║███╗██║██║   ██║██║╚██╗██║██╔══██║  -->
+<!--    ██║  ██║██║  ██║   ██║   ██║  ██║    ╚███╔███╔╝╚██████╔╝██║ ╚████║██║  ██║  -->
+<!--    ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝     ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝  -->
+<!--                                                                                -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&color=gradient&customColorList=0,2,2,5,30&height=300&section=header&text=Arya%20Wiguna&fontSize=90&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=✨%20Full%20Stack%20Developer%20%7C%20Software%20Engineer%20%7C%20Indonesia%20🇮🇩%20✨&descAlignY=60&descSize=20"/>
+  
+```
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                      ║
+║  ░██████╗██╗░░░██╗░██████╗████████╗███████╗███╗░░░███╗  ██████╗░░█████╗░░█████╗░████████╗  ║
+║  ██╔════╝╚██╗░██╔╝██╔════╝╚══██╔══╝██╔════╝████╗░████║  ██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝  ║
+║  ╚█████╗░░╚████╔╝░╚█████╗░░░░██║░░░█████╗░░██╔████╔██║  ██████╦╝██║░░██║██║░░██║░░░██║░░░  ║
+║  ░╚═══██╗░░╚██╔╝░░░╚═══██╗░░░██║░░░██╔══╝░░██║╚██╔╝██║  ██╔══██╗██║░░██║██║░░██║░░░██║░░░  ║
+║  ██████╔╝░░░██║░░░██████╔╝░░░██║░░░███████╗██║░╚═╝░██║  ██████╦╝╚█████╔╝╚█████╔╝░░░██║░░░  ║
+║  ╚═════╝░░░░╚═╝░░░╚═════╝░░░░╚═╝░░░╚══════╝╚═╝░░░░░╚═╝  ╚═════╝░░╚════╝░░╚════╝░░░░╚═╝░░░  ║
+║                                                                                      ║
+║                    [ INITIALIZING ARYA_WIGUNA.EXE... ]                               ║
+║                                                                                      ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0f0f,50:ff0080,100:00ffff&height=200&section=header&text=⟨%20ARYA%20WIGUNA%20⟩&fontSize=60&fontColor=00ffff&animation=fadeIn&fontAlignY=35&desc=▓▓▓%20FULL%20STACK%20DEVELOPER%20%7C%20CYBER%20ARCHITECT%20%7C%20INDONESIA%20▓▓▓&descAlignY=55&descSize=15&descColor=ff0080"/>
 </div>
 
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=2500&pause=800&color=00D9FF&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=900&height=120&lines=%F0%9F%91%8B+Selamat+Datang+di+Profil+GitHub+Saya!;%F0%9F%92%BB+Transforming+Ideas+into+Digital+Reality;%F0%9F%9A%80+Building+Tomorrow's+Technology+Today;%E2%9C%A8+Passionate+about+Clean+Code+%26+Innovation" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=22&duration=2000&pause=500&color=00FFFF&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=800&height=100&lines=%3E_%20WELCOME_TO_MY_TERMINAL...;%3E_%20ACCESSING_SECURE_DATABASE...;%3E_%20DECRYPTING_DEVELOPER_PROFILE...;%3E_%20LOADING_DIGITAL_IDENTITY...;%3E_%20ACCESS_GRANTED_%E2%96%88%E2%96%88%E2%96%88" alt="Typing SVG" />
   </a>
 </div>
 
 <br/>
 
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-<!--                              PROFILE BADGES                                     -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
+<!--                              SYSTEM STATUS                                      -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
 
 <div align="center">
-  
-  [![Profile Views](https://komarev.com/ghpvc/?username=AryaWgna&label=Profile%20Views&color=00d9ff&style=for-the-badge&logo=eye)](https://github.com/AryaWgna)
-  [![GitHub Followers](https://img.shields.io/github/followers/AryaWgna?label=Followers&style=for-the-badge&color=00d9ff&logo=github)](https://github.com/AryaWgna?tab=followers)
-  [![GitHub Stars](https://img.shields.io/github/stars/AryaWgna?label=Total%20Stars&style=for-the-badge&color=ffd700&logo=github)](https://github.com/AryaWgna?tab=repositories)
-  [![Years Badge](https://badges.pufler.dev/years/AryaWgna?style=for-the-badge&color=00d9ff&logo=github)](https://github.com/AryaWgna)
-  
+
+```
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│  ◉ SYSTEM STATUS: ONLINE    ◉ THREAT LEVEL: MINIMAL    ◉ UPTIME: 99.99%          │
+└──────────────────────────────────────────────────────────────────────────────────┘
+```
+
 </div>
 
-<br/>
+<p align="center">
+  <a href="https://github.com/AryaWgna">
+    <img src="https://komarev.com/ghpvc/?username=AryaWgna&label=%3E_%20PROFILE_SCANS&color=ff0080&style=flat-square" alt="Profile Views"/>
+  </a>
+  <a href="https://github.com/AryaWgna?tab=followers">
+    <img src="https://img.shields.io/github/followers/AryaWgna?label=%3E_%20NETWORK_NODES&style=flat-square&color=00ffff" alt="Followers"/>
+  </a>
+  <a href="https://github.com/AryaWgna?tab=repositories">
+    <img src="https://img.shields.io/github/stars/AryaWgna?label=%3E_%20REPO_SIGNALS&style=flat-square&color=ff0080" alt="Stars"/>
+  </a>
+</p>
 
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-<!--                              TROPHIES                                           -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
+<!--                              USER PROFILE                                       -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AryaWgna&theme=algolia&no-frame=true&no-bg=true&margin-w=10&margin-h=10&column=7" alt="GitHub Trophies" />
+
+```
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                      ║
+║   ▄▄▄█████▓ ▄▄▄       ██▀███    ▄████ ▓█████▄▄▄█████▓    █    ██   ██████ ▓█████     ║
+║   ▓  ██▒ ▓▒▒████▄    ▓██ ▒ ██▒ ██▒ ▀█▒▓█   ▀▓  ██▒ ▓▒    ██  ▓██▒▒██    ▒ ▓█   ▀     ║
+║   ▒ ▓██░ ▒░▒██  ▀█▄  ▓██ ░▄█ ▒▒██░▄▄▄░▒███  ▒ ▓██░ ▒░   ▓██  ▒██░░ ▓██▄   ▒███       ║
+║   ░ ▓██▓ ░ ░██▄▄▄▄██ ▒██▀▀█▄  ░▓█  ██▓▒▓█  ▄░ ▓██▓ ░    ▓▓█  ░██░  ▒   ██▒▒▓█  ▄     ║
+║     ▒██▒ ░  ▓█   ▓██▒░██▓ ▒██▒░▒▓███▀▒░▒████▒ ▒██▒ ░    ▒▒█████▓ ▒██████▒▒░▒████▒    ║
+║     ▒ ░░    ▒▒   ▓▒█░░ ▒▓ ░▒▓░ ░▒   ▒ ░░ ▒░ ░ ▒ ░░      ░▒▓▒ ▒ ▒ ▒ ▒▓▒ ▒ ░░░ ▒░ ░    ║
+║                                                                                      ║
+║                         [ USER_PROFILE.DAT LOADED ]                                  ║
+║                                                                                      ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+```
+
 </div>
 
-<br/>
+<img align="right" alt="Hacking" width="380" src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif"/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+```javascript
+// ═══════════════════════════════════════════════
+// ███ USER_DATA.JS - CLASSIFIED INFORMATION ███
+// ═══════════════════════════════════════════════
 
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-<!--                              ABOUT ME                                           -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-
-<h2>
-  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35">
-  <b> About Me</b>
-</h2>
-
-<img align="right" alt="Coding" width="400" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif"/>
-
-<br/>
-
-```typescript
-const aryaWiguna: Developer = {
-  pronouns: "He" | "Him",
-  location: "Indonesia 🇮🇩",
-  currentRole: "Full Stack Developer",
-  
-  code: {
-    languages: ["TypeScript", "JavaScript", "Python", "Go", "PHP", "Dart", "C#"],
-    frontend: ["React", "Vue.js", "Next.js", "Angular", "Nuxt.js", "Svelte"],
-    backend: ["Node.js", "Laravel", "Flask", "Gin", ".NET", "Express", "NestJS"],
-    mobile: ["Flutter", "React Native"],
-    database: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase"],
-    devOps: ["Docker", "Git", "Nginx", "Linux", "CI/CD", "AWS"],
-  },
-  
-  architecture: ["Microservices", "Event-Driven", "Design Patterns", "REST API", "GraphQL"],
-  
-  currentlyLearning: ["Cloud Architecture", "Kubernetes", "System Design"],
-  
-  askMeAbout: ["Web Dev", "Mobile Dev", "Tech", "Open Source"],
-  
-  funFact: "I think I'm an introvert... tapi boong 🤫",
-  
-  lifePhilosophy: "First, solve the problem. Then, write the code."
+const OPERATOR = {
+    codename: "AryaWgna",
+    realIdentity: "Arya Wiguna",
+    location: "Indonesia [ID]",
+    status: "ACTIVE",
+    clearanceLevel: "FULL_STACK",
+    
+    expertise: {
+        languages: [
+            "TypeScript", "JavaScript", 
+            "Python", "Go", "PHP", 
+            "Dart", "C#"
+        ],
+        frontendSystems: [
+            "React", "Vue.js", "Next.js",
+            "Angular", "Nuxt.js", "Svelte"
+        ],
+        backendInfra: [
+            "Node.js", "Laravel", "Flask",
+            "Gin", ".NET", "NestJS"
+        ],
+        mobileOps: ["Flutter", "React Native"],
+        databases: [
+            "PostgreSQL", "MySQL", "MongoDB",
+            "Redis", "Firebase", "Supabase"
+        ],
+        devOps: [
+            "Docker", "Git", "Nginx",
+            "Linux", "CI/CD", "AWS"
+        ]
+    },
+    
+    currentMission: "Building the Future",
+    philosophy: "First, solve the problem. Then, write the code.",
+    
+    funFact: "// I'm an introvert... tapi boong 🤫"
 };
+
+module.exports = { OPERATOR };
 ```
 
 <br clear="both"/>
 
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-<!--                              CURRENT FOCUS                                      -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 
-<h3>
-  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="25">
-  <b> What I'm Up To</b>
-</h3>
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
+<!--                              MISSION STATUS                                     -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
+
+<div align="center">
+
+```
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                  │
+│   ██████╗██╗   ██╗██████╗ ██████╗ ███████╗███╗   ██╗████████╗                    │
+│  ██╔════╝██║   ██║██╔══██╗██╔══██╗██╔════╝████╗  ██║╚══██╔══╝                    │
+│  ██║     ██║   ██║██████╔╝██████╔╝█████╗  ██╔██╗ ██║   ██║                       │
+│  ██║     ██║   ██║██╔══██╗██╔══██╗██╔══╝  ██║╚██╗██║   ██║                       │
+│  ╚██████╗╚██████╔╝██║  ██║██║  ██║███████╗██║ ╚████║   ██║                       │
+│   ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝   ╚═╝                       │
+│                                                                                  │
+│                    ███╗   ███╗██╗███████╗███████╗██╗ ██████╗ ███╗   ██╗          │
+│                    ████╗ ████║██║██╔════╝██╔════╝██║██╔═══██╗████╗  ██║          │
+│                    ██╔████╔██║██║███████╗███████╗██║██║   ██║██╔██╗ ██║          │
+│                    ██║╚██╔╝██║██║╚════██║╚════██║██║██║   ██║██║╚██╗██║          │
+│                    ██║ ╚═╝ ██║██║███████║███████║██║╚██████╔╝██║ ╚████║          │
+│                    ╚═╝     ╚═╝╚═╝╚══════╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝          │
+│                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────┘
+```
+
+</div>
 
 <table align="center">
 <tr>
 <td width="50%">
 
-```yaml
-🔭 Currently Building:
-  - Scalable Full-Stack Applications
-  - Cloud-Native Solutions
-  - Open Source Projects
-  
-📚 Learning:
-  - Laravel & PostgreSQL (Mastering)
-  - Cloud Architecture
-  - System Design Patterns
-  
-🎯 2026 Goals:
-  - Contribute to 20+ Open Source Projects
-  - Build a SaaS Product
-  - Master Kubernetes
+```python
+# ═══════════════════════════════════════
+# █ ACTIVE_MISSIONS.PY
+# ═══════════════════════════════════════
+
+class CurrentOperations:
+    
+    building = [
+        ">> Scalable Full-Stack Apps",
+        ">> Cloud-Native Solutions", 
+        ">> Open Source Projects",
+    ]
+    
+    learning = [
+        ">> Laravel & PostgreSQL [MASTERING]",
+        ">> Cloud Architecture [IN_PROGRESS]",
+        ">> System Design Patterns [ACTIVE]",
+    ]
+    
+    goals_2026 = [
+        ">> 20+ Open Source Contributions",
+        ">> Launch SaaS Product",
+        ">> Master Kubernetes",
+    ]
+
+# STATUS: EXECUTING...
 ```
 
 </td>
 <td width="50%">
 
-```yaml
-✍️ Creating Content:
-  - Technical Blog Posts
-  - Code Tutorials
-  - Development Tips
+```python
+# ═══════════════════════════════════════
+# █ SIDE_QUESTS.PY
+# ═══════════════════════════════════════
 
-🤝 Open To:
-  - Collaboration
-  - Freelance Projects  
-  - Tech Discussions
-  
-☕ Fun Facts:
-  - Coffee-Powered Coding
-  - Night Owl Developer
-  - Keyboard Enthusiast
+class SecondaryObjectives:
+    
+    content_creation = [
+        ">> Technical Blog Posts",
+        ">> Code Tutorials",
+        ">> Development Tips",
+    ]
+    
+    collaboration = [
+        ">> Open for Projects",
+        ">> Freelance Available",
+        ">> Tech Discussions",
+    ]
+    
+    power_ups = [
+        ">> Coffee-Powered Coding ☕",
+        ">> Night Owl Mode 🦉",
+        ">> Keyboard Enthusiast ⌨️",
+    ]
+
+# STATUS: ALWAYS_ACTIVE...
 ```
 
 </td>
 </tr>
 </table>
 
-<br/>
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
+<!--                              TECH ARSENAL                                       -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
 
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-<!--                              TECH STACK                                         -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-
-<h2>
-  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="35">
-  <b> Tech Stack & Tools</b>
-</h2>
-
-<br/>
-
-<table align="center">
-<tr>
-<td valign="top" width="33%">
-
-<h3 align="center">🎨 Frontend</h3>
 <div align="center">
-<a href="#"><img src="https://skillicons.dev/icons?i=react,vue,next,angular,nuxtjs,svelte&perline=3" /></a>
-<br/><br/>
-<a href="#"><img src="https://skillicons.dev/icons?i=ts,js,html,css,sass,tailwind&perline=3" /></a>
-<br/><br/>
-<a href="#"><img src="https://skillicons.dev/icons?i=redux,vite,webpack&perline=3" /></a>
+
+```
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                      ║
+║   ████████╗███████╗ ██████╗██╗  ██╗     █████╗ ██████╗ ███████╗███████╗███╗   ██╗   ║
+║   ╚══██╔══╝██╔════╝██╔════╝██║  ██║    ██╔══██╗██╔══██╗██╔════╝██╔════╝████╗  ██║   ║
+║      ██║   █████╗  ██║     ███████║    ███████║██████╔╝███████╗█████╗  ██╔██╗ ██║   ║
+║      ██║   ██╔══╝  ██║     ██╔══██║    ██╔══██║██╔══██╗╚════██║██╔══╝  ██║╚██╗██║   ║
+║      ██║   ███████╗╚██████╗██║  ██║    ██║  ██║██║  ██║███████║███████╗██║ ╚████║   ║
+║      ╚═╝   ╚══════╝ ╚═════╝╚═╝  ╚═╝    ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═══╝   ║
+║                                                                                      ║
+║                         [ WEAPON_SYSTEMS INITIALIZED ]                               ║
+║                                                                                      ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+```
+
 </div>
-
-</td>
-<td valign="top" width="33%">
-
-<h3 align="center">⚙️ Backend</h3>
-<div align="center">
-<a href="#"><img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,python,flask,django&perline=3" /></a>
-<br/><br/>
-<a href="#"><img src="https://skillicons.dev/icons?i=go,php,laravel,dotnet,graphql,apollo&perline=3" /></a>
-<br/><br/>
-<a href="#"><img src="https://skillicons.dev/icons?i=kafka,rabbitmq,nginx&perline=3" /></a>
-</div>
-
-</td>
-<td valign="top" width="33%">
-
-<h3 align="center">📱 Mobile & Database</h3>
-<div align="center">
-<a href="#"><img src="https://skillicons.dev/icons?i=flutter,dart,kotlin,swift&perline=4" /></a>
-<br/><br/>
-<a href="#"><img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis,firebase,supabase&perline=3" /></a>
-</div>
-
-</td>
-</tr>
-</table>
-
-<table align="center">
-<tr>
-<td valign="top" width="50%">
-
-<h3 align="center">🛠️ DevOps & Tools</h3>
-<div align="center">
-<a href="#"><img src="https://skillicons.dev/icons?i=docker,kubernetes,aws,gcp,azure,vercel&perline=6" /></a>
-<br/><br/>
-<a href="#"><img src="https://skillicons.dev/icons?i=git,github,gitlab,jenkins,githubactions,linux&perline=6" /></a>
-</div>
-
-</td>
-<td valign="top" width="50%">
-
-<h3 align="center">🔧 IDE & Design</h3>
-<div align="center">
-<a href="#"><img src="https://skillicons.dev/icons?i=vscode,idea,androidstudio,figma,xd,postman&perline=6" /></a>
-<br/><br/>
-<a href="#"><img src="https://skillicons.dev/icons?i=notion,obsidian,markdown&perline=3" /></a>
-</div>
-
-</td>
-</tr>
-</table>
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<div align="center">
 
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
+### `>_ FRONTEND SYSTEMS`
+
+![React](https://img.shields.io/badge/React-0f0f0f?style=for-the-badge&logo=react&logoColor=00ffff)
+![Vue.js](https://img.shields.io/badge/Vue.js-0f0f0f?style=for-the-badge&logo=vue.js&logoColor=00ffff)
+![Next.js](https://img.shields.io/badge/Next.js-0f0f0f?style=for-the-badge&logo=next.js&logoColor=00ffff)
+![Angular](https://img.shields.io/badge/Angular-0f0f0f?style=for-the-badge&logo=angular&logoColor=ff0080)
+![Nuxt.js](https://img.shields.io/badge/Nuxt.js-0f0f0f?style=for-the-badge&logo=nuxt.js&logoColor=00ffff)
+![Svelte](https://img.shields.io/badge/Svelte-0f0f0f?style=for-the-badge&logo=svelte&logoColor=ff0080)
+
+![TypeScript](https://img.shields.io/badge/TypeScript-0f0f0f?style=for-the-badge&logo=typescript&logoColor=00ffff)
+![JavaScript](https://img.shields.io/badge/JavaScript-0f0f0f?style=for-the-badge&logo=javascript&logoColor=ffff00)
+![HTML5](https://img.shields.io/badge/HTML5-0f0f0f?style=for-the-badge&logo=html5&logoColor=ff0080)
+![CSS3](https://img.shields.io/badge/CSS3-0f0f0f?style=for-the-badge&logo=css3&logoColor=00ffff)
+![Sass](https://img.shields.io/badge/Sass-0f0f0f?style=for-the-badge&logo=sass&logoColor=ff0080)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-0f0f0f?style=for-the-badge&logo=tailwind-css&logoColor=00ffff)
+
+</div>
+
+<div align="center">
+
+### `>_ BACKEND INFRASTRUCTURE`
+
+![Node.js](https://img.shields.io/badge/Node.js-0f0f0f?style=for-the-badge&logo=node.js&logoColor=00ff00)
+![Express](https://img.shields.io/badge/Express-0f0f0f?style=for-the-badge&logo=express&logoColor=00ffff)
+![NestJS](https://img.shields.io/badge/NestJS-0f0f0f?style=for-the-badge&logo=nestjs&logoColor=ff0080)
+![Python](https://img.shields.io/badge/Python-0f0f0f?style=for-the-badge&logo=python&logoColor=ffff00)
+![Flask](https://img.shields.io/badge/Flask-0f0f0f?style=for-the-badge&logo=flask&logoColor=00ffff)
+![Django](https://img.shields.io/badge/Django-0f0f0f?style=for-the-badge&logo=django&logoColor=00ff00)
+
+![Go](https://img.shields.io/badge/Go-0f0f0f?style=for-the-badge&logo=go&logoColor=00ffff)
+![PHP](https://img.shields.io/badge/PHP-0f0f0f?style=for-the-badge&logo=php&logoColor=ff0080)
+![Laravel](https://img.shields.io/badge/Laravel-0f0f0f?style=for-the-badge&logo=laravel&logoColor=ff0080)
+![.NET](https://img.shields.io/badge/.NET-0f0f0f?style=for-the-badge&logo=dotnet&logoColor=00ffff)
+![GraphQL](https://img.shields.io/badge/GraphQL-0f0f0f?style=for-the-badge&logo=graphql&logoColor=ff0080)
+
+</div>
+
+<div align="center">
+
+### `>_ DATABASE & MOBILE`
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0f0f0f?style=for-the-badge&logo=postgresql&logoColor=00ffff)
+![MySQL](https://img.shields.io/badge/MySQL-0f0f0f?style=for-the-badge&logo=mysql&logoColor=00ffff)
+![MongoDB](https://img.shields.io/badge/MongoDB-0f0f0f?style=for-the-badge&logo=mongodb&logoColor=00ff00)
+![Redis](https://img.shields.io/badge/Redis-0f0f0f?style=for-the-badge&logo=redis&logoColor=ff0080)
+![Firebase](https://img.shields.io/badge/Firebase-0f0f0f?style=for-the-badge&logo=firebase&logoColor=ffff00)
+![Supabase](https://img.shields.io/badge/Supabase-0f0f0f?style=for-the-badge&logo=supabase&logoColor=00ff00)
+
+![Flutter](https://img.shields.io/badge/Flutter-0f0f0f?style=for-the-badge&logo=flutter&logoColor=00ffff)
+![Dart](https://img.shields.io/badge/Dart-0f0f0f?style=for-the-badge&logo=dart&logoColor=00ffff)
+![React Native](https://img.shields.io/badge/React_Native-0f0f0f?style=for-the-badge&logo=react&logoColor=00ffff)
+
+</div>
+
+<div align="center">
+
+### `>_ DEVOPS & TOOLS`
+
+![Docker](https://img.shields.io/badge/Docker-0f0f0f?style=for-the-badge&logo=docker&logoColor=00ffff)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-0f0f0f?style=for-the-badge&logo=kubernetes&logoColor=00ffff)
+![AWS](https://img.shields.io/badge/AWS-0f0f0f?style=for-the-badge&logo=amazon-aws&logoColor=ffff00)
+![GCP](https://img.shields.io/badge/GCP-0f0f0f?style=for-the-badge&logo=google-cloud&logoColor=ff0080)
+![Linux](https://img.shields.io/badge/Linux-0f0f0f?style=for-the-badge&logo=linux&logoColor=ffff00)
+![Nginx](https://img.shields.io/badge/Nginx-0f0f0f?style=for-the-badge&logo=nginx&logoColor=00ff00)
+
+![Git](https://img.shields.io/badge/Git-0f0f0f?style=for-the-badge&logo=git&logoColor=ff0080)
+![GitHub](https://img.shields.io/badge/GitHub-0f0f0f?style=for-the-badge&logo=github&logoColor=00ffff)
+![VS Code](https://img.shields.io/badge/VS_Code-0f0f0f?style=for-the-badge&logo=visual-studio-code&logoColor=00ffff)
+![Postman](https://img.shields.io/badge/Postman-0f0f0f?style=for-the-badge&logo=postman&logoColor=ff0080)
+
+</div>
+
+<br/>
+
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
 <!--                              GITHUB STATS                                       -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-
-<h2>
-  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35">
-  <b> GitHub Statistics</b>
-</h2>
-
-<br/>
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
 
 <div align="center">
-  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=AryaWgna&show_icons=true&count_private=true&hide_border=true&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9&bg_color=0d1117&ring_color=00d9ff&include_all_commits=true" alt="Arya Wiguna's GitHub Stats" /> 
-  <img width="49%" height="195px" src="https://github-readme-streak-stats.herokuapp.com/?user=AryaWgna&hide_border=true&stroke=00d9ff&ring=00d9ff&fire=ffd700&currStreakNum=c9d1d9&sideNums=c9d1d9&currStreakLabel=00d9ff&sideLabels=00d9ff&dates=888888&background=0d1117" alt="Arya Wiguna's Streak Stats" />
+
+```
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                      ║
+║   ███████╗██╗   ██╗███████╗████████╗███████╗███╗   ███╗                              ║
+║   ██╔════╝╚██╗ ██╔╝██╔════╝╚══██╔══╝██╔════╝████╗ ████║                              ║
+║   ███████╗ ╚████╔╝ ███████╗   ██║   █████╗  ██╔████╔██║                              ║
+║   ╚════██║  ╚██╔╝  ╚════██║   ██║   ██╔══╝  ██║╚██╔╝██║                              ║
+║   ███████║   ██║   ███████║   ██║   ███████╗██║ ╚═╝ ██║                              ║
+║   ╚══════╝   ╚═╝   ╚══════╝   ╚═╝   ╚══════╝╚═╝     ╚═╝                              ║
+║                                                                                      ║
+║         ███╗   ███╗███████╗████████╗██████╗ ██╗ ██████╗███████╗                      ║
+║         ████╗ ████║██╔════╝╚══██╔══╝██╔══██╗██║██╔════╝██╔════╝                      ║
+║         ██╔████╔██║█████╗     ██║   ██████╔╝██║██║     ███████╗                      ║
+║         ██║╚██╔╝██║██╔══╝     ██║   ██╔══██╗██║██║     ╚════██║                      ║
+║         ██║ ╚═╝ ██║███████╗   ██║   ██║  ██║██║╚██████╗███████║                      ║
+║         ╚═╝     ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝ ╚═════╝╚══════╝                      ║
+║                                                                                      ║
+║                         [ ANALYZING DATA STREAMS... ]                                ║
+║                                                                                      ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+```
+
 </div>
 
 <br/>
 
 <div align="center">
-  <img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AryaWgna&layout=donut&hide_border=true&title_color=00d9ff&text_color=c9d1d9&bg_color=0d1117&langs_count=10" alt="Most Used Languages" />
+  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=AryaWgna&show_icons=true&count_private=true&hide_border=true&title_color=00ffff&icon_color=ff0080&text_color=00ffff&bg_color=0f0f0f&ring_color=ff0080&include_all_commits=true" alt="Arya Wiguna's GitHub Stats" /> 
+  <img width="49%" height="195px" src="https://streak-stats.demolab.com/?user=AryaWgna&hide_border=true&stroke=ff0080&ring=ff0080&fire=00ffff&currStreakNum=00ffff&sideNums=00ffff&currStreakLabel=ff0080&sideLabels=ff0080&dates=666666&background=0f0f0f" alt="Arya Wiguna's Streak Stats" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AryaWgna&custom_title=Arya's%20Contribution%20Graph&hide_border=true&bg_color=0d1117&color=00d9ff&line=ffd700&point=00d9ff&area=true&area_color=00d9ff" alt="Contribution Graph" />
+  <img width="38%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AryaWgna&layout=donut&hide_border=true&title_color=00ffff&text_color=ff0080&bg_color=0f0f0f&langs_count=8" alt="Most Used Languages" />
 </div>
 
 <br/>
 
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-<!--                              METRICS                                            -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AryaWgna&custom_title=%3E_%20COMMIT_ACTIVITY_LOG&hide_border=true&bg_color=0f0f0f&color=00ffff&line=ff0080&point=00ffff&area=true&area_color=ff0080" alt="Contribution Graph" />
+</div>
+
+<br/>
 
 <details>
-<summary><h3>📊 More Detailed Stats</h3></summary>
+<summary><h3>📊 >_ EXPAND_DETAILED_METRICS</h3></summary>
 
 <br/>
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AryaWgna&theme=tokyonight" alt="Profile Details" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AryaWgna&theme=radical" alt="Profile Details" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AryaWgna&theme=tokyonight" alt="Repos per Language" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AryaWgna&theme=tokyonight" alt="Most Commit Language" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AryaWgna&theme=radical" alt="Repos per Language" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AryaWgna&theme=radical" alt="Most Commit Language" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AryaWgna&theme=tokyonight" alt="Stats" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=AryaWgna&theme=tokyonight&utcOffset=7" alt="Productive Time" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AryaWgna&theme=radical" alt="Stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=AryaWgna&theme=radical&utcOffset=7" alt="Productive Time" />
 </div>
 
 </details>
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-<!--                              FEATURED PROJECTS                                  -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-
-<h2>
-  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35">
-  <b> Featured Projects</b>
-</h2>
-
-<br/>
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
+<!--                              ACHIEVEMENTS                                       -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
 
 <div align="center">
-<a href="https://github.com/AryaWgna/Arya-intelligence">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=AryaWgna&repo=Arya-intelligence&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&icon_color=ffd700" />
-</a>
-<a href="https://github.com/AryaWgna/Dashboard-Framework">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=AryaWgna&repo=Dashboard-Framework&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&icon_color=ffd700" />
-</a>
-</div>
 
-<div align="center">
-<a href="https://github.com/AryaWgna/go-restapi-gin">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=AryaWgna&repo=go-restapi-gin&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&icon_color=ffd700" />
-</a>
-<a href="https://github.com/AryaWgna/Speech-To-Text">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=AryaWgna&repo=Speech-To-Text&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&icon_color=ffd700" />
-</a>
-</div>
+```
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                      ║
+║       █████╗  ██████╗██╗  ██╗██╗███████╗██╗   ██╗███████╗███╗   ███╗███████╗         ║
+║      ██╔══██╗██╔════╝██║  ██║██║██╔════╝██║   ██║██╔════╝████╗ ████║██╔════╝         ║
+║      ███████║██║     ███████║██║█████╗  ██║   ██║█████╗  ██╔████╔██║███████╗         ║
+║      ██╔══██║██║     ██╔══██║██║██╔══╝  ╚██╗ ██╔╝██╔══╝  ██║╚██╔╝██║╚════██║         ║
+║      ██║  ██║╚██████╗██║  ██║██║███████╗ ╚████╔╝ ███████╗██║ ╚═╝ ██║███████║         ║
+║      ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚══════╝  ╚═══╝  ╚══════╝╚═╝     ╚═╝╚══════╝         ║
+║                                                                                      ║
+║               ██╗   ██╗███╗   ██╗██╗      ██████╗  ██████╗██╗  ██╗███████╗██████╗    ║
+║               ██║   ██║████╗  ██║██║     ██╔═══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗   ║
+║               ██║   ██║██╔██╗ ██║██║     ██║   ██║██║     █████╔╝ █████╗  ██║  ██║   ║
+║               ██║   ██║██║╚██╗██║██║     ██║   ██║██║     ██╔═██╗ ██╔══╝  ██║  ██║   ║
+║               ╚██████╔╝██║ ╚████║███████╗╚██████╔╝╚██████╗██║  ██╗███████╗██████╔╝   ║
+║                ╚═════╝ ╚═╝  ╚═══╝╚══════╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝╚══════╝╚═════╝    ║
+║                                                                                      ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+```
 
-<div align="center">
-<a href="https://github.com/AryaWgna/Calculator-Split">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=AryaWgna&repo=Calculator-Split&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&icon_color=ffd700" />
-</a>
-<a href="https://github.com/AryaWgna/FlutterSchools">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=AryaWgna&repo=FlutterSchools&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=c9d1d9&icon_color=ffd700" />
-</a>
 </div>
 
 <br/>
 
 <div align="center">
-  <a href="https://github.com/AryaWgna?tab=repositories">
-    <img src="https://img.shields.io/badge/🔗%20View%20All%20Repositories-0d1117?style=for-the-badge&logo=github" alt="View All Repositories" />
-  </a>
+
+| 🏆 **CERTIFICATION** | 📋 **DESCRIPTION** | 🔗 **VERIFY** |
+|:---:|:---:|:---:|
+| <img src="./Sertifkat/ccna-introduction-to-networks.png" width="120"/> | **CCNA: Introduction to Networks**<br/>`Network Architecture & Protocols` | [![View](https://img.shields.io/badge/>_ACCESS-ff0080?style=flat-square)](./Sertifkat/CCNAITNUpdated20251128-31-uohl23.pdf) |
+| <img src="./Sertifkat/english-for-it-1%20(1).png" width="120"/> | **English for IT 1**<br/>`IT Terminology & Communication` | [![View](https://img.shields.io/badge/>_ACCESS-ff0080?style=flat-square)](./Sertifkat/EnglishforIT1Update20251128-32-gfbjsw.pdf) |
+| <img src="./Sertifkat/operating-systems-basics.png" width="120"/> | **Operating Systems Basics**<br/>`OS Fundamentals & Architecture` | [![View](https://img.shields.io/badge/>_ACCESS-ff0080?style=flat-square)](./Sertifkat/OperatingSystemsBasicsUpdate20251128-30-jb59v3.pdf) |
+
 </div>
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-<!--                              CERTIFICATIONS                                     -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
+<!--                              CONNECT                                            -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
 
-<h2>
-  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35">
-  <b> Certifications & Achievements</b>
-</h2>
+<div align="center">
+
+```
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                      ║
+║   ███╗   ██╗███████╗████████╗██╗    ██╗ ██████╗ ██████╗ ██╗  ██╗                     ║
+║   ████╗  ██║██╔════╝╚══██╔══╝██║    ██║██╔═══██╗██╔══██╗██║ ██╔╝                     ║
+║   ██╔██╗ ██║█████╗     ██║   ██║ █╗ ██║██║   ██║██████╔╝█████╔╝                      ║
+║   ██║╚██╗██║██╔══╝     ██║   ██║███╗██║██║   ██║██╔══██╗██╔═██╗                      ║
+║   ██║ ╚████║███████╗   ██║   ╚███╔███╔╝╚██████╔╝██║  ██║██║  ██╗                     ║
+║   ╚═╝  ╚═══╝╚══════╝   ╚═╝    ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝                     ║
+║                                                                                      ║
+║        █████╗  ██████╗ ██████╗███████╗███████╗███████╗                               ║
+║       ██╔══██╗██╔════╝██╔════╝██╔════╝██╔════╝██╔════╝                               ║
+║       ███████║██║     ██║     █████╗  ███████╗███████╗                               ║
+║       ██╔══██║██║     ██║     ██╔══╝  ╚════██║╚════██║                               ║
+║       ██║  ██║╚██████╗╚██████╗███████╗███████║███████║                               ║
+║       ╚═╝  ╚═╝ ╚═════╝ ╚═════╝╚══════╝╚══════╝╚══════╝                               ║
+║                                                                                      ║
+║                    [ ESTABLISHING SECURE CONNECTION... ]                             ║
+║                                                                                      ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+```
+
+</div>
 
 <br/>
 
 <div align="center">
 
-<table>
-<tr>
-<td align="center" width="33%">
-<img src="./Sertifkat/ccna-introduction-to-networks.png" width="180" style="border-radius:10px"/>
-<br/>
-<h4>🌐 CCNA: Introduction to Networks</h4>
-<p><i>Networking Architecture & Protocols</i></p>
-<a href="./Sertifkat/CCNAITNUpdated20251128-31-uohl23.pdf">
-<img src="https://img.shields.io/badge/📄%20View%20Certificate-00d9ff?style=for-the-badge" />
-</a>
-</td>
-<td align="center" width="33%">
-<img src="./Sertifkat/english-for-it-1%20(1).png" width="180" style="border-radius:10px"/>
-<br/>
-<h4>🗣️ English for IT 1</h4>
-<p><i>IT Terminology & Communication</i></p>
-<a href="./Sertifkat/EnglishforIT1Update20251128-32-gfbjsw.pdf">
-<img src="https://img.shields.io/badge/📄%20View%20Certificate-00d9ff?style=for-the-badge" />
-</a>
-</td>
-<td align="center" width="33%">
-<img src="./Sertifkat/operating-systems-basics.png" width="180" style="border-radius:10px"/>
-<br/>
-<h4>💻 Operating Systems Basics</h4>
-<p><i>OS Fundamentals & Architecture</i></p>
-<a href="./Sertifkat/OperatingSystemsBasicsUpdate20251128-30-jb59v3.pdf">
-<img src="https://img.shields.io/badge/📄%20View%20Certificate-00d9ff?style=for-the-badge" />
-</a>
-</td>
-</tr>
-</table>
+[![LinkedIn](https://img.shields.io/badge/>_LINKEDIN-0f0f0f?style=for-the-badge&logo=linkedin&logoColor=00ffff)](https://linkedin.com/in/arya-wgna)
+[![Gmail](https://img.shields.io/badge/>_EMAIL-0f0f0f?style=for-the-badge&logo=gmail&logoColor=ff0080)](mailto:wgnarya123@gmail.com)
+[![Blog](https://img.shields.io/badge/>_BLOG-0f0f0f?style=for-the-badge&logo=blogger&logoColor=00ffff)](https://aryawgna.blogspot.com)
+[![Instagram](https://img.shields.io/badge/>_INSTAGRAM-0f0f0f?style=for-the-badge&logo=instagram&logoColor=ff0080)](https://instagram.com/arya.wgna)
 
-</div>
-
-<br/>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-<!--                              CONTRIBUTION SNAKE                                 -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-
-<h2>
-  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35">
-  <b> Contribution Snake</b>
-</h2>
-
-<br/>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AryaWgna/AryaWgna/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AryaWgna/AryaWgna/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/AryaWgna/AryaWgna/output/github-contribution-grid-snake-dark.svg" style="max-width:100%">
-  </picture>
-</div>
-
-<br/>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-<!--                              CONNECT WITH ME                                    -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-
-<h2>
-  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="35">
-  <b> Let's Connect!</b>
-</h2>
-
-<br/>
-
-<div align="center">
-  
-  <a href="https://linkedin.com/in/arya-wgna" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="mailto:wgnarya123@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
-  </a>
-  <a href="https://aryawgna.blogspot.com" target="_blank">
-    <img src="https://img.shields.io/badge/Blog-FF5722?style=for-the-badge&logo=blogger&logoColor=white" alt="Blog"/>
-  </a>
-  <a href="https://instagram.com/arya.wgna" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram"/>
-  </a>
-  <a href="https://discord.gg/yourdiscord" target="_blank">
-    <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/>
-  </a>
-  
 </div>
 
 <br/>
 
 <div align="center">
-  
-  ```
-  ╔═══════════════════════════════════════════════════════════════════════════════╗
-  ║                                                                               ║
-  ║   📫  How to reach me:           wgnarya123@gmail.com                         ║
-  ║   💼  LinkedIn:                  linkedin.com/in/arya-wgna                    ║
-  ║   📝  Blog:                      aryawgna.blogspot.com                        ║
-  ║   📸  Instagram:                 @arya.wgna                                   ║
-  ║                                                                               ║
-  ╚═══════════════════════════════════════════════════════════════════════════════╝
-  ```
+
+```
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                  │
+│   ╔═══════════════════════════════════════════════════════════════════════════╗  │
+│   ║                                                                           ║  │
+│   ║   >_ EMAIL............... wgnarya123@gmail.com                            ║  │
+│   ║   >_ LINKEDIN............ linkedin.com/in/arya-wgna                       ║  │
+│   ║   >_ BLOG................ aryawgna.blogspot.com                           ║  │
+│   ║   >_ INSTAGRAM........... @arya.wgna                                      ║  │
+│   ║   >_ LOCATION............ Indonesia [ID]                                  ║  │
+│   ║   >_ STATUS.............. OPEN_FOR_OPPORTUNITIES                          ║  │
+│   ║                                                                           ║  │
+│   ╚═══════════════════════════════════════════════════════════════════════════╝  │
+│                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────┘
+```
+
 </div>
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-<!--                              SUPPORT ME                                         -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
+<!--                              SUPPORT                                            -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
 
-<h2>
-  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="35">
-  <b> Support My Work</b>
-</h2>
+<div align="center">
+
+```
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                  │
+│     ███████╗██╗   ██╗███████╗██╗         ███╗   ███╗███████╗                     │
+│     ██╔════╝██║   ██║██╔════╝██║         ████╗ ████║██╔════╝                     │
+│     █████╗  ██║   ██║█████╗  ██║         ██╔████╔██║█████╗                       │
+│     ██╔══╝  ██║   ██║██╔══╝  ██║         ██║╚██╔╝██║██╔══╝                       │
+│     ██║     ╚██████╔╝███████╗███████╗    ██║ ╚═╝ ██║███████╗                     │
+│     ╚═╝      ╚═════╝ ╚══════╝╚══════╝    ╚═╝     ╚═╝╚══════╝                     │
+│                                                                                  │
+│              >_ If you find my work helpful, consider fueling                    │
+│                 the matrix with some digital coffee ☕                           │
+│                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────┘
+```
+
+</div>
 
 <br/>
 
 <div align="center">
-  <p><i>If you find my work helpful, consider buying me a coffee! ☕</i></p>
-  
-  <a href="https://saweria.co/aryawgna" target="_blank">
-    <img src="https://img.shields.io/badge/Saweria-FAC536?style=for-the-badge" alt="Saweria" />
-  </a>
-  <a href="https://trakteer.id/aryawgna" target="_blank">
-    <img src="https://img.shields.io/badge/Trakteer-BE1E2D?style=for-the-badge" alt="Trakteer" />
-  </a>
-  <a href="https://www.buymeacoffee.com/aryawgna" target="_blank">
-    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
-  </a>
-  <a href="https://ko-fi.com/aryawgna" target="_blank">
-    <img src="https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi" />
-  </a>
+
+[![Saweria](https://img.shields.io/badge/>_SAWERIA-0f0f0f?style=for-the-badge&logoColor=ff0080)](https://saweria.co/aryawgna)
+[![Trakteer](https://img.shields.io/badge/>_TRAKTEER-0f0f0f?style=for-the-badge&logoColor=00ffff)](https://trakteer.id/aryawgna)
+[![BuyMeACoffee](https://img.shields.io/badge/>_BUY_ME_COFFEE-0f0f0f?style=for-the-badge&logo=buy-me-a-coffee&logoColor=ffff00)](https://www.buymeacoffee.com/aryawgna)
+[![Ko-Fi](https://img.shields.io/badge/>_KO--FI-0f0f0f?style=for-the-badge&logo=ko-fi&logoColor=ff0080)](https://ko-fi.com/aryawgna)
+
 </div>
 
 <br/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
 <!--                              QUOTE                                              -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-
-<h2>
-  <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="35">
-  <b> Random Dev Quote</b>
-</h2>
-
-<br/>
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
 
 <div align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&border=true" alt="Random Dev Quote" />
+
+```
+┌──────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                  │
+│   ██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ ███╗   ███╗                         │
+│   ██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔═══██╗████╗ ████║                         │
+│   ██████╔╝███████║██╔██╗ ██║██║  ██║██║   ██║██╔████╔██║                         │
+│   ██╔══██╗██╔══██║██║╚██╗██║██║  ██║██║   ██║██║╚██╔╝██║                         │
+│   ██║  ██║██║  ██║██║ ╚████║██████╔╝╚██████╔╝██║ ╚═╝ ██║                         │
+│   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝ ╚═╝     ╚═╝                         │
+│                                                                                  │
+│        ██████╗ ██╗   ██╗ ██████╗ ████████╗███████╗                               │
+│       ██╔═══██╗██║   ██║██╔═══██╗╚══██╔══╝██╔════╝                               │
+│       ██║   ██║██║   ██║██║   ██║   ██║   █████╗                                 │
+│       ██║▄▄ ██║██║   ██║██║   ██║   ██║   ██╔══╝                                 │
+│       ╚██████╔╝╚██████╔╝╚██████╔╝   ██║   ███████╗                               │
+│        ╚══▀▀═╝  ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝                               │
+│                                                                                  │
+└──────────────────────────────────────────────────────────────────────────────────┘
+```
+
 </div>
 
 <br/>
 
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&border=true" alt="Random Dev Quote" />
+</div>
+
+<br/>
+
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
 <!--                              FOOTER                                             -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=150&section=footer&text=Thanks%20for%20visiting!%20👋&fontSize=30&fontColor=fff&fontAlignY=70&animation=fadeIn"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0f0f,50:ff0080,100:00ffff&height=120&section=footer"/>
 </div>
 
 <div align="center">
-  
-  <br/>
-  
-  <img src="https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge" alt="Made with Love"/>
-  <img src="https://img.shields.io/badge/From-Indonesia%20🇮🇩-red?style=for-the-badge" alt="From Indonesia"/>
-  <img src="https://img.shields.io/badge/Powered%20by-Coffee%20☕-brown?style=for-the-badge" alt="Powered by Coffee"/>
-  
-  <br/><br/>
-  
-  ```
-  ⚡ "Code is like humor. When you have to explain it, it's bad." – Cory House
-  ```
-  
-  <br/>
-  
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&random=false&width=600&lines=💙+If+you+like+my+work%2C+give+a+⭐+to+my+repos!;🙏+Thanks+for+visiting+my+profile!;🚀+Let's+build+something+amazing+together!" alt="Footer Typing" />
-  
+
+```
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                      ║
+║   ███████╗███████╗███████╗███████╗██╗ ██████╗ ███╗   ██╗                             ║
+║   ██╔════╝██╔════╝██╔════╝██╔════╝██║██╔═══██╗████╗  ██║                             ║
+║   ███████╗█████╗  ███████╗███████╗██║██║   ██║██╔██╗ ██║                             ║
+║   ╚════██║██╔══╝  ╚════██║╚════██║██║██║   ██║██║╚██╗██║                             ║
+║   ███████║███████╗███████║███████║██║╚██████╔╝██║ ╚████║                             ║
+║   ╚══════╝╚══════╝╚══════╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝                             ║
+║                                                                                      ║
+║   ████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ████████╗███████╗██████╗  ║
+║   ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔══██╗╚══██╔══╝██╔════╝██╔══██╗ ║
+║      ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║███████║   ██║   █████╗  ██║  ██║ ║
+║      ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██╔══██║   ██║   ██╔══╝  ██║  ██║ ║
+║      ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║   ██║   ███████╗██████╔╝ ║
+║      ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═════╝  ║
+║                                                                                      ║
+║                                                                                      ║
+║                >_ "The quieter you become, the more you can hear."                   ║
+║                                           - Ram Dass (Hacker's Wisdom)               ║
+║                                                                                      ║
+║   ════════════════════════════════════════════════════════════════════════════════   ║
+║                                                                                      ║
+║          [■■■■■■■■■■■■■■■■■■■■] 100% - PROFILE LOADED SUCCESSFULLY                   ║
+║                                                                                      ║
+║                     >_ Thanks for visiting my digital realm...                       ║
+║                     >_ Connection will be remembered...                              ║
+║                     >_ See you in the matrix... ▓▓▓                                  ║
+║                                                                                      ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+```
+
+<br/>
+
+![Made with](https://img.shields.io/badge/>_MADE_WITH-0f0f0f?style=for-the-badge)
+![Love](https://img.shields.io/badge/❤️_LOVE-ff0080?style=for-the-badge)
+![From](https://img.shields.io/badge/>_FROM-0f0f0f?style=for-the-badge)
+![Indonesia](https://img.shields.io/badge/🇮🇩_INDONESIA-ff0080?style=for-the-badge)
+![Powered by](https://img.shields.io/badge/>_POWERED_BY-0f0f0f?style=for-the-badge)
+![Coffee](https://img.shields.io/badge/☕_COFFEE-00ffff?style=for-the-badge)
+
+<br/>
+
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=600&size=16&duration=2500&pause=800&color=00FFFF&center=true&vCenter=true&random=false&width=600&lines=%3E_+If+you+like+my+work%2C+give+a+%E2%AD%90+to+my+repos!;%3E_+Thanks+for+visiting+my+profile!;%3E_+Let's+build+something+amazing+together!;%3E_+CONNECTION_CLOSED...+GOODBYE..." alt="Footer Typing" />
+</a>
+
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
-<!--                              END OF README                                      -->
-<!-- ═══════════════════════════════════════════════════════════════════════════════ -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
+<!--                              END OF TRANSMISSION                                -->
+<!-- ██████████████████████████████████████████████████████████████████████████████ -->
