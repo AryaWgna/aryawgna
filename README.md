@@ -251,9 +251,32 @@ const OPERATOR = {
 
 <br/>
 
-<!-- TROPHY -->
+<!-- TROPHY - Multiple fallback instances -->
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AryaWgna&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" alt="Trophies"/>
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-trophies.vercel.app/?username=AryaWgna&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" alt="Trophies"/>
+  </a>
+</div>
+
+<br/>
+
+<!-- DETAILED STATS CARDS -->
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AryaWgna&theme=radical" alt="Profile Details"/>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AryaWgna&theme=radical" alt="Repos per Language"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AryaWgna&theme=radical" alt="Most Commit Language"/>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AryaWgna&theme=radical" alt="Stats"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=AryaWgna&theme=radical&utcOffset=7" alt="Productive Time"/>
 </div>
 
 <br/>
