@@ -475,21 +475,10 @@ const OPERATOR = {
 
 <br/>
 
-<!-- SPOTIFY EMBED - STATIC PLAYLIST -->
+<!-- SPOTIFY WIDGET - CYBER THEME -->
 <div align="center">
   <a href="https://open.spotify.com/user/sxur5f9sjkhpr6o6mogpygu0t">
-    <img src="https://img.shields.io/badge/🎧_My_Spotify_Profile-1DB954?style=for-the-badge&logo=spotify&logoColor=white" alt="Spotify Profile"/>
-  </a>
-</div>
-
-<br/>
-
-<!-- FAVORITE PLAYLIST PREVIEW -->
-<div align="center">
-  <img src="https://i.scdn.co/image/ab67706f00000002ca5a7517156021292e5663a6" width="150" style="border-radius:15px"/>
-  <br/><br/>
-  <a href="https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j">
-    <img src="https://img.shields.io/badge/▶_Coding_Mode_Playlist-ff0080?style=for-the-badge&logo=spotify&logoColor=white"/>
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=sxur5f9sjkhpr6o6mogpygu0t&cover_image=true&theme=natemoo-re&show_offline=true&background_color=0d1117&interchange=true&bar_color=ff0080&bar_color_cover=true" alt="Spotify"/>
   </a>
 </div>
 
