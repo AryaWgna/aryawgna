@@ -478,8 +478,52 @@ const OPERATOR = {
 <!-- SPOTIFY NOW PLAYING -->
 <div align="center">
   <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=sxur5f9sjkhpr6o6mogpygu0t&redirect=true">
-    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=sxur5f9sjkhpr6o6mogpygu0t&cover_image=true&theme=spotify-embed&show_offline=true&background_color=121212&interchange=true&profanity=true&bar_color=53b14f&bar_color_cover=true&mode=light" alt="Spotify Now Playing"/>
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=sxur5f9sjkhpr6o6mogpygu0t&cover_image=true&theme=spotify-embed&show_offline=true&background_color=121212&interchange=true&profanity=true&bar_color=53b14f&bar_color_cover=true" alt="Spotify Now Playing"/>
   </a>
+</div>
+
+<br/>
+
+<!-- BACKGROUND BEATS / CODING MUSIC -->
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://open.spotify.com/playlist/0vvXsWCC9xrXsKd4FyS8kM" target="_blank">
+          <img src="https://img.shields.io/badge/🎧_Lo--Fi_Beats-1DB954?style=for-the-badge&logo=spotify&logoColor=white" alt="Lo-Fi Beats"/>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j" target="_blank">
+          <img src="https://img.shields.io/badge/🎵_Coding_Mode-ff0080?style=for-the-badge&logo=spotify&logoColor=white" alt="Coding Mode"/>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://open.spotify.com/playlist/37i9dQZF1DWZeKCadgRdKQ" target="_blank">
+          <img src="https://img.shields.io/badge/🔥_Deep_Focus-00ffff?style=for-the-badge&logo=spotify&logoColor=black" alt="Deep Focus"/>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://open.spotify.com/playlist/37i9dQZF1DX8Uebhn9wzrS" target="_blank">
+          <img src="https://img.shields.io/badge/⚡_Chill_Synth-ff0080?style=for-the-badge&logo=spotify&logoColor=white" alt="Chill Synth"/>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://open.spotify.com/playlist/37i9dQZF1DX4sWSpwq3LiO" target="_blank">
+          <img src="https://img.shields.io/badge/🌙_Night_Coding-1DB954?style=for-the-badge&logo=spotify&logoColor=white" alt="Night Coding"/>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://open.spotify.com/playlist/37i9dQZF1DX0SM0LYsmbMT" target="_blank">
+          <img src="https://img.shields.io/badge/🎹_Electronic-00ffff?style=for-the-badge&logo=spotify&logoColor=black" alt="Electronic"/>
+        </a>
+      </td>
+    </tr>
+  </table>
+  <br/>
+  <sub><b>▶ Click to play coding beats while browsing!</b></sub>
 </div>
 
 <br/>
