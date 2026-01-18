@@ -463,7 +463,7 @@ const OPERATOR = {
 <br/>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=35&duration=3000&pause=1000&color=FF0080&center=true&vCenter=true&width=700&height=70&lines=%E2%96%88%E2%96%88%E2%96%88+NOW+PLAYING+%E2%96%88%E2%96%88%E2%96%88" alt="Now Playing" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=35&duration=3000&pause=1000&color=FF0080&center=true&vCenter=true&width=800&height=70&lines=%E2%96%88%E2%96%88%E2%96%88+RECENTLY+PLAYED+%E2%96%88%E2%96%88%E2%96%88" alt="Recently Played" />
 </div>
 
 <br/>
@@ -475,10 +475,10 @@ const OPERATOR = {
 
 <br/>
 
-<!-- SPOTIFY NOW PLAYING - CYBER THEME -->
+<!-- SPOTIFY RECENTLY PLAYED - CYBER THEME -->
 <div align="center">
-  <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=sxur5f9sjkhpr6o6mogpygu0t&redirect=true">
-    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=sxur5f9sjkhpr6o6mogpygu0t&cover_image=true&theme=natemoo-re&show_offline=true&background_color=0D1117&interchange=true&bar_color=ff0080&bar_color_cover=false" alt="Spotify Now Playing"/>
+  <a href="https://open.spotify.com/user/sxur5f9sjkhpr6o6mogpygu0t">
+    <img src="https://spotify-recently-played-readme.vercel.app/api?user=sxur5f9sjkhpr6o6mogpygu0t&count=5&unique=true&width=400" alt="Spotify Recently Played"/>
   </a>
 </div>
 
