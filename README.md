@@ -158,7 +158,7 @@ const AryaWiguna = {
 
 <div align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=AryaWgna&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00d9ff&icon_color=00d9ff&text_color=c9d1d9" alt="GitHub Stats"/>
-  <img width="49%" src="https://streak-stats.demolab.com/?user=AryaWgna&theme=tokyonight&hide_border=true&background=0D1117&stroke=00d9ff&ring=00d9ff&fire=ff6b6b&currStreakNum=c9d1d9&sideNums=c9d1d9&currStreakLabel=00d9ff&sideLabels=00d9ff&dates=6e7681" alt="Streak Stats"/>
+  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=AryaWgna&theme=tokyonight&hide_border=true&background=0D1117&stroke=00d9ff&ring=00d9ff&fire=ff6b6b&currStreakNum=c9d1d9&sideNums=c9d1d9&currStreakLabel=00d9ff&sideLabels=00d9ff&dates=6e7681" alt="Streak Stats"/>
 </div>
 
 <br/>
@@ -179,7 +179,7 @@ const AryaWiguna = {
 <!-- TROPHIES -->
 <div align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=AryaWgna&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=10" alt="Trophies"/>
+    <img src="https://github-profile-trophy.vercel.app/?username=AryaWgna&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=10" alt="Trophies"/>
   </a>
 </div>
 
