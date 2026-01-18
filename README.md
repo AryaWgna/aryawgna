@@ -475,10 +475,10 @@ const OPERATOR = {
 
 <br/>
 
-<!-- SPOTIFY NOW PLAYING -->
+<!-- SPOTIFY NOW PLAYING - CYBER THEME -->
 <div align="center">
   <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=sxur5f9sjkhpr6o6mogpygu0t&redirect=true">
-    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=sxur5f9sjkhpr6o6mogpygu0t&cover_image=true&theme=spotify-embed&show_offline=true&background_color=121212&interchange=true&profanity=true&bar_color=53b14f&bar_color_cover=true" alt="Spotify Now Playing"/>
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=sxur5f9sjkhpr6o6mogpygu0t&cover_image=true&theme=natemoo-re&show_offline=true&background_color=0D1117&interchange=true&bar_color=ff0080&bar_color_cover=false" alt="Spotify Now Playing"/>
   </a>
 </div>
 
