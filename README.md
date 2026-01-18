@@ -475,10 +475,10 @@ const OPERATOR = {
 
 <br/>
 
-<!-- SPOTIFY RECENTLY PLAYED - CYBER THEME -->
+<!-- SPOTIFY WIDGET - CYBER THEME -->
 <div align="center">
   <a href="https://open.spotify.com/user/sxur5f9sjkhpr6o6mogpygu0t">
-    <img src="https://spotify-recently-played-readme.vercel.app/api?user=sxur5f9sjkhpr6o6mogpygu0t&count=5&unique=true&width=400" alt="Spotify Recently Played"/>
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=sxur5f9sjkhpr6o6mogpygu0t&cover_image=true&theme=natemoo-re&show_offline=true&background_color=0d1117&interchange=true&bar_color=ff0080&bar_color_cover=true" alt="Spotify"/>
   </a>
 </div>
 
