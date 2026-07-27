@@ -295,16 +295,16 @@ const OPERATOR = {
 
 <br/>
 
-<!-- GITHUB STATS - USING WORKING URLS -->
+<!-- GITHUB STATS - USING WORKING RELIABLE MIRRORS -->
 <div align="center">
-  <img width="49%" src="https://github-readme-stats-sigma-five.vercel.app/api?username=AryaWgna&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00ffff&icon_color=ff0080&text_color=ffffff&ring_color=ff0080" alt="GitHub Stats"/>
+  <img width="49%" src="https://github-readme-stats-sigma-five.vercel.app/api?username=AryaWgna&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00ffff&icon_color=ff0080&text_color=ffffff&ring_color=ff0080&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
   <img width="49%" src="https://github-readme-streak-stats-eight-delta.vercel.app/?user=AryaWgna&theme=radical&hide_border=true&background=0D1117&stroke=ff0080&ring=ff0080&fire=00ffff&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00ffff&sideLabels=ff0080&dates=888888" alt="Streak Stats"/>
 </div>
 
 <br/>
 
 <div align="center">
-  <img width="40%" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=AryaWgna&layout=donut&theme=radical&hide_border=true&bg_color=0D1117&title_color=00ffff&text_color=ff0080" alt="Top Languages"/>
+  <img width="60%" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=AryaWgna&layout=donut&theme=radical&hide_border=true&bg_color=0D1117&title_color=00ffff&text_color=ff0080&langs_count=8" alt="Top Languages"/>
 </div>
 
 <br/>
@@ -328,27 +328,6 @@ const OPERATOR = {
   <a href="https://github.com/ryo-ma/github-profile-trophy">
     <img src="https://github-trophies.vercel.app/?username=AryaWgna&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" alt="Trophies"/>
   </a>
-</div>
-
-<br/>
-
-<!-- DETAILED STATS CARDS -->
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AryaWgna&theme=radical" alt="Profile Details"/>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=AryaWgna&theme=radical" alt="Repos per Language"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=AryaWgna&theme=radical" alt="Most Commit Language"/>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=AryaWgna&theme=radical" alt="Stats"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=AryaWgna&theme=radical&utcOffset=7" alt="Productive Time"/>
 </div>
 
 <br/>
