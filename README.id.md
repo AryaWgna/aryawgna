@@ -127,7 +127,7 @@ kode >> kualitas >> kopi</pre>
 <table style="width:100%; border-collapse:collapse; font-size:14px;">
 <thead>
 <tr style="color:#71717A; font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.04em; text-transform:uppercase; border-bottom:1px solid #E4E4E7;">
-<th style="padding:8px 12px; text-align:left; width:110px;">Preview</th>
+<th style="padding:8px 12px; text-align:left; width:110px;">Pratinjau</th>
 <th style="padding:8px 12px; text-align:left;">Kredensial</th>
 <th style="padding:8px 12px; text-align:left;">Materi Utama</th>
 <th style="padding:8px 12px; text-align:right;">Bukti</th>

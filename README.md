@@ -136,18 +136,18 @@ code >> craftsmanship >> coffee</pre>
 <tbody>
 <tr style="border-bottom:1px solid #F4F4F5; vertical-align:top;">
 <td style="padding:12px;"><img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/ccna-introduction-to-networks.png" width="96" alt="CCNA – Introduction to Networks preview" style="border-radius:8px; display:block;"></td>
-<td style="padding:12px;"><strong>CCNA — Introduction to Networks</strong><br><span style="color:#71717A; font-size:13px;">Kursus pembuka Cisco Networking Academy: cara kerja jaringan modern dan dasar-dasar konsepnya.</span></td>
-<td style="padding:12px; color:#71717A; font-size:14px;">Model OSI &amp; TCP/IP · subnetting IPv4/IPv6 · Ethernet · dasar routing &amp; switching</td>
+<td style="padding:12px;"><strong>CCNA — Introduction to Networks</strong><br><span style="color:#71717A; font-size:13px;">Introductory Cisco Networking Academy course: how modern networks work and the fundamentals behind them.</span></td>
+<td style="padding:12px; color:#71717A; font-size:14px;">OSI model &amp; TCP/IP · IPv4/IPv6 subnetting · Ethernet · routing &amp; switching basics</td>
 <td style="padding:12px; text-align:right;"><a href="https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/ccna-itn.pdf" style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#4F46E5; text-decoration:none;">PDF →</a></td>
 </tr><tr style="border-bottom:1px solid #F4F4F5; vertical-align:top;">
 <td style="padding:12px;"><img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/english-for-it-1.png" width="96" alt="English for IT 1 preview" style="border-radius:8px; display:block;"></td>
-<td style="padding:12px;"><strong>English for IT 1</strong><br><span style="color:#71717A; font-size:13px;">Kosakata dan komunikasi teknis untuk lingkungan IT profesional.</span></td>
-<td style="padding:12px; color:#71717A; font-size:14px;">Terminologi hardware &amp; software · komunikasi profesional · studi kasus troubleshooting</td>
+<td style="padding:12px;"><strong>English for IT 1</strong><br><span style="color:#71717A; font-size:13px;">Technical vocabulary and communication for professional IT environments.</span></td>
+<td style="padding:12px; color:#71717A; font-size:14px;">Hardware &amp; software terminology · professional communication · troubleshooting case studies</td>
 <td style="padding:12px; text-align:right;"><a href="https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/english-for-it-1.pdf" style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#4F46E5; text-decoration:none;">PDF →</a></td>
 </tr><tr style="border-bottom:1px solid #F4F4F5; vertical-align:top;">
 <td style="padding:12px;"><img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/operating-systems-basics.png" width="96" alt="Operating Systems Basics preview" style="border-radius:8px; display:block;"></td>
-<td style="padding:12px;"><strong>Operating Systems Basics</strong><br><span style="color:#71717A; font-size:13px;">Memahami cara kerja sistem operasi sebagai fondasi administrasi &amp; keamanan.</span></td>
-<td style="padding:12px; color:#71717A; font-size:14px;">Proses &amp; manajemen memori · sistem file · konsep keamanan &amp; virtualisasi</td>
+<td style="padding:12px;"><strong>Operating Systems Basics</strong><br><span style="color:#71717A; font-size:13px;">Understanding how operating systems work as a foundation for administration &amp; security.</span></td>
+<td style="padding:12px; color:#71717A; font-size:14px;">Processes &amp; memory management · file systems · security concepts &amp; virtualization</td>
 <td style="padding:12px; text-align:right;"><a href="https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/operating-systems-basics.pdf" style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#4F46E5; text-decoration:none;">PDF →</a></td>
 </tr>
 </tbody>
