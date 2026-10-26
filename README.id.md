@@ -61,7 +61,7 @@ kode >> kualitas >> kopi</pre>
 <img src="https://img.shields.io/badge/Node.js-18181B?style=flat-square&logo=nodedotjs&logoColor=339933&labelColor=18181B" alt="Node.js"> <img src="https://img.shields.io/badge/Laravel-18181B?style=flat-square&logo=laravel&logoColor=FF2D20&labelColor=18181B" alt="Laravel"> <img src="https://img.shields.io/badge/NestJS-18181B?style=flat-square&logo=nestjs&logoColor=E0234E&labelColor=18181B" alt="NestJS"> <img src="https://img.shields.io/badge/Flask-18181B?style=flat-square&logo=flask&logoColor=E5E7EB&labelColor=18181B" alt="Flask"> <img src="https://img.shields.io/badge/Gin-18181B?style=flat-square&logo=gin&logoColor=00ADD8&labelColor=18181B" alt="Gin">
 
 **Seluler — 02**
-<img src="https://img.shields.io/badge/Flutter-18181B?style=flat-square&logo=flutter&logoColor=02569B&labelColor=18181B" alt="Flutter"> <img src="https://img.shields.io/badge/React Native-18181B?style=flat-square&logo=react&logoColor=61DAFB&labelColor=18181B" alt="React Native">
+<img src="https://img.shields.io/badge/Flutter-18181B?style=flat-square&logo=flutter&logoColor=02569B&labelColor=18181B" alt="Flutter"> <img src="https://img.shields.io/badge/React%20Native-18181B?style=flat-square&logo=react&logoColor=61DAFB&labelColor=18181B" alt="React Native">
 
 **Database — 04**
 <img src="https://img.shields.io/badge/PostgreSQL-18181B?style=flat-square&logo=postgresql&logoColor=4169E1&labelColor=18181B" alt="PostgreSQL"> <img src="https://img.shields.io/badge/MongoDB-18181B?style=flat-square&logo=mongodb&logoColor=47A248&labelColor=18181B" alt="MongoDB"> <img src="https://img.shields.io/badge/Redis-18181B?style=flat-square&logo=redis&logoColor=DC382D&labelColor=18181B" alt="Redis"> <img src="https://img.shields.io/badge/Firebase-18181B?style=flat-square&logo=firebase&logoColor=FFCA28&labelColor=18181B" alt="Firebase">
@@ -123,11 +123,35 @@ kode >> kualitas >> kopi</pre>
 
 ## Sertifikasi
 
-| Preview | Kredensial | Fokus | Bukti |
-| --- | --- | --- | --- |
-| <img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/ccna-introduction-to-networks.png" width="112" alt="CCNA – Introduction to Networks preview"> | **CCNA — Introduction to Networks** | Arsitektur &amp; Protokol Jaringan | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/ccna-itn.pdf) |
-| <img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/english-for-it-1.png" width="112" alt="English for IT 1 preview"> | **English for IT 1** | Terminologi &amp; Komunikasi IT | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/english-for-it-1.pdf) |
-| <img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/operating-systems-basics.png" width="112" alt="Operating Systems Basics preview"> | **Operating Systems Basics** | Fundamental &amp; Arsitektur OS | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/operating-systems-basics.pdf) |
+<div align="left">
+<table style="width:100%; max-width:640px; border-collapse:collapse; font-size:14px;">
+<thead>
+<tr style="color:#71717A; font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.04em; text-transform:uppercase; border-bottom:1px solid #E4E4E7;">
+<th style="padding:8px 12px; text-align:left; width:110px;">Preview</th>
+<th style="padding:8px 12px; text-align:left;">Kredensial</th>
+<th style="padding:8px 12px; text-align:left;">Fokus</th>
+<th style="padding:8px 12px; text-align:right;">Bukti</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border-bottom:1px solid #F4F4F5; vertical-align:top;">
+<td style="padding:12px;"><img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/ccna-introduction-to-networks.png" width="96" alt="CCNA – Introduction to Networks preview" style="border-radius:8px; display:block;"></td>
+<td style="padding:12px;"><strong>CCNA — Introduction to Networks</strong></td>
+<td style="padding:12px; color:#71717A;">Arsitektur &amp; Protokol Jaringan</td>
+<td style="padding:12px; text-align:right;"><a href="https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/ccna-itn.pdf" style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#4F46E5; text-decoration:none;">PDF →</a></td>
+</tr><tr style="border-bottom:1px solid #F4F4F5; vertical-align:top;">
+<td style="padding:12px;"><img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/english-for-it-1.png" width="96" alt="English for IT 1 preview" style="border-radius:8px; display:block;"></td>
+<td style="padding:12px;"><strong>English for IT 1</strong></td>
+<td style="padding:12px; color:#71717A;">Terminologi &amp; Komunikasi IT</td>
+<td style="padding:12px; text-align:right;"><a href="https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/english-for-it-1.pdf" style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#4F46E5; text-decoration:none;">PDF →</a></td>
+</tr><tr style="border-bottom:1px solid #F4F4F5; vertical-align:top;">
+<td style="padding:12px;"><img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/operating-systems-basics.png" width="96" alt="Operating Systems Basics preview" style="border-radius:8px; display:block;"></td>
+<td style="padding:12px;"><strong>Operating Systems Basics</strong></td>
+<td style="padding:12px; color:#71717A;">Fundamental &amp; Arsitektur OS</td>
+<td style="padding:12px; text-align:right;"><a href="https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/operating-systems-basics.pdf" style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#4F46E5; text-decoration:none;">PDF →</a></td>
+</tr></tbody>
+</table>
+</div>
 
 ---
 
@@ -136,9 +160,9 @@ kode >> kualitas >> kopi</pre>
 Punya proyek dalam pikiran? Biasanya saya membalas dalam 24 jam.
 
 <p align="center" style="margin:20px 0 0;">
-<a href="mailto:wgnarya123@gmail.com" style="display:inline-block; padding:12px 26px; border-radius:999px; background:#4F46E5; color:#fff; text-decoration:none; font-weight:500;">Email Saya</a>
-<a href="https://github.com/AryaWgna" style="display:inline-block; padding:12px 26px; border-radius:999px; border:1px solid #E4E4E7; color:#18181B; text-decoration:none; font-weight:500; margin-left:12px;">GitHub</a>
-<a href="https://www.linkedin.com/in/arya-wgna" style="display:inline-block; padding:12px 26px; border-radius:999px; border:1px solid #E4E4E7; color:#18181B; text-decoration:none; font-weight:500; margin-left:12px;">LinkedIn</a>
+<a href="mailto:wgnarya123@gmail.com" style="margin-right:8px;"><img src="https://img.shields.io/badge/Email-18181B?style=flat-square&logo=gmail&logoColor=EA4335&labelColor=18181B" alt="Email"></a>
+<a href="https://github.com/AryaWgna" style="margin-right:8px;"><img src="https://img.shields.io/badge/GitHub-18181B?style=flat-square&logo=github&logoColor=FFFFFF&labelColor=18181B" alt="GitHub"></a>
+<a href="https://www.linkedin.com/in/arya-wgna"><img src="https://img.shields.io/badge/LinkedIn-18181B?style=flat-square&logo=linkedin&logoColor=0A66C2&labelColor=18181B" alt="LinkedIn"></a>
 </p>
 
 <div align="center">
