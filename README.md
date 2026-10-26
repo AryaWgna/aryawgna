@@ -61,7 +61,7 @@ code >> craftsmanship >> coffee</pre>
 
 <div align="left">
 <div style="border:1px solid #E4E4E7; border-radius:16px; background:#FAFAF9; overflow:hidden; max-width:640px; margin-bottom:16px;">
-<img src="landing/assets/projects/simaru.svg" alt="SIMARU Mobile App preview" style="width:100%; display:block; background:#F4F4F5;">
+<img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/projects/simaru.svg" alt="SIMARU Mobile App preview" style="width:100%; display:block; background:#F4F4F5;">
 <div style="padding:16px 20px;">
 <div style="margin-bottom:10px;"><span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">Flutter</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">Dart</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">Mobile</span></div>
 <h3 style="margin:0 0 6px; font-size:18px; font-weight:500;">SIMARU Mobile App</h3>
@@ -71,7 +71,7 @@ code >> craftsmanship >> coffee</pre>
 </div>
 
 <div style="border:1px solid #E4E4E7; border-radius:16px; background:#FAFAF9; overflow:hidden; max-width:640px; margin-bottom:16px;">
-<img src="landing/assets/projects/skyboard.svg" alt="Digital Skyboard preview" style="width:100%; display:block; background:#F4F4F5;">
+<img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/projects/skyboard.svg" alt="Digital Skyboard preview" style="width:100%; display:block; background:#F4F4F5;">
 <div style="padding:16px 20px;">
 <div style="margin-bottom:10px;"><span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">TypeScript</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">React</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">PostgreSQL</span></div>
 <h3 style="margin:0 0 6px; font-size:18px; font-weight:500;">Digital Skyboard</h3>
@@ -81,7 +81,7 @@ code >> craftsmanship >> coffee</pre>
 </div>
 
 <div style="border:1px solid #E4E4E7; border-radius:16px; background:#FAFAF9; overflow:hidden; max-width:640px; margin-bottom:16px;">
-<img src="landing/assets/projects/streamely.svg" alt="StreamEly preview" style="width:100%; display:block; background:#F4F4F5;">
+<img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/projects/streamely.svg" alt="StreamEly preview" style="width:100%; display:block; background:#F4F4F5;">
 <div style="padding:16px 20px;">
 <div style="margin-bottom:10px;"><span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">MongoDB</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">Express</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">Node.js</span></div>
 <h3 style="margin:0 0 6px; font-size:18px; font-weight:500;">StreamEly</h3>
@@ -97,9 +97,9 @@ code >> craftsmanship >> coffee</pre>
 
 | Credential | Focus | Proof |
 | --- | --- | --- |
-| **CCNA — Introduction to Networks** | Network Architecture &amp; Protocols | [PDF](landing/assets/sertifikat/ccna-itn.pdf) |
-| **English for IT 1** | IT Terminology &amp; Communication | [PDF](landing/assets/sertifikat/english-for-it-1.pdf) |
-| **Operating Systems Basics** | OS Fundamentals &amp; Architecture | [PDF](landing/assets/sertifikat/operating-systems-basics.pdf) |
+| **CCNA — Introduction to Networks** | Network Architecture &amp; Protocols | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/ccna-itn.pdf) |
+| **English for IT 1** | IT Terminology &amp; Communication | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/english-for-it-1.pdf) |
+| **Operating Systems Basics** | OS Fundamentals &amp; Architecture | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/operating-systems-basics.pdf) |
 
 ---
 

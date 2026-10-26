@@ -61,7 +61,7 @@ kode >> kualitas >> kopi</pre>
 
 <div align="left">
 <div style="border:1px solid #E4E4E7; border-radius:16px; background:#FAFAF9; overflow:hidden; max-width:640px; margin-bottom:16px;">
-<img src="landing/assets/projects/simaru.svg" alt="Pratinjau Aplikasi Mobile SIMARU" style="width:100%; display:block; background:#F4F4F5;">
+<img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/projects/simaru.svg" alt="Pratinjau Aplikasi Mobile SIMARU" style="width:100%; display:block; background:#F4F4F5;">
 <div style="padding:16px 20px;">
 <div style="margin-bottom:10px;"><span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">Flutter</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">Dart</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">Mobile</span></div>
 <h3 style="margin:0 0 6px; font-size:18px; font-weight:500;">Aplikasi Mobile SIMARU</h3>
@@ -71,7 +71,7 @@ kode >> kualitas >> kopi</pre>
 </div>
 
 <div style="border:1px solid #E4E4E7; border-radius:16px; background:#FAFAF9; overflow:hidden; max-width:640px; margin-bottom:16px;">
-<img src="landing/assets/projects/skyboard.svg" alt="Pratinjau Digital Skyboard" style="width:100%; display:block; background:#F4F4F5;">
+<img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/projects/skyboard.svg" alt="Pratinjau Digital Skyboard" style="width:100%; display:block; background:#F4F4F5;">
 <div style="padding:16px 20px;">
 <div style="margin-bottom:10px;"><span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">TypeScript</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">React</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">PostgreSQL</span></div>
 <h3 style="margin:0 0 6px; font-size:18px; font-weight:500;">Digital Skyboard</h3>
@@ -81,7 +81,7 @@ kode >> kualitas >> kopi</pre>
 </div>
 
 <div style="border:1px solid #E4E4E7; border-radius:16px; background:#FAFAF9; overflow:hidden; max-width:640px; margin-bottom:16px;">
-<img src="landing/assets/projects/streamely.svg" alt="Pratinjau StreamEly" style="width:100%; display:block; background:#F4F4F5;">
+<img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/projects/streamely.svg" alt="Pratinjau StreamEly" style="width:100%; display:block; background:#F4F4F5;">
 <div style="padding:16px 20px;">
 <div style="margin-bottom:10px;"><span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">MongoDB</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">Express</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">Node.js</span></div>
 <h3 style="margin:0 0 6px; font-size:18px; font-weight:500;">StreamEly</h3>
@@ -97,9 +97,9 @@ kode >> kualitas >> kopi</pre>
 
 | Kredensial | Fokus | Bukti |
 | --- | --- | --- |
-| **CCNA — Introduction to Networks** | Arsitektur &amp; Protokol Jaringan | [PDF](landing/assets/sertifikat/ccna-itn.pdf) |
-| **English for IT 1** | Terminologi &amp; Komunikasi IT | [PDF](landing/assets/sertifikat/english-for-it-1.pdf) |
-| **Operating Systems Basics** | Fundamental &amp; Arsitektur OS | [PDF](landing/assets/sertifikat/operating-systems-basics.pdf) |
+| **CCNA — Introduction to Networks** | Arsitektur &amp; Protokol Jaringan | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/ccna-itn.pdf) |
+| **English for IT 1** | Terminologi &amp; Komunikasi IT | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/english-for-it-1.pdf) |
+| **Operating Systems Basics** | Fundamental &amp; Arsitektur OS | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/operating-systems-basics.pdf) |
 
 ---
 
