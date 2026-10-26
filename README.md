@@ -12,6 +12,8 @@
 
 </div>
 
+**Also available in [Bahasa Indonesia](README.id.md).**
+
 ---
 
 ## 👋 About
@@ -95,11 +97,11 @@ code >> craftsmanship >> coffee</pre>
 
 ## 📜 Certifications
 
-| Credential | Focus | Proof |
-| --- | --- | --- |
-| **CCNA — Introduction to Networks** | Network Architecture &amp; Protocols | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/ccna-itn.pdf) |
-| **English for IT 1** | IT Terminology &amp; Communication | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/english-for-it-1.pdf) |
-| **Operating Systems Basics** | OS Fundamentals &amp; Architecture | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/operating-systems-basics.pdf) |
+| Preview | Credential | Focus | Proof |
+| --- | --- | --- | --- |
+| <img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/ccna-introduction-to-networks.png" width="112" alt="CCNA – Introduction to Networks preview"> | **CCNA — Introduction to Networks** | Network Architecture &amp; Protocols | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/ccna-itn.pdf) |
+| <img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/english-for-it-1.png" width="112" alt="English for IT 1 preview"> | **English for IT 1** | IT Terminology &amp; Communication | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/english-for-it-1.pdf) |
+| <img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/operating-systems-basics.png" width="112" alt="Operating Systems Basics preview"> | **Operating Systems Basics** | OS Fundamentals &amp; Architecture | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/operating-systems-basics.pdf) |
 
 ---
 
@@ -114,5 +116,5 @@ Have a project in mind? I usually reply within 24 hours.
 </p>
 
 <div align="center">
-<p style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A;">© 2026 Arya Wiguna. Built with care. · Also available in [Bahasa Indonesia](README.id.md).</p>
+<p style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A;">© 2026 Arya Wiguna. Built with care.</p>
 </div>

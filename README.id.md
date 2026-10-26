@@ -12,6 +12,8 @@
 
 </div>
 
+**Baca versi Inggris: [English](README.md).**
+
 ---
 
 ## 👋 Tentang
@@ -95,11 +97,11 @@ kode >> kualitas >> kopi</pre>
 
 ## 📜 Sertifikasi
 
-| Kredensial | Fokus | Bukti |
-| --- | --- | --- |
-| **CCNA — Introduction to Networks** | Arsitektur &amp; Protokol Jaringan | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/ccna-itn.pdf) |
-| **English for IT 1** | Terminologi &amp; Komunikasi IT | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/english-for-it-1.pdf) |
-| **Operating Systems Basics** | Fundamental &amp; Arsitektur OS | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/operating-systems-basics.pdf) |
+| Preview | Kredensial | Fokus | Bukti |
+| --- | --- | --- | --- |
+| <img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/ccna-introduction-to-networks.png" width="112" alt="CCNA – Introduction to Networks preview"> | **CCNA — Introduction to Networks** | Arsitektur &amp; Protokol Jaringan | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/ccna-itn.pdf) |
+| <img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/english-for-it-1.png" width="112" alt="English for IT 1 preview"> | **English for IT 1** | Terminologi &amp; Komunikasi IT | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/english-for-it-1.pdf) |
+| <img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/operating-systems-basics.png" width="112" alt="Operating Systems Basics preview"> | **Operating Systems Basics** | Fundamental &amp; Arsitektur OS | [PDF](https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/operating-systems-basics.pdf) |
 
 ---
 
@@ -114,5 +116,5 @@ Punya proyek dalam pikiran? Biasanya saya membalas dalam 24 jam.
 </p>
 
 <div align="center">
-<p style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A;">© 2026 Arya Wiguna. Dibuat dengan penuh perhatian. · Baca versi Inggris: [English](README.md).</p>
+<p style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A;">© 2026 Arya Wiguna. Dibuat dengan penuh perhatian.</p>
 </div>
