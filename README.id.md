@@ -1,9 +1,9 @@
 <div align="center">
 
-<h1 style="font-family:'Space Grotesk',system-ui,sans-serif; font-size:44px; font-weight:500; letter-spacing:-1px; margin:0;">arya<span style="color:#4F46E5;">wigna</span></h1>
-<p style="font-family:'JetBrains Mono',monospace; font-size:15px; color:#71717A; margin:8px 0 0;">pengembang full-stack · indonesia 🇮🇩</p>
+<h1 style="font-family:'Space Grotesk',system-ui,sans-serif; font-size:42px; font-weight:600; letter-spacing:-1.5px; margin:0;">arya<span style="color:#4F46E5;">wigna</span></h1>
+<p style="font-family:'JetBrains Mono',monospace; font-size:14px; color:#71717A; margin:10px 0 0;">pengembang full-stack — indonesia</p>
 
-<p style="margin:18px 0 0;">
+<p style="margin:22px 0 0;">
 <img src="https://img.shields.io/github/followers/AryaWgna?style=flat-square&label=followers&color=4F46E5&labelColor=18181B" alt="followers">
 <img src="https://img.shields.io/github/stars/AryaWgna?style=flat-square&label=stars&color=4F46E5&labelColor=18181B" alt="stars">
 <img src="https://img.shields.io/badge/stack-full--stack-4F46E5?style=flat-square&labelColor=18181B" alt="stack">
@@ -16,7 +16,13 @@
 
 ---
 
-## 👋 Tentang
+## Daftar Isi
+
+[Tentang](#tentang) · [Teknologi](#teknologi) · [Proyek](#proyek) · [Sertifikasi](#sertifikasi) · [Kontak](#kontak)
+
+---
+
+## Tentang
 
 Saya membangun untuk web dan sekitarnya — dari aplikasi seluler Flutter, dashboard realtime, hingga platform self-hosted. Berbasis di Indonesia; paling sering menulis TypeScript, Go, atau merapikan PHP lawas.
 
@@ -38,7 +44,7 @@ kode >> kualitas >> kopi</pre>
 </div>
 
 ---
-## 🛠️ Teknologi
+## Teknologi
 
 **Bahasa — 06**
 <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">TypeScript</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">JavaScript</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">Python</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">Go</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">PHP</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">Dart</span>
@@ -59,7 +65,7 @@ kode >> kualitas >> kopi</pre>
 <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">Docker</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">Kubernetes</span> <span style="display:inline-block; padding:4px 14px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; background:rgba(79,70,229,0.10); border:1px solid #E4E4E7; border-radius:999px; margin:3px;">AWS</span>
 
 ---
-## 📦 Proyek
+## Proyek
 
 <div align="left">
 <div style="border:1px solid #E4E4E7; border-radius:16px; background:#FAFAF9; overflow:hidden; max-width:640px; margin-bottom:16px;">
@@ -95,7 +101,7 @@ kode >> kualitas >> kopi</pre>
 
 ---
 
-## 📜 Sertifikasi
+## Sertifikasi
 
 | Preview | Kredensial | Fokus | Bukti |
 | --- | --- | --- | --- |
@@ -105,7 +111,7 @@ kode >> kualitas >> kopi</pre>
 
 ---
 
-## 📬 Kontak
+## Kontak
 
 Punya proyek dalam pikiran? Biasanya saya membalas dalam 24 jam.
 
