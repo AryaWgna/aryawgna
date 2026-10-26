@@ -22,7 +22,7 @@
 ## Contents
 
 <p align="center" style="margin:0;">
-<a href="#about" style="padding:6px 16px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#4F46E5; background:rgba(79,70,229,0.08); border:1px solid #C7D2FE; border-radius:999px; margin:4px; text-decoration:none;">About</a><a href="#stack" style="padding:6px 16px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#4F46E5; background:rgba(79,70,229,0.08); border:1px solid #C7D2FE; border-radius:999px; margin:4px; text-decoration:none;">Stack</a><a href="#projects" style="padding:6px 16px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#4F46E5; background:rgba(79,70,229,0.08); border:1px solid #C7D2FE; border-radius:999px; margin:4px; text-decoration:none;">Projects</a><a href="#certifications" style="padding:6px 16px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#4F46E5; background:rgba(79,70,229,0.08); border:1px solid #C7D2FE; border-radius:999px; margin:4px; text-decoration:none;">Certifications</a><a href="#contact" style="padding:6px 16px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#4F46E5; background:rgba(79,70,229,0.08); border:1px solid #C7D2FE; border-radius:999px; margin:4px; text-decoration:none;">Contact</a>
+<a href="#about" style="color:#4F46E5; text-decoration:none; font-weight:500;">About</a> &nbsp;·&nbsp; <a href="#stack" style="color:#4F46E5; text-decoration:none; font-weight:500;">Stack</a> &nbsp;·&nbsp; <a href="#projects" style="color:#4F46E5; text-decoration:none; font-weight:500;">Projects</a> &nbsp;·&nbsp; <a href="#certifications" style="color:#4F46E5; text-decoration:none; font-weight:500;">Certifications</a> &nbsp;·&nbsp; <a href="#contact" style="color:#4F46E5; text-decoration:none; font-weight:500;">Contact</a> &nbsp;·&nbsp; <a href="#top" style="color:#4F46E5; text-decoration:none; font-weight:500;">Top</a>
 </p>
 
 ---
@@ -124,7 +124,7 @@ code >> craftsmanship >> coffee</pre>
 ## Certifications
 
 <div align="left">
-<table style="width:100%; max-width:640px; border-collapse:collapse; font-size:14px;">
+<table style="width:100%; border-collapse:collapse; font-size:14px;">
 <thead>
 <tr style="color:#71717A; font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.04em; text-transform:uppercase; border-bottom:1px solid #E4E4E7;">
 <th style="padding:8px 12px; text-align:left; width:110px;">Preview</th>

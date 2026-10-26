@@ -22,7 +22,7 @@
 ## Daftar Isi
 
 <p align="center" style="margin:0;">
-<a href="#tentang" style="padding:6px 16px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#4F46E5; background:rgba(79,70,229,0.08); border:1px solid #C7D2FE; border-radius:999px; margin:4px; text-decoration:none;">Tentang</a><a href="#teknologi" style="padding:6px 16px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#4F46E5; background:rgba(79,70,229,0.08); border:1px solid #C7D2FE; border-radius:999px; margin:4px; text-decoration:none;">Teknologi</a><a href="#proyek" style="padding:6px 16px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#4F46E5; background:rgba(79,70,229,0.08); border:1px solid #C7D2FE; border-radius:999px; margin:4px; text-decoration:none;">Proyek</a><a href="#sertifikasi" style="padding:6px 16px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#4F46E5; background:rgba(79,70,229,0.08); border:1px solid #C7D2FE; border-radius:999px; margin:4px; text-decoration:none;">Sertifikasi</a><a href="#kontak" style="padding:6px 16px; font-family:'JetBrains Mono',monospace; font-size:12px; color:#4F46E5; background:rgba(79,70,229,0.08); border:1px solid #C7D2FE; border-radius:999px; margin:4px; text-decoration:none;">Kontak</a>
+<a href="#tentang" style="color:#4F46E5; text-decoration:none; font-weight:500;">Tentang</a> &nbsp;·&nbsp; <a href="#teknologi" style="color:#4F46E5; text-decoration:none; font-weight:500;">Teknologi</a> &nbsp;·&nbsp; <a href="#proyek" style="color:#4F46E5; text-decoration:none; font-weight:500;">Proyek</a> &nbsp;·&nbsp; <a href="#sertifikasi" style="color:#4F46E5; text-decoration:none; font-weight:500;">Sertifikasi</a> &nbsp;·&nbsp; <a href="#kontak" style="color:#4F46E5; text-decoration:none; font-weight:500;">Kontak</a> &nbsp;·&nbsp; <a href="#top" style="color:#4F46E5; text-decoration:none; font-weight:500;">Top</a>
 </p>
 
 ---
@@ -124,7 +124,7 @@ kode >> kualitas >> kopi</pre>
 ## Sertifikasi
 
 <div align="left">
-<table style="width:100%; max-width:640px; border-collapse:collapse; font-size:14px;">
+<table style="width:100%; border-collapse:collapse; font-size:14px;">
 <thead>
 <tr style="color:#71717A; font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.04em; text-transform:uppercase; border-bottom:1px solid #E4E4E7;">
 <th style="padding:8px 12px; text-align:left; width:110px;">Preview</th>
