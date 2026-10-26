@@ -129,27 +129,28 @@ code >> craftsmanship >> coffee</pre>
 <tr style="color:#71717A; font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.04em; text-transform:uppercase; border-bottom:1px solid #E4E4E7;">
 <th style="padding:8px 12px; text-align:left; width:110px;">Preview</th>
 <th style="padding:8px 12px; text-align:left;">Credential</th>
-<th style="padding:8px 12px; text-align:left;">Focus</th>
+<th style="padding:8px 12px; text-align:left;">Key Topics</th>
 <th style="padding:8px 12px; text-align:right;">Proof</th>
 </tr>
 </thead>
 <tbody>
 <tr style="border-bottom:1px solid #F4F4F5; vertical-align:top;">
 <td style="padding:12px;"><img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/ccna-introduction-to-networks.png" width="96" alt="CCNA – Introduction to Networks preview" style="border-radius:8px; display:block;"></td>
-<td style="padding:12px;"><strong>CCNA — Introduction to Networks</strong></td>
-<td style="padding:12px; color:#71717A;">Network Architecture &amp; Protocols</td>
+<td style="padding:12px;"><strong>CCNA — Introduction to Networks</strong><br><span style="color:#71717A; font-size:13px;">Kursus pembuka Cisco Networking Academy: cara kerja jaringan modern dan dasar-dasar konsepnya.</span></td>
+<td style="padding:12px; color:#71717A; font-size:14px;">Model OSI &amp; TCP/IP · subnetting IPv4/IPv6 · Ethernet · dasar routing &amp; switching</td>
 <td style="padding:12px; text-align:right;"><a href="https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/ccna-itn.pdf" style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#4F46E5; text-decoration:none;">PDF →</a></td>
 </tr><tr style="border-bottom:1px solid #F4F4F5; vertical-align:top;">
 <td style="padding:12px;"><img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/english-for-it-1.png" width="96" alt="English for IT 1 preview" style="border-radius:8px; display:block;"></td>
-<td style="padding:12px;"><strong>English for IT 1</strong></td>
-<td style="padding:12px; color:#71717A;">IT Terminology &amp; Communication</td>
+<td style="padding:12px;"><strong>English for IT 1</strong><br><span style="color:#71717A; font-size:13px;">Kosakata dan komunikasi teknis untuk lingkungan IT profesional.</span></td>
+<td style="padding:12px; color:#71717A; font-size:14px;">Terminologi hardware &amp; software · komunikasi profesional · studi kasus troubleshooting</td>
 <td style="padding:12px; text-align:right;"><a href="https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/english-for-it-1.pdf" style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#4F46E5; text-decoration:none;">PDF →</a></td>
 </tr><tr style="border-bottom:1px solid #F4F4F5; vertical-align:top;">
 <td style="padding:12px;"><img src="https://raw.githubusercontent.com/AryaWgna/arya-wiguna-landing/main/assets/sertifikat/operating-systems-basics.png" width="96" alt="Operating Systems Basics preview" style="border-radius:8px; display:block;"></td>
-<td style="padding:12px;"><strong>Operating Systems Basics</strong></td>
-<td style="padding:12px; color:#71717A;">OS Fundamentals &amp; Architecture</td>
+<td style="padding:12px;"><strong>Operating Systems Basics</strong><br><span style="color:#71717A; font-size:13px;">Memahami cara kerja sistem operasi sebagai fondasi administrasi &amp; keamanan.</span></td>
+<td style="padding:12px; color:#71717A; font-size:14px;">Proses &amp; manajemen memori · sistem file · konsep keamanan &amp; virtualisasi</td>
 <td style="padding:12px; text-align:right;"><a href="https://github.com/AryaWgna/arya-wiguna-landing/blob/main/assets/sertifikat/operating-systems-basics.pdf" style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#4F46E5; text-decoration:none;">PDF →</a></td>
-</tr></tbody>
+</tr>
+</tbody>
 </table>
 </div>
 
@@ -167,6 +168,8 @@ Have a project in mind? I usually reply within 24 hours.
 
 <div align="center">
 <p style="font-family:'JetBrains Mono',monospace; font-size:13px; color:#71717A; margin-top:16px;">wgnarya123@gmail.com</p>
-<p style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; margin-top:8px;">[About](#about) · [Stack](#stack) · [Projects](#projects) · [Certifications](#certifications) · [Contact](#contact) · [Top](#top)</p>
+<p style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; margin-top:8px;">
+<a href="#about" style="color:#4F46E5; text-decoration:none;">About</a> &nbsp;·&nbsp; <a href="#stack" style="color:#4F46E5; text-decoration:none;">Stack</a> &nbsp;·&nbsp; <a href="#projects" style="color:#4F46E5; text-decoration:none;">Projects</a> &nbsp;·&nbsp; <a href="#certifications" style="color:#4F46E5; text-decoration:none;">Certifications</a> &nbsp;·&nbsp; <a href="#contact" style="color:#4F46E5; text-decoration:none;">Contact</a> &nbsp;·&nbsp; <a href="#top" style="color:#4F46E5; text-decoration:none;">Top</a>
+</p>
 <p style="font-family:'JetBrains Mono',monospace; font-size:12px; color:#71717A; margin-top:8px;">© 2026 Arya Wiguna. Built with care.</p>
 </div>
