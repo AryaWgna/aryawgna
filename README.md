@@ -1,7 +1,7 @@
 <div align="center" id="top">
 
 <img src="https://avatars.githubusercontent.com/u/156288269?s=400" width="64" height="64" alt="Arya Wiguna" style="border-radius:50%; border:2px solid #DCDDD7; margin-bottom:16px;">
-<h1 style="font-family:'Geist',system-ui,sans-serif; font-size:42px; font-weight:600; letter-spacing:-1.5px; margin:0;">arya<span style="color:#4778A9;">wigna</span></h1>
+<h1 style="font-family:'Geist',system-ui,sans-serif; font-size:42px; font-weight:600; letter-spacing:-1.5px; margin:0;">arya<span style="color:#4778A9;">wiguna</span></h1>
 <p style="font-family:'Geist Mono','JetBrains Mono',monospace; font-size:14px; color:#777D85; margin:10px 0 0;">full-stack developer — bogor, indonesia</p>
 
 <p align="center" style="margin:14px 0 0;"><span style="display:inline-block; padding:6px 16px; font-family:'Geist Mono','JetBrains Mono',monospace; font-size:12px; color:#16A34A; background:rgba(22,163,74,0.10); border:1px solid #BBF7D0; border-radius:999px;"><span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#22C55E; margin-right:8px;"></span>available for opportunities</span></p>
