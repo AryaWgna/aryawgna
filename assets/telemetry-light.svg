@@ -20,7 +20,7 @@
     <line x1="0" y1="2" x2="0" y2="48" stroke="#4778A9" stroke-width="2" />
     <text x="12" y="12" fill="#6E757D" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" letter-spacing="0.8">CONTRIBUTIONS</text>
     <text x="12" y="34" fill="#20252C" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="19" font-weight="700">371</text>
-    <text x="12" y="49" fill="#6E757D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11">283 in last 12 mos</text>
+    <text x="12" y="49" fill="#6E757D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11">284 in last 12 mos</text>
   </g>
   <g transform="translate(22, 136)">
     <line x1="0" y1="2" x2="0" y2="48" stroke="#4778A9" stroke-width="2" />
@@ -40,31 +40,31 @@
   </clipPath>
   <g clip-path="url(#lang-bar-clip)">
     <rect x="436" y="58" width="416" height="10" fill="#ECEBE4" />
-    <rect x="436.0" y="58" width="223.1" height="10" fill="#172A45" />
-    <rect x="660.6" y="58" width="97.3" height="10" fill="#356393" />
-    <rect x="759.4" y="58" width="44.5" height="10" fill="#4F81B3" />
-    <rect x="805.4" y="58" width="21.1" height="10" fill="#6C99C6" />
-    <rect x="828.0" y="58" width="15.8" height="10" fill="#8FB3D7" />
-    <rect x="845.3" y="58" width="6.7" height="10" fill="#AEBFD1" />
+    <rect x="436.0" y="58" width="220.8" height="10" fill="#172A45" />
+    <rect x="658.3" y="58" width="96.3" height="10" fill="#356393" />
+    <rect x="756.0" y="58" width="44.0" height="10" fill="#4F81B3" />
+    <rect x="801.5" y="58" width="20.9" height="10" fill="#6C99C6" />
+    <rect x="823.9" y="58" width="20.0" height="10" fill="#8FB3D7" />
+    <rect x="845.4" y="58" width="6.6" height="10" fill="#AEBFD1" />
   </g>
 
   
   <g transform="translate(436, 94)">
     <rect x="0" y="-8" width="8" height="8" rx="2" fill="#172A45" />
     <text x="14" y="0" fill="#20252C" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600">Dart</text>
-    <text x="196" y="0" text-anchor="end" fill="#172A45" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600">54.0%</text>
+    <text x="196" y="0" text-anchor="end" fill="#172A45" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600">53.4%</text>
     <text x="14" y="14" fill="#6E757D" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10">1.62 MB</text>
   </g>
   <g transform="translate(648, 94)">
     <rect x="0" y="-8" width="8" height="8" rx="2" fill="#356393" />
     <text x="14" y="0" fill="#20252C" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600">TypeScript</text>
-    <text x="196" y="0" text-anchor="end" fill="#172A45" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600">23.8%</text>
+    <text x="196" y="0" text-anchor="end" fill="#172A45" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600">23.5%</text>
     <text x="14" y="14" fill="#6E757D" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10">711 KB</text>
   </g>
   <g transform="translate(436, 130)">
     <rect x="0" y="-8" width="8" height="8" rx="2" fill="#4F81B3" />
     <text x="14" y="0" fill="#20252C" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600">Python</text>
-    <text x="196" y="0" text-anchor="end" fill="#172A45" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600">11.0%</text>
+    <text x="196" y="0" text-anchor="end" fill="#172A45" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600">10.9%</text>
     <text x="14" y="14" fill="#6E757D" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10">331 KB</text>
   </g>
   <g transform="translate(648, 130)">
@@ -76,8 +76,8 @@
   <g transform="translate(436, 166)">
     <rect x="0" y="-8" width="8" height="8" rx="2" fill="#8FB3D7" />
     <text x="14" y="0" fill="#20252C" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600">JavaScript</text>
-    <text x="196" y="0" text-anchor="end" fill="#172A45" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600">4.2%</text>
-    <text x="14" y="14" fill="#6E757D" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10">124 KB</text>
+    <text x="196" y="0" text-anchor="end" fill="#172A45" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600">5.2%</text>
+    <text x="14" y="14" fill="#6E757D" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10">156 KB</text>
   </g>
   <g transform="translate(648, 166)">
     <rect x="0" y="-8" width="8" height="8" rx="2" fill="#AEBFD1" />
