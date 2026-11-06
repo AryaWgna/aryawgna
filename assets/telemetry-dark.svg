@@ -19,8 +19,8 @@
   <g transform="translate(216, 62)">
     <line x1="0" y1="2" x2="0" y2="48" stroke="#7FA8D0" stroke-width="2" />
     <text x="12" y="12" fill="#8F98A2" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" letter-spacing="0.8">CONTRIBUTIONS</text>
-    <text x="12" y="34" fill="#E9E8E2" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="19" font-weight="700">371</text>
-    <text x="12" y="49" fill="#8F98A2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11">284 in last 12 mos</text>
+    <text x="12" y="34" fill="#E9E8E2" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="19" font-weight="700">373</text>
+    <text x="12" y="49" fill="#8F98A2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11">285 in last 12 mos</text>
   </g>
   <g transform="translate(22, 136)">
     <line x1="0" y1="2" x2="0" y2="48" stroke="#7FA8D0" stroke-width="2" />
@@ -40,8 +40,8 @@
   </clipPath>
   <g clip-path="url(#lang-bar-clip)">
     <rect x="436" y="58" width="416" height="10" fill="#17202A" />
-    <rect x="436.0" y="58" width="220.8" height="10" fill="#9FB6D6" />
-    <rect x="658.3" y="58" width="96.3" height="10" fill="#7FA8D0" />
+    <rect x="436.0" y="58" width="220.7" height="10" fill="#9FB6D6" />
+    <rect x="658.2" y="58" width="96.3" height="10" fill="#7FA8D0" />
     <rect x="756.0" y="58" width="44.0" height="10" fill="#5F8BB8" />
     <rect x="801.5" y="58" width="20.9" height="10" fill="#487099" />
     <rect x="823.9" y="58" width="20.0" height="10" fill="#37587A" />
@@ -59,7 +59,7 @@
     <rect x="0" y="-8" width="8" height="8" rx="2" fill="#7FA8D0" />
     <text x="14" y="0" fill="#E9E8E2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="600">TypeScript</text>
     <text x="196" y="0" text-anchor="end" fill="#9FB6D6" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="11" font-weight="600">23.5%</text>
-    <text x="14" y="14" fill="#8F98A2" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10">711 KB</text>
+    <text x="14" y="14" fill="#8F98A2" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="10">712 KB</text>
   </g>
   <g transform="translate(436, 130)">
     <rect x="0" y="-8" width="8" height="8" rx="2" fill="#5F8BB8" />
