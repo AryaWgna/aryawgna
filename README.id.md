@@ -1,14 +1,20 @@
 <div id="top" align="center">
 
-<a href="https://arya-wiguna.my.id">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/masthead-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/masthead-light.svg" />
-    <img alt="Arya Wiguna — Software Engineer (Full-Stack Web &amp; Mobile)" src="./assets/masthead-light.svg" width="100%" />
-  </picture>
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/masthead-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/masthead-light.svg" />
+  <img alt="Arya Wiguna — Software Engineer" src="./assets/masthead-light.svg" width="100%" />
+</picture>
 
-<sub><a href="README.md">English</a> · <strong>Bahasa Indonesia</strong> &nbsp;|&nbsp; <a href="#tentang">Tentang</a> · <a href="#pengalaman">Pengalaman</a> · <a href="#karya-utama">Karya Utama</a> · <a href="#stack-teknis">Stack</a> · <a href="#fitur-interaktif">Fitur Interaktif</a> · <a href="#sertifikasi">Sertifikasi</a> · <a href="#kontak">Kontak</a></sub>
+<p>
+  <strong>Software Engineer · Full-Stack Web &amp; Flutter Mobile</strong><br />
+  <a href="https://arya-wiguna.my.id">Portofolio</a> ·
+  <a href="https://www.linkedin.com/in/arya-wgna">LinkedIn</a> ·
+  <a href="https://github.com/AryaWgna">GitHub</a> ·
+  <a href="mailto:wgnarya123@gmail.com">Email</a>
+</p>
+
+<sub><a href="README.md">English</a> · <strong>Bahasa Indonesia</strong> &nbsp;|&nbsp; <a href="#tentang">Tentang</a> · <a href="#pengalaman">Pengalaman</a> · <a href="#karya">Karya</a> · <a href="#stack">Stack</a> · <a href="#sertifikasi">Sertifikasi</a> · <a href="#kontak">Kontak</a></sub>
 
 </div>
 
@@ -16,87 +22,77 @@
 
 ## Tentang
 
-Lulusan Teknik Informatika (**S1 Teknik Informatika**, Universitas Binaniaga Indonesia — IPK **3.77 / 4.00**) dan **Pemrogram Junior tersertifikasi BNSP** yang berdomisili di Bogor, Indonesia. Saya membangun aplikasi mobile teruji lapangan menggunakan **Flutter** serta backend web multi-layanan dengan **Next.js 15**, **Laravel 11**, dan **Bun / Elysia.js**.
+Lulusan Teknik Informatika (**S1 Teknik Informatika**, Universitas Binaniaga Indonesia — IPK **3.77 / 4.00**) dan **Pemrogram Junior tersertifikasi BNSP** yang berdomisili di Bogor, Indonesia. Saya membangun aplikasi mobile **Flutter** teruji lapangan serta backend web multi-layanan dengan **Next.js 15**, **Laravel 11**, dan **Bun / Elysia.js**.
 
-- **Rekayasa Lapangan Rumah Sakit:** Magang IT Support & Mobile Developer 5 bulan di **RS UMMI Bogor** (Feb – Jul 2025), membangun perangkat mobile internal untuk inspeksi alat medis berbasis QR dan audit stock opname per ruangan.
-- **Disiplin Arsitektur:** Batas layanan eksplisit, skema relasional ternormalisasi, dan manajemen state yang dapat diprediksi tanpa lapisan framework yang tidak perlu.
-- **Bukti Langsung:** Setiap sistem dan sertifikasi di bawah merujuk langsung ke repositori publik, halaman verifikasi resmi, atau PDF sertifikat hasil pindaian.
+- **Rekayasa rumah sakit:** Magang 5 bulan di **RS UMMI Bogor** — aplikasi inspeksi alat medis berbasis QR & stock opname (SIMARU).
+- **Disiplin arsitektur:** batas layanan eksplisit, skema ternormalisasi, manajemen state yang dapat diprediksi.
+- **Bukti langsung:** setiap proyek dan sertifikasi merujuk ke repositori publik atau verifikasi resmi.
 
 ---
 
 ## Pengalaman
 
-- **RS UMMI Bogor** — Mobile App Developer (SIMARU) & IT Support Intern (Feb – Jul 2025)
-- **Digital Skyboard Announcement** — Sistem tampilan penerbangan bandara (FIDS) yang diorkestrasi 5 kontainer Docker
-- **StreamEly** — Agregator metadata VOD self-hosted & pemutar multi-gateway
+| Periode | Peran |
+|---|---|
+| Feb–Jul 2025 | **Mobile App Developer & IT Support Intern** — RS UMMI Bogor (SIMARU) |
+| 2024–2025 | **Engineer FIDS Bandara** — Digital Skyboard Announcement |
+| 2025 | **Full-Stack Engineer** — StreamEly (agregator VOD self-hosted) |
 
 ---
 
-## Karya Utama
+## Karya
 
 ### 01 · Aplikasi Mobile SIMARU — RS UMMI Bogor
 **Aplikasi Inspeksi Aset Medis & Notifikasi Push** · `Flutter` `Dart` `Firebase FCM` `REST API`
 
-<p>
-  <a href="https://arya-wiguna.my.id/work/simaru-mobile-app">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/project-simaru-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/project-simaru-light.svg" />
-      <img alt="SIMARU Mobile App Interface and System Architecture" src="./assets/project-simaru-light.svg" width="100%" />
-    </picture>
-  </a>
-</p>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/project-simaru-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/project-simaru-light.svg" />
+    <img alt="SIMARU Mobile App" src="./assets/project-simaru-light.svg" width="100%" />
+  </picture>
+</div>
 
-Dikembangkan saat magang di **RS UMMI Bogor** agar teknisi rumah sakit dapat mengaudit peralatan medis langsung di lantai bangsal tanpa kertas. Terintegrasi dengan pencarian QR `mobile_scanner`, kontrol `StockOpnameController` per gedung/ruangan, pelaporan kerusakan beserta foto, token Bearer terenkripsi `flutter_secure_storage`, serta registrasi push perangkat `FcmTokenManager`.
+Audit aset via QR kamera, stock opname per ruangan, laporan kerusakan dengan foto, token terenkripsi, dan registrasi push latar belakang — untuk teknisi rumah sakit di lantai bangsal.
 
-<p>
-  <a href="https://github.com/AryaWgna/SIMARU-Mobile-App"><strong>Repositori sumber ↗</strong></a> · <a href="https://arya-wiguna.my.id/work/simaru-mobile-app"><strong>Studi kasus &amp; arsitektur ↗</strong></a>
-</p>
+[Repositori sumber ↗](https://github.com/AryaWgna/SIMARU-Mobile-App) · [Studi kasus & arsitektur ↗](https://arya-wiguna.my.id/work/simaru-mobile-app)
 
 ---
 
 ### 02 · Digital Skyboard Announcement
 **Sistem Tampilan Informasi Penerbangan (FIDS)** · `Next.js 15` `Laravel 11` `MySQL 8.0` `Docker Compose` `Nginx`
 
-<p>
-  <a href="https://arya-wiguna.my.id/work/digital-skyboard-announcement">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/project-skyboard-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/project-skyboard-light.svg" />
-      <img alt="Digital Skyboard FIDS Interface and Docker Topology" src="./assets/project-skyboard-light.svg" width="100%" />
-    </picture>
-  </a>
-</p>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/project-skyboard-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/project-skyboard-light.svg" />
+    <img alt="Digital Skyboard FIDS" src="./assets/project-skyboard-light.svg" width="100%" />
+  </picture>
+</div>
 
-Tampilan informasi penerbangan terminal yang diorkestrasi lintas **5 kontainer Docker** (`database-skyboard` MySQL 8.0, `api-skyboard` Laravel 11 + Sanctum, `ui-skyboard` Next.js 15, `assets-skyboard` server Nginx statis, `gateway-skyboard` reverse proxy Nginx TLS). Layar terminal meminta `/api/flights` setiap 30 detik, memutar nada saat perubahan status boarding, dan menampilkan banner promosi dari dashboard operator terlindungi Sanctum.
+Tampilan informasi penerbangan lintas **5 kontainer Docker**, reverse proxy Nginx TLS, dashboard operator terlindungi Sanctum, dan polling penerbangan setiap 30 detik.
 
-<p>
-  <a href="https://github.com/AryaWgna/Digital-Skyboard-Announcement"><strong>Repositori sumber ↗</strong></a> · <a href="https://arya-wiguna.my.id/work/digital-skyboard-announcement"><strong>Studi kasus &amp; arsitektur ↗</strong></a>
-</p>
+[Repositori sumber ↗](https://github.com/AryaWgna/Digital-Skyboard-Announcement) · [Studi kasus & arsitektur ↗](https://arya-wiguna.my.id/work/digital-skyboard-announcement)
 
 ---
 
 ### 03 · StreamEly
 **Agregator Metadata VOD Self-Hosted & Pemutar Multi-Gateway** · `Bun` `Elysia.js` `Svelte` `TypeScript`
 
-<p>
-  <a href="https://arya-wiguna.my.id/work/streamely">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/project-streamely-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/project-streamely-light.svg" />
-      <img alt="StreamEly VOD Interface and Bun Proxy Architecture" src="./assets/project-streamely-light.svg" width="100%" />
-    </picture>
-  </a>
-</p>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/project-streamely-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/project-streamely-light.svg" />
+    <img alt="StreamEly VOD" src="./assets/project-streamely-light.svg" width="100%" />
+  </picture>
+</div>
 
-Katalog media ringan yang dirute melalui reverse proxy kustom `Bun.serve` (`:8000`) — meneruskan `/api/*` ke **Elysia.js** (`:3000`) dan `/` ke **Svelte** (`:5173`), serta menghapus header `content-encoding` upstream agar kompatibel dengan Cloudflare Tunnel. Memuat 15.000+ data TVmaze/OMDB ke memori, menghitung skor kemiripan Jaccard genre/cast di sisi klien, dan menyediakan 3 gateway embed cadangan.
+Reverse proxy Bun kustom, 15.000+ data katalog di memori, kemiripan Jaccard sisi klien, dan 3 gateway embed cadangan.
 
-<p>
-  <a href="https://github.com/AryaWgna/streamely"><strong>Repositori sumber ↗</strong></a> · <a href="https://arya-wiguna.my.id/work/streamely"><strong>Studi kasus &amp; arsitektur ↗</strong></a>
-</p>
+[Repositori sumber ↗](https://github.com/AryaWgna/streamely) · [Studi kasus & arsitektur ↗](https://arya-wiguna.my.id/work/streamely)
 
 ---
-## Stack Teknis
+## Stack
 
 | Area | Teknologi |
 |---|---|
@@ -111,8 +107,8 @@ Katalog media ringan yang dirute melalui reverse proxy kustom `Bun.serve` (`:800
 ## Fitur Interaktif
 
 - **Cursor SVG kustom** — menggantikan cursor bawaan pada perangkat pointer halus.
-- **Musik ambient** — disintesis langsung di browser via Web Audio API, diaktifkan dari topbar.
-- **Mini-game “FLY DODGE”** — demo canvas yang dibuka dari topbar.
+- **Musik ambient** — disintesis di browser via Web Audio API, diaktifkan dari topbar.
+- **Mini-game “FLY DODGE”** — demo canvas dari topbar.
 - **Antarmuka dwibahasa** — Inggris / Bahasa Indonesia.
 - **Presensi pengunjung langsung** — penghitung online real-time.
 
@@ -120,7 +116,7 @@ Katalog media ringan yang dirute melalui reverse proxy kustom `Bun.serve` (`:800
 
 ## Sertifikasi
 
-Sertifikasi utama terpilih (dari [23 sertifikat arsip di arya-wiguna.my.id](https://arya-wiguna.my.id/#certs)):
+Sertifikasi utama terpilih (dari [21 sertifikat arsip di arya-wiguna.my.id](https://arya-wiguna.my.id/#certs)):
 
 <table>
   <thead>

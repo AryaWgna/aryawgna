@@ -1,14 +1,20 @@
 <div id="top" align="center">
 
-<a href="https://arya-wiguna.my.id">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/masthead-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/masthead-light.svg" />
-    <img alt="Arya Wiguna — Software Engineer (Full-Stack Web &amp; Mobile)" src="./assets/masthead-light.svg" width="100%" />
-  </picture>
-</a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/masthead-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/masthead-light.svg" />
+  <img alt="Arya Wiguna — Software Engineer" src="./assets/masthead-light.svg" width="100%" />
+</picture>
 
-<sub><strong>English</strong> · <a href="README.id.md">Bahasa Indonesia</a> &nbsp;|&nbsp; <a href="#about">About</a> · <a href="#experience">Experience</a> · <a href="#featured-work">Featured Work</a> · <a href="#technical-stack">Stack</a> · <a href="#interactive-features">Interactive Features</a> · <a href="#credentials">Credentials</a> · <a href="#contact">Contact</a></sub>
+<p>
+  <strong>Software Engineer · Full-Stack Web &amp; Flutter Mobile</strong><br />
+  <a href="https://arya-wiguna.my.id">Portfolio</a> ·
+  <a href="https://www.linkedin.com/in/arya-wgna">LinkedIn</a> ·
+  <a href="https://github.com/AryaWgna">GitHub</a> ·
+  <a href="mailto:wgnarya123@gmail.com">Email</a>
+</p>
+
+<sub><strong>English</strong> · <a href="README.id.md">Bahasa Indonesia</a> &nbsp;|&nbsp; <a href="#about">About</a> · <a href="#experience">Experience</a> · <a href="#featured-work">Work</a> · <a href="#stack">Stack</a> · <a href="#credentials">Credentials</a> · <a href="#contact">Contact</a></sub>
 
 </div>
 
@@ -16,19 +22,21 @@
 
 ## About
 
-Informatics Engineering graduate (**S1 Teknik Informatika**, Universitas Binaniaga Indonesia — GPA **3.77 / 4.00**) and **BNSP-certified Junior Coder** based in Bogor, Indonesia. I build field-tested mobile applications in **Flutter** alongside multi-service web backends with **Next.js 15**, **Laravel 11**, and **Bun / Elysia.js**.
+Informatics Engineering graduate (**S1 Teknik Informatika**, Universitas Binaniaga Indonesia — GPA **3.77 / 4.00**) and **BNSP-certified Junior Coder** based in Bogor, Indonesia. I build field-tested **Flutter** mobile apps and multi-service web backends with **Next.js 15**, **Laravel 11**, and **Bun / Elysia.js**.
 
-- **Hospital Field Engineering:** 5-month IT Support & Mobile Developer internship at **RS UMMI Bogor** (Feb – Jul 2025), building internal mobile tooling for QR-based medical equipment inspection and room-by-room stock opname audits.
-- **Architectural Discipline:** Explicit service boundaries, normalized relational schemas, and predictable state management without unnecessary framework layers.
-- **Direct Evidence:** Every system and credential below links directly to its public source repository, official verification page, or scanned certificate PDF.
+- **Hospital engineering:** 5-month internship at **RS UMMI Bogor** — QR-based medical equipment inspection & stock opname app (SIMARU).
+- **Architectural discipline:** explicit service boundaries, normalized schemas, predictable state management.
+- **Direct evidence:** every project and credential links to its public repository or official verification.
 
 ---
 
 ## Experience
 
-- **RS UMMI Bogor** — Mobile App Developer (SIMARU) & IT Support Intern (Feb – Jul 2025)
-- **Digital Skyboard Announcement** — Airport flight information display (FIDS) across 5 Docker containers
-- **StreamEly** — Self-hosted VOD metadata aggregator & multi-gateway player
+| Period | Role |
+|---|---|
+| Feb–Jul 2025 | **Mobile App Developer & IT Support Intern** — RS UMMI Bogor (SIMARU) |
+| 2024–2025 | **Airport FIDS Engineer** — Digital Skyboard Announcement |
+| 2025 | **Full-Stack Engineer** — StreamEly (self-hosted VOD aggregator) |
 
 ---
 
@@ -37,66 +45,54 @@ Informatics Engineering graduate (**S1 Teknik Informatika**, Universitas Binania
 ### 01 · SIMARU Mobile App — RS UMMI Bogor
 **Hospital Medical Asset Inspection & Push Notification App** · `Flutter` `Dart` `Firebase FCM` `REST API`
 
-<p>
-  <a href="https://arya-wiguna.my.id/work/simaru-mobile-app">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/project-simaru-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/project-simaru-light.svg" />
-      <img alt="SIMARU Mobile App Interface and System Architecture" src="./assets/project-simaru-light.svg" width="100%" />
-    </picture>
-  </a>
-</p>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/project-simaru-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/project-simaru-light.svg" />
+    <img alt="SIMARU Mobile App" src="./assets/project-simaru-light.svg" width="100%" />
+  </picture>
+</div>
 
-Developed during my internship at **RS UMMI Bogor** so hospital technicians can audit medical equipment directly on ward floors instead of carrying paper spreadsheets. Integrates `mobile_scanner` QR camera lookup, building/room-scoped `StockOpnameController` audits, damage complaint reporting with photo uploads, encrypted `flutter_secure_storage` Bearer tokens, and background `FcmTokenManager` device push registration.
+QR camera asset audits, room-scoped stock opname, photo damage reports, encrypted tokens, background push registration — built for ward-floor hospital technicians.
 
-<p>
-  <a href="https://github.com/AryaWgna/SIMARU-Mobile-App"><strong>Source repository ↗</strong></a> · <a href="https://arya-wiguna.my.id/work/simaru-mobile-app"><strong>Case study &amp; architecture ↗</strong></a>
-</p>
+[Source repository ↗](https://github.com/AryaWgna/SIMARU-Mobile-App) · [Case study & architecture ↗](https://arya-wiguna.my.id/work/simaru-mobile-app)
 
 ---
 
 ### 02 · Digital Skyboard Announcement
 **Airport Flight Information Display System (FIDS)** · `Next.js 15` `Laravel 11` `MySQL 8.0` `Docker Compose` `Nginx`
 
-<p>
-  <a href="https://arya-wiguna.my.id/work/digital-skyboard-announcement">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/project-skyboard-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/project-skyboard-light.svg" />
-      <img alt="Digital Skyboard FIDS Interface and Docker Topology" src="./assets/project-skyboard-light.svg" width="100%" />
-    </picture>
-  </a>
-</p>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/project-skyboard-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/project-skyboard-light.svg" />
+    <img alt="Digital Skyboard FIDS" src="./assets/project-skyboard-light.svg" width="100%" />
+  </picture>
+</div>
 
-Terminal flight information display orchestrated across **5 Docker containers** (`database-skyboard` MySQL 8.0, `api-skyboard` Laravel 11 + Sanctum, `ui-skyboard` Next.js 15, `assets-skyboard` static Nginx server, `gateway-skyboard` TLS Nginx reverse proxy). Terminal displays poll `/api/flights` every 30 seconds, trigger audio chimes on boarding transitions, and rotate promotional banners from a Sanctum-protected operator dashboard.
+Flight information display across **5 Docker containers**, TLS Nginx reverse proxy, Sanctum-protected operator dashboard, and 30-second flight polling.
 
-<p>
-  <a href="https://github.com/AryaWgna/Digital-Skyboard-Announcement"><strong>Source repository ↗</strong></a> · <a href="https://arya-wiguna.my.id/work/digital-skyboard-announcement"><strong>Case study &amp; architecture ↗</strong></a>
-</p>
+[Source repository ↗](https://github.com/AryaWgna/Digital-Skyboard-Announcement) · [Case study & architecture ↗](https://arya-wiguna.my.id/work/digital-skyboard-announcement)
 
 ---
 
 ### 03 · StreamEly
 **Self-Hosted VOD Metadata Aggregator & Multi-Gateway Player** · `Bun` `Elysia.js` `Svelte` `TypeScript`
 
-<p>
-  <a href="https://arya-wiguna.my.id/work/streamely">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/project-streamely-dark.svg" />
-      <source media="(prefers-color-scheme: light)" srcset="./assets/project-streamely-light.svg" />
-      <img alt="StreamEly VOD Interface and Bun Proxy Architecture" src="./assets/project-streamely-light.svg" width="100%" />
-    </picture>
-  </a>
-</p>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/project-streamely-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/project-streamely-light.svg" />
+    <img alt="StreamEly VOD" src="./assets/project-streamely-light.svg" width="100%" />
+  </picture>
+</div>
 
-Lightweight media catalog routed through a custom `Bun.serve` reverse proxy (`:8000`) forwarding `/api/*` to **Elysia.js** (`:3000`) and `/` to **Svelte** (`:5173`), stripping upstream `content-encoding` headers for Cloudflare Tunnel compatibility. Preloads 15,000+ TVmaze/OMDB records into memory, computes client-side Jaccard genre/cast similarity, and offers 3 fallback embed gateways.
+Custom Bun reverse proxy, 15,000+ in-memory catalog records, client-side Jaccard similarity, and 3 fallback embed gateways.
 
-<p>
-  <a href="https://github.com/AryaWgna/streamely"><strong>Source repository ↗</strong></a> · <a href="https://arya-wiguna.my.id/work/streamely"><strong>Case study &amp; architecture ↗</strong></a>
-</p>
+[Source repository ↗](https://github.com/AryaWgna/streamely) · [Case study & architecture ↗](https://arya-wiguna.my.id/work/streamely)
 
 ---
-## Technical Stack
+## Stack
 
 | Area | Technologies |
 |---|---|
@@ -120,7 +116,7 @@ Lightweight media catalog routed through a custom `Bun.serve` reverse proxy (`:8
 
 ## Credentials
 
-Selected primary credentials (out of [23 archived certificates on arya-wiguna.my.id](https://arya-wiguna.my.id/#certs)):
+Selected primary credentials (out of [21 archived certificates on arya-wiguna.my.id](https://arya-wiguna.my.id/#certs)):
 
 <table>
   <thead>
