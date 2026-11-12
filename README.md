@@ -1,75 +1,32 @@
-<div align="center">
-
 # Arya Wiguna
 
-**Software Engineer · Full-Stack Web & Flutter Mobile**
+Software engineer based in Bogor, Indonesia. I build Flutter mobile apps and web backends that people actually use — not just demos.
 
-[Portfolio](https://arya-wiguna.my.id) · [LinkedIn](https://www.linkedin.com/in/arya-wgna) · [GitHub](https://github.com/AryaWgna) · [Email](mailto:wgnarya123@gmail.com)
+## What I've worked on
 
-_English_ · [Bahasa Indonesia](README.id.md)
+**SIMARU — a hospital app.** During an internship at RS UMMI Bogor, I helped technicians audit medical equipment directly on the wards. The app scans QR codes, records equipment condition by room, and sends damage reports with photos. Less paperwork, faster fieldwork.
 
----
+**Digital Skyboard — an airport flight information system.** Terminal screens show real-time flight schedules assembled from 5 Docker containers: MySQL, Laravel, Next.js, Nginx, and a TLS gateway. Screens poll every 30 seconds and chime when boarding status changes.
 
-| 3.77 GPA | 21 Certificates | 3 Core Projects | 2+ Years Building |
-| :---: | :---: | :---: | :---: |
+**StreamEly — a self-hosted VOD aggregator.** A personal project to tidy up my movie/TV catalog. I wrote a custom Bun reverse proxy, keep 15,000+ metadata records in memory, and compute genre-similarity recommendations.
 
-</div>
+## How I work
 
-## I build
-
-- 📱 **Flutter mobile apps** — field-tested, QR-based, push-enabled.
-- 🌐 **Web backends** — Next.js 15, Laravel 11, Bun / Elysia.js.
-- 🐳 **Containerized infra** — Docker Compose, Nginx, Cloudflare Tunnel.
-
----
-
-## Featured work
-
-### 🇮🇩 SIMARU — RS UMMI Bogor
-Hospital medical asset inspection & push notification app (`Flutter`, `FCM`).
-
-[Source ↗](https://github.com/AryaWgna/SIMARU-Mobile-App) · [Case study ↗](https://arya-wiguna.my.id/work/simaru-mobile-app)
-
-### ✈️ Digital Skyboard Announcement
-Airport flight information display across 5 Docker containers (`Next.js 15`, `Laravel 11`).
-
-[Source ↗](https://github.com/AryaWgna/Digital-Skyboard-Announcement) · [Case study ↗](https://arya-wiguna.my.id/work/digital-skyboard-announcement)
-
-### 🎬 StreamEly
-Self-hosted VOD aggregator & multi-gateway player (`Bun`, `Elysia.js`).
-
-[Source ↗](https://github.com/AryaWgna/streamely) · [Case study ↗](https://arya-wiguna.my.id/work/streamely)
-
----
-
-## Interactive
-
-Custom SVG cursor · Ambient Web Audio music · “FLY DODGE” mini-game · Bilingual UI · Live visitors
-
----
+- I prefer clear database schemas and firm boundaries between services.
+- I write code others can read, not code that looks clever.
+- I test what I build — currently 58 unit tests run under Vitest.
+- I pick technology based on the problem, not on hype.
 
 ## Stack
 
-`Flutter` `Dart` `Next.js 15` `React 19` `TypeScript` `Tailwind v4` `Laravel 11` `Bun` `Elysia.js` `MySQL 8` `Docker` `Nginx` `Vitest`
+Flutter, Dart, Next.js, React, TypeScript, Laravel, Bun, Elysia.js, MySQL, Docker, Nginx, Tailwind CSS.
 
----
+## See for yourself
 
-## Credentials (selected)
-
-- 🏅 BNSP Junior Coder — Jan 2026
-- 🎓 S1 Informatics Engineering (SKL) — Aug 2026
-- 🏥 RS UMMI Internship — Aug 2025
-- 🌐 Cisco CCNA: Intro to Networks — Sep 2025
-- 💻 Operating Systems Basics — Sep 2025
-- 🧱 Dicoding SOLID Principles — Jun 2025
-- 🐍 Dicoding Python — Oct 2026
-
-[All 21 certificates ↗](https://arya-wiguna.my.id/#certs)
-
----
+- Portfolio: [arya-wiguna.my.id](https://arya-wiguna.my.id)
+- Project repos: [SIMARU](https://github.com/AryaWgna/SIMARU-Mobile-App) · [Skyboard](https://github.com/AryaWgna/Digital-Skyboard-Announcement) · [StreamEly](https://github.com/AryaWgna/streamely)
+- Certificates: [21 archived](https://arya-wiguna.my.id/#certs)
 
 ## Contact
 
-Open to full-time roles & collaborations.
-
-[Portfolio](https://arya-wiguna.my.id) · [Email](mailto:wgnarya123@gmail.com) · [LinkedIn](https://www.linkedin.com/in/arya-wgna) · [GitHub](https://github.com/AryaWgna)
+Email: [wgnarya123@gmail.com](mailto:wgnarya123@gmail.com) · LinkedIn: [arya-wgna](https://www.linkedin.com/in/arya-wgna) · [Bahasa Indonesia](README.id.md)
