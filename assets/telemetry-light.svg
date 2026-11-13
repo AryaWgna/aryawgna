@@ -19,8 +19,8 @@
   <g transform="translate(216, 62)">
     <line x1="0" y1="2" x2="0" y2="48" stroke="#4778A9" stroke-width="2" />
     <text x="12" y="12" fill="#6E757D" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="9.5" letter-spacing="0.8">CONTRIBUTIONS</text>
-    <text x="12" y="34" fill="#20252C" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="19" font-weight="700">405</text>
-    <text x="12" y="49" fill="#6E757D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11">317 in last 12 mos</text>
+    <text x="12" y="34" fill="#20252C" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="19" font-weight="700">413</text>
+    <text x="12" y="49" fill="#6E757D" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11">325 in last 12 mos</text>
   </g>
   <g transform="translate(22, 136)">
     <line x1="0" y1="2" x2="0" y2="48" stroke="#4778A9" stroke-width="2" />
@@ -40,9 +40,9 @@
   </clipPath>
   <g clip-path="url(#lang-bar-clip)">
     <rect x="436" y="58" width="416" height="10" fill="#ECEBE4" />
-    <rect x="436.0" y="58" width="198.6" height="10" fill="#172A45" />
-    <rect x="636.1" y="58" width="128.0" height="10" fill="#356393" />
-    <rect x="765.6" y="58" width="39.4" height="10" fill="#4F81B3" />
+    <rect x="436.0" y="58" width="198.7" height="10" fill="#172A45" />
+    <rect x="636.2" y="58" width="127.9" height="10" fill="#356393" />
+    <rect x="765.5" y="58" width="39.5" height="10" fill="#4F81B3" />
     <rect x="806.5" y="58" width="18.7" height="10" fill="#6C99C6" />
     <rect x="826.7" y="58" width="17.9" height="10" fill="#8FB3D7" />
     <rect x="846.0" y="58" width="6.0" height="10" fill="#AEBFD1" />
