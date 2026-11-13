@@ -1,0 +1,133 @@
+# Everything the profile says lives here. Edit, push, and the Action re-renders.
+# Plain text only: emoji and other symbols are stripped when rendered.
+
+profile:
+  name: "Arya Wiguna"
+  handle: "AryaWgna"
+  alias: "Arya"
+  motto: "pragmatic engineering over trends"
+  tagline: "Full-Stack Web · Flutter Mobile · Cloud & Systems"
+  school_line: "S1 Informatika · Universitas Bina Insani"
+  location: "Bogor, ID"
+  timezone: "UTC+07:00"
+  quote: "clear schemas, predictable state, real system boundaries"
+  bio: "Informatics Engineering graduate (GPA 3.77) and software engineer from Bogor, Indonesia. Building production-grade Flutter mobile apps and containerized web backends with Next.js, Laravel, and Bun."
+
+about:
+  statement: "I build software that balances technical precision with real-world utility: predictable state management, clear schemas, and clean boundaries."
+  detail: "BNSP Junior Coder certified, with experience building hospital asset management (RS UMMI Bogor), airport flight information systems, and high-performance web applications."
+  based_in: "Bogor, Indonesia"
+  studying: "S1 Teknik Informatika, Universitas Bina Insani, 2022 to 2026 (Graduated, GPA 3.77)"
+  now: "Building production-grade web & mobile applications, exploring Go & microservices"
+  research: "Clean architecture, reactive state management, and containerized topologies"
+  exploring: "High-concurrency systems, Flutter internals, and distributed architectures"
+
+backlog:
+  - "Multi-service Docker architectures with automated CI/CD pipelines"
+  - "Open-source developer utilities and high-performance microservices"
+
+# Items ending in * are drawn as primary.
+toolkit:
+  Languages:
+    - "Dart*"
+    - "TypeScript*"
+    - "PHP*"
+    - "JavaScript"
+    - "Python"
+    - "Go"
+    - "C"
+    - "HTML"
+    - "CSS"
+  Mobile:
+    - "Flutter*"
+    - "Provider"
+    - "Firebase FCM"
+    - "SQLite"
+    - "REST API"
+  Web and backend:
+    - "Next.js*"
+    - "Laravel*"
+    - "React*"
+    - "Bun"
+    - "Elysia.js"
+    - "Node.js"
+    - "Tailwind CSS"
+  Systems:
+    - "Docker*"
+    - "Nginx*"
+    - "MySQL*"
+    - "Git"
+    - "Cloudflare"
+    - "Linux"
+
+# The Abyss map (LAYER 01 to 07): one step of my own descent per layer.
+# here = the layer I am on right now (the map marks it).
+abyss:
+  here: "6"
+  L1:
+    step: "Vocational Software Engineering at SMKN 1 Ciomas"
+    when: "2019"
+    cost: "first loops, syntax errors, and late night debugging"
+  L2:
+    step: "Enrolled in S1 Teknik Informatika at Universitas Bina Insani"
+    when: "2022"
+    cost: "data structures, discrete mathematics, and algorithms"
+  L3:
+    step: "Mobile engineering with Flutter & full-stack architectures"
+    when: "2024"
+    cost: "reactive state management and widget lifecycles"
+  L4:
+    step: "Hospital Internship at RS UMMI Bogor — built SIMARU"
+    when: "2025"
+    cost: "hospital ward audits, QR scanner edge cases, real users"
+  L5:
+    step: "Earned Cisco CCNA & Dicoding software certifications"
+    when: "2025"
+    cost: "subnetting, packet inspection, and SOLID refactoring"
+  L6:
+    step: "BNSP Junior Coder certified & graduated S1 (GPA 3.77)"
+    when: "2026"
+    cost: "final thesis, multi-container architecture defense"
+  L7:
+    step: "Designing resilient full-stack systems and cloud solutions"
+    when: "NOW"
+    cost: "the endless pursuit of engineering craftsmanship"
+
+signal:
+  divergence: "1.048596"
+
+# Optional: replace the auto-written text on a pinned card.
+pinned_overrides:
+  SIMARU-Mobile-App:
+    tagline: "Hospital medical asset tracking & inventory management (RS UMMI Bogor)"
+    summary: "Production Flutter app with QR code scanning, asset mutation lifecycle, maintenance requests, and Firebase Cloud Messaging for hospital technicians."
+  Digital-Skyboard-Announcement:
+    tagline: "Airport flight information display & broadcast announcement system"
+    summary: "5-service Docker Compose topology with Next.js 15, Laravel 11 API, MySQL, and Nginx reverse proxy running real-time flight schedules and audio chimes."
+  streamely:
+    tagline: "Self-hosted VOD catalog and high-performance streaming service"
+    summary: "Built on Bun runtime with Elysia.js and Svelte, indexing 15,000+ titles in-memory with client-side Jaccard similarity recommendations."
+  api_tobe_store:
+    tagline: "E-commerce backend REST API with authentication and store management"
+    summary: "Robust backend services featuring secure authentication, order processing, and transactional database schemas."
+  go-restapi-gin:
+    tagline: "High-throughput RESTful API implemented with Go and Gin framework"
+    summary: "Lightweight and concurrent microservice backend demonstrating clean architecture patterns and fast HTTP routing."
+  aryawgna:
+    tagline: "Personal profile README generator and telemetry engine"
+    summary: "Multi-layered SVG generator rendering aesthetic cards with live GitHub statistics and automated contribution tracking."
+
+system:  # written by `python build.py --sync-system`
+  user: "Arya"
+  host: "latitude3420"
+  os: "Windows 11 Home x86_64"
+  kernel: "10.0.26200"
+  machine: "Dell Latitude 3420"
+  desktop: "Windows Terminal / WSL2 (Ubuntu)"
+  shell: "pwsh 7.5 / bash"
+  cpu: "11th Gen Intel Core i5-1135G7 (4C/8T @ 2.40GHz)"
+  gpu: "Intel Iris Xe Graphics"
+  memory: "32 GiB"
+  filesystem: "NTFS / ext4"
+  synced: "2026-11-13"
+
