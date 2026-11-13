@@ -1,6 +1,11 @@
 # Everything the profile says lives here. Edit, push, and the Action re-renders.
 # Plain text only: emoji and other symbols are stripped when rendered.
 
+# Theme rotation: "daily" rotates colors every day automatically (UTC+07:00).
+# Options: daily, crimson, cyan, emerald, violet, amber, sakura, cobalt.
+theme:
+  mode: "daily"
+
 profile:
   name: "Arya Wiguna"
   handle: "AryaWgna"

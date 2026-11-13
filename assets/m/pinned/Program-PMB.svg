@@ -10,18 +10,18 @@
 <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/>
 <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0"/></filter></defs>
 <rect x=".5" y=".5" width="479" height="311" rx="8" fill="#0b0b0b" stroke="#363636"/>
-<text x="20" y="36" class="bebas" font-size="18" fill="#f0384b" text-anchor="start" letter-spacing="4" >PINNED · 04</text>
+<text x="20" y="36" class="bebas" font-size="18" fill="#fb923c" text-anchor="start" letter-spacing="4" >PINNED · 04</text>
 <text x="460" y="35" class="plex" font-size="11" fill="#ff5f2e" text-anchor="end" letter-spacing="1.5" >WORLD LINE 0.230200</text>
 <text x="20" y="80" class="bebas" font-size="40" fill="#f4f2ed" text-anchor="start" letter-spacing="1" >Program-PMB</text>
 <text x="20" y="110" class="play" font-size="18" fill="#dcdad5" text-anchor="start" letter-spacing="0" >No transmission recorded.</text>
 <line x1="20" y1="156" x2="460" y2="156" stroke="#363636"/>
 <text x="20" y="184" class="plex" font-size="11" fill="#aaa8a3" text-anchor="start" letter-spacing="3" >COMPOSITION</text>
 <text x="460" y="184" class="plex" font-size="11" fill="#dcdad5" text-anchor="end" letter-spacing="1.5" >2024-01-11</text>
-<rect x="20.0" y="196" width="159.5" height="8" fill="#c8102e"/>
+<rect x="20.0" y="196" width="159.5" height="8" fill="#f97316"/>
 <rect x="179.5" y="196" width="136.1" height="8" fill="#f4f2ed"/>
 <rect x="315.6" y="196" width="126.4" height="8" fill="#9e9c97"/>
 <rect x="442.0" y="196" width="18.0" height="8" fill="#5f5d59"/>
-<rect x="20" y="220" width="10" height="10" fill="#c8102e"/>
+<rect x="20" y="220" width="10" height="10" fill="#f97316"/>
 <text x="38" y="230" class="plex" font-size="13" fill="#dcdad5" text-anchor="start" letter-spacing="0" >SCSS 36.3%</text>
 <rect x="240" y="220" width="10" height="10" fill="#f4f2ed"/>
 <text x="258" y="230" class="plex" font-size="13" fill="#dcdad5" text-anchor="start" letter-spacing="0" >HTML 30.9%</text>
@@ -30,6 +30,6 @@
 <rect x="240" y="244" width="10" height="10" fill="#5f5d59"/>
 <text x="258" y="254" class="plex" font-size="13" fill="#dcdad5" text-anchor="start" letter-spacing="0" >PHP 4.1%</text>
 <text x="20" y="288" class="plex" font-size="12" fill="#dcdad5" text-anchor="start" letter-spacing="1.5" >STARS 0  ·  FORKS 0</text>
-<text x="460" y="288" class="plex" font-size="12" fill="#f0384b" text-anchor="end" letter-spacing="2" >OPEN →</text>
+<text x="460" y="288" class="plex" font-size="12" fill="#fb923c" text-anchor="end" letter-spacing="2" >OPEN →</text>
 <rect x="1" y="1" width="478" height="310" rx="8" filter="url(#grain)" opacity=".045" pointer-events="none"/>
 </svg>

@@ -3,10 +3,10 @@
 </a>
 
 <p align="center">
-  <a href="https://arya-wiguna.my.id"><img src="https://img.shields.io/badge/Portofolio-arya--wiguna.my.id-c8102e?style=for-the-badge&labelColor=0b0b0b" alt="Portofolio arya-wiguna.my.id"></a>
-  <a href="https://www.linkedin.com/in/arya-wgna"><img src="https://img.shields.io/badge/LinkedIn-arya--wgna-c8102e?style=for-the-badge&labelColor=0b0b0b&logo=linkedin&logoColor=f4f2ed" alt="LinkedIn arya-wgna"></a>
-  <a href="mailto:wgnarya123@gmail.com"><img src="https://img.shields.io/badge/Email-wgnarya123@gmail.com-c8102e?style=for-the-badge&labelColor=0b0b0b&logo=gmail&logoColor=f4f2ed" alt="Email wgnarya123@gmail.com"></a>
-  <a href="README.md"><img src="https://img.shields.io/badge/Lang-English-c8102e?style=for-the-badge&labelColor=0b0b0b" alt="English"></a>
+  <a href="https://arya-wiguna.my.id"><img src="https://img.shields.io/badge/Portofolio-arya--wiguna.my.id-f97316?style=for-the-badge&labelColor=0b0b0b" alt="Portofolio arya-wiguna.my.id"></a>
+  <a href="https://www.linkedin.com/in/arya-wgna"><img src="https://img.shields.io/badge/LinkedIn-arya--wgna-f97316?style=for-the-badge&labelColor=0b0b0b&logo=linkedin&logoColor=f4f2ed" alt="LinkedIn arya-wgna"></a>
+  <a href="mailto:wgnarya123@gmail.com"><img src="https://img.shields.io/badge/Email-wgnarya123@gmail.com-f97316?style=for-the-badge&labelColor=0b0b0b&logo=gmail&logoColor=f4f2ed" alt="Email wgnarya123@gmail.com"></a>
+  <a href="README.md"><img src="https://img.shields.io/badge/Lang-English-f97316?style=for-the-badge&labelColor=0b0b0b" alt="English"></a>
 </p>
 
 <picture><source media="(min-width: 701px)" srcset="assets/abyss.svg"><img src="assets/m/abyss.svg" width="100%" alt="Peta perjalanan rekayasa Arya: 7 lapisan mulai dari SMKN 1 Ciomas, S1 Universitas Bina Insani, magang RS UMMI Bogor, sertifikasi CCNA & BNSP, hingga eksplorasi sistem terkontainerisasi."></picture>

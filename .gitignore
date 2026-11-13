@@ -7,3 +7,7 @@ cv/
 
 # Arya portfolio agent kit (tooling — not part of this repo)
 arya-portfolio-agent-kit/
+
+# Python cache
+__pycache__/
+*.pyc

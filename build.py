@@ -37,6 +37,144 @@ README = ROOT / "README.md"
 USER = "AryaWgna"
 OFFLINE = "--offline" in sys.argv
 
+# --------------------------------------------------------------------------- #
+# Themes: 7 distinct cyberpunk / manga dark aesthetics (one for each day)
+# --------------------------------------------------------------------------- #
+THEMES = {
+    0: {
+        "id": "crimson",
+        "day_name": "Senin / Monday",
+        "name": "Tokyo Ghoul Crimson",
+        "red": "#c8102e",
+        "red_hi": "#f0384b",
+        "red_dk": "#5c0a14",
+        "snake_dots": ["#3a0a12", "#7d0e1b", "#c8102e", "#f0384b"],
+    },
+    1: {
+        "id": "cyan",
+        "day_name": "Selasa / Tuesday",
+        "name": "Cyber Wired Cyan",
+        "red": "#00b4d8",
+        "red_hi": "#38d9f0",
+        "red_dk": "#004753",
+        "snake_dots": ["#00323d", "#006d85", "#00b4d8", "#38d9f0"],
+    },
+    2: {
+        "id": "emerald",
+        "day_name": "Rabu / Wednesday",
+        "name": "Matrix Terminal Emerald",
+        "red": "#10b981",
+        "red_hi": "#34d399",
+        "red_dk": "#064e3b",
+        "snake_dots": ["#063d27", "#0a704a", "#10b981", "#34d399"],
+    },
+    3: {
+        "id": "violet",
+        "day_name": "Kamis / Thursday",
+        "name": "Ultraviolet Neon",
+        "red": "#8b5cf6",
+        "red_hi": "#a78bfa",
+        "red_dk": "#4c1d95",
+        "snake_dots": ["#2e1065", "#5b21b6", "#8b5cf6", "#a78bfa"],
+    },
+    4: {
+        "id": "amber",
+        "day_name": "Jumat / Friday",
+        "name": "Solar Divergence Amber",
+        "red": "#f97316",
+        "red_hi": "#fb923c",
+        "red_dk": "#7c2d12",
+        "snake_dots": ["#431407", "#9a3412", "#f97316", "#fb923c"],
+    },
+    5: {
+        "id": "sakura",
+        "day_name": "Sabtu / Saturday",
+        "name": "Neo Sakura Pink",
+        "red": "#ec4899",
+        "red_hi": "#f472b6",
+        "red_dk": "#831843",
+        "snake_dots": ["#500724", "#9d174d", "#ec4899", "#f472b6"],
+    },
+    6: {
+        "id": "cobalt",
+        "day_name": "Minggu / Sunday",
+        "name": "Arctic Cobalt Ice",
+        "red": "#3b82f6",
+        "red_hi": "#60a5fa",
+        "red_dk": "#1e3a8a",
+        "snake_dots": ["#172554", "#1e40af", "#3b82f6", "#60a5fa"],
+    },
+}
+
+
+def hex_to_rgb(h: str) -> tuple[float, float, float]:
+    h = h.lstrip("#")
+    return tuple(int(h[i:i+2], 16) / 255.0 for i in (0, 2, 4))
+
+
+def resolve_theme(st: dict) -> dict:
+    cli_theme = None
+    for i, arg in enumerate(sys.argv):
+        if arg == "--theme" and i + 1 < len(sys.argv):
+            cli_theme = sys.argv[i + 1].lower()
+            break
+        elif arg.startswith("--theme="):
+            cli_theme = arg.split("=", 1)[1].lower()
+            break
+
+    mode = (cli_theme or st.get("theme", {}).get("mode", "daily")).lower()
+
+    for t in THEMES.values():
+        if t["id"] == mode:
+            return t
+
+    tz_str = st.get("profile", {}).get("timezone", "UTC+07:00")
+    hours = 7
+    m = re.search(r"([+-])(\d+)", tz_str)
+    if m:
+        sign, val = m.groups()
+        hours = int(val) * (-1 if sign == "-" else 1)
+    tz = dt.timezone(dt.timedelta(hours=hours))
+    day_idx = dt.datetime.now(tz).weekday()
+    return THEMES[day_idx]
+
+
+def apply_theme(t: dict):
+    C["red"] = t["red"]
+    C["red_hi"] = t["red_hi"]
+    C["red_dk"] = t["red_dk"]
+    global RAMP
+    RAMP = [C["red"], C["paper"], "#9e9c97", "#5f5d59", C["red_dk"]]
+
+
+def update_readme_badges(accent_hex: str):
+    accent_clean = accent_hex.lstrip("#").lower()
+    for readme_path in [README, ROOT / "README.id.md"]:
+        if not readme_path.exists():
+            continue
+        src = readme_path.read_text(encoding="utf-8")
+        new_src = re.sub(r'(img\.shields\.io/badge/[^?]+-)[0-9a-fA-F]{6}(\?)', rf'\g<1>{accent_clean}\2', src)
+        if new_src != src:
+            readme_path.write_text(new_src, encoding="utf-8")
+            print(f"  updated badges in {readme_path.name} to #{accent_clean}")
+
+
+def update_snake_colors(snake_dots: list[str]):
+    snake_path = ASSETS / "snake-dark.svg"
+    if not snake_path.exists():
+        return
+    src = snake_path.read_text(encoding="utf-8")
+    c1, c2, c3, c4 = snake_dots
+    new_src = re.sub(
+        r'--c1:#[0-9a-fA-F]{6};--c2:#[0-9a-fA-F]{6};--c3:#[0-9a-fA-F]{6};--c4:#[0-9a-fA-F]{6}',
+        f'--c1:{c1};--c2:{c2};--c3:{c3};--c4:{c4}',
+        src
+    )
+    if new_src != src:
+        snake_path.write_text(new_src, encoding="utf-8")
+        print("  updated snake-dark.svg palette")
+
+
 # Palette: Tokyo Ghoul manga. Ink black, off-white paper, one blood red.
 # Greys are kept bright enough to read on a phone. Nixie orange-red is only for
 # the Steins;Gate meter.
@@ -661,8 +799,8 @@ def hero(st, stats, today):
 <feComponentTransfer><feFuncR type="table" tableValues=".04 .1 .8 .93"/><feFuncG type="table" tableValues=".04 .1 .79 .92"/>
 <feFuncB type="table" tableValues=".04 .1 .77 .9"/></feComponentTransfer></filter>
 <filter id="duored" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/>
-<feComponentTransfer><feFuncR type="table" tableValues=".04 .78"/><feFuncG type="table" tableValues=".04 .06"/>
-<feFuncB type="table" tableValues=".04 .18"/></feComponentTransfer></filter>
+<feComponentTransfer><feFuncR type="table" tableValues=".04 {hex_to_rgb(C['red'])[0]:.2f}"/><feFuncG type="table" tableValues=".04 {hex_to_rgb(C['red'])[1]:.2f}"/>
+<feFuncB type="table" tableValues=".04 {hex_to_rgb(C['red'])[2]:.2f}"/></feComponentTransfer></filter>
 <pattern id="tone" width="5" height="5" patternUnits="userSpaceOnUse"><circle cx="2.5" cy="2.5" r="1.05" fill="#f4f2ed"/></pattern>
 <radialGradient id="toneFade" cx="1" cy="0" r="1"><stop offset="0" stop-color="#fff"/><stop offset=".7" stop-color="#fff" stop-opacity="0"/></radialGradient>
 <mask id="toneMask"><rect width="1000" height="560" fill="url(#toneFade)"/></mask>
@@ -1211,13 +1349,13 @@ def kakugan(ex, ey, s=1.0, uid="k"):
     L, R, T, B = (ex - hw, ey), (ex + hw, ey), (ex, ey - hh), (ex, ey + hh)
     eye = f"M{L[0]} {ey} Q{ex} {ey-hh} {R[0]} {ey} Q{ex} {ey+hh} {L[0]} {ey}Z"
     ir = 22 * s
-    defs = (f'<radialGradient id="{uid}iris" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd0b0"/>'
-            f'<stop offset=".22" stop-color="#ff6a4a"/><stop offset=".55" stop-color="{C["red_hi"]}"/>'
-            f'<stop offset=".85" stop-color="{C["red"]}"/><stop offset="1" stop-color="#3a0008"/></radialGradient>'
+    defs = (f'<radialGradient id="{uid}iris" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="{C["paper"]}"/>'
+            f'<stop offset=".22" stop-color="{C["red_hi"]}"/><stop offset=".55" stop-color="{C["red"]}"/>'
+            f'<stop offset=".85" stop-color="{C["red_dk"]}"/><stop offset="1" stop-color="#000"/></radialGradient>'
             f'<radialGradient id="{uid}scl" cx=".5" cy=".5" r=".65"><stop offset="0" stop-color="#2a0509"/>'
             f'<stop offset=".6" stop-color="#0a0102"/><stop offset="1" stop-color="#000"/></radialGradient>'
-            f'<radialGradient id="{uid}sock" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#3a0610" stop-opacity=".75"/>'
-            f'<stop offset=".55" stop-color="#1a0306" stop-opacity=".5"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>'
+            f'<radialGradient id="{uid}sock" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="{C["red_dk"]}" stop-opacity=".45"/>'
+            f'<stop offset=".55" stop-color="#141414" stop-opacity=".3"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>'
             f'<radialGradient id="{uid}shade" cx=".5" cy=".15" r=".8"><stop offset="0" stop-color="#000" stop-opacity=".75"/>'
             f'<stop offset=".5" stop-color="#000" stop-opacity="0"/></radialGradient>'
             f'<filter id="{uid}glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="{5*s:.1f}"/></filter>'
@@ -1242,9 +1380,9 @@ def kakugan(ex, ey, s=1.0, uid="k"):
         px, py = _qpt((R[0], ey), (ex, ey + hh), (L[0], ey), t)
         _vein_tree(rng, px, py + 3 * s, math.pi / 2 + rng.uniform(-.4, .4), rng.uniform(20, 30) * s, 1.1 * s, 1, veins, 2)
     under = "".join(f'<path d="{d}" stroke="#000" stroke-width="{w+1.4*s:.2f}" opacity=".8"/>' for d, w, _ in veins)
-    over = "".join(f'<path d="{d}" stroke="{("#a00c26", "#7d0e1b", "#4a0712")[dep]}" stroke-width="{w:.2f}" '
+    over = "".join(f'<path d="{d}" stroke="{(C["red"], C["red_dk"], "#141414")[dep]}" stroke-width="{w:.2f}" '
                    f'opacity="{(.95, .75, .55)[dep]}"/>' for d, w, dep in veins)
-    hi = "".join(f'<path d="{d}" stroke="#ff8a8a" stroke-width="{w*.28:.2f}" opacity=".45"/>' for d, w, dep in veins if dep == 0)
+    hi = "".join(f'<path d="{d}" stroke="{C["red_hi"]}" stroke-width="{w*.28:.2f}" opacity=".45"/>' for d, w, dep in veins if dep == 0)
     out.append(f'<g fill="none" stroke-linecap="round" stroke-linejoin="round">{under}{over}{hi}'
                f'<animate attributeName="opacity" values="1;.62;1;.85;1" keyTimes="0;.18;.36;.5;1" dur="2.4s" repeatCount="indefinite"/></g>')
 
@@ -1796,9 +1934,19 @@ def sync_system():
 
 # --------------------------------------------------------------------------- #
 def main():
+    if "--list-themes" in sys.argv:
+        print("Available Themes (7-day automatic rotation):")
+        for d, t in THEMES.items():
+            print(f"  [{d}] {t['day_name']:<18} : {t['name']:<25} ({t['red']})")
+        return
     if "--sync-system" in sys.argv:
         sync_system()
     st = load_status()
+    active_theme = resolve_theme(st)
+    apply_theme(active_theme)
+    print(f"theme: {active_theme['name']} ({active_theme['day_name']}) -> {active_theme['red']}")
+    update_readme_badges(active_theme["red"])
+    update_snake_colors(active_theme["snake_dots"])
     today = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
     print("fetching GitHub data" + (" (skipped, offline)" if OFFLINE else ""))
     stats, pinned = fetch_github()

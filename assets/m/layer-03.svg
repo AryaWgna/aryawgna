@@ -10,12 +10,12 @@
 <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/>
 <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0"/></filter></defs>
 <rect x=".5" y=".5" width="479" height="111" rx="8" fill="#0b0b0b" stroke="#363636"/>
-<text x="20" y="34" class="bebas" font-size="22" fill="#f0384b" text-anchor="start" letter-spacing="4" >LAYER:03</text>
+<text x="20" y="34" class="bebas" font-size="22" fill="#fb923c" text-anchor="start" letter-spacing="4" >LAYER:03</text>
 <text x="460" y="33" class="plex" font-size="11" fill="#dcdad5" text-anchor="end" letter-spacing="1.5" >03 / 06  ·  TOOLKIT</text>
 <text x="20" y="70" class="play" font-size="30" fill="#f4f2ed" text-anchor="start" letter-spacing="0" >Instruments</text>
 <text x="460" y="70" class="plex" font-size="11" fill="#aaa8a3" text-anchor="end" letter-spacing="1" >2,600 M</text>
 <path d="M20 98H460" stroke="#363636" stroke-width="1.5"/>
 <path d="M22 94l6 10 M35 94l6 10 M48 94l6 10 M61 94l6 10 M74 94l6 10 M87 94l6 10 M100 94l6 10 M113 94l6 10 M126 94l6 10 M139 94l6 10 M152 94l6 10 M165 94l6 10 M178 94l6 10 M191 94l6 10 M204 94l6 10 M217 94l6 10 M230 94l6 10 M243 94l6 10 M256 94l6 10 M269 94l6 10 M282 94l6 10 M295 94l6 10 M308 94l6 10 M321 94l6 10 M334 94l6 10 M347 94l6 10 M360 94l6 10 M373 94l6 10 M386 94l6 10 M399 94l6 10 M412 94l6 10 M425 94l6 10 M438 94l6 10 M451 94l6 10" stroke="#7c7a75" stroke-width="1.3" stroke-linecap="round"/>
-<rect x="20" y="96" width="72" height="4" fill="#c8102e"/>
+<rect x="20" y="96" width="72" height="4" fill="#f97316"/>
 <rect x="1" y="1" width="478" height="110" rx="8" filter="url(#grain)" opacity=".045" pointer-events="none"/>
 </svg>
