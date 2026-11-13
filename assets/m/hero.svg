@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 660" width="480" height="660" role="img" aria-label="Arya Wiguna — Software Engineer">
+  <rect width="1000" height="560" fill="#0a0a0c"/>
+  <rect x="40" y="40" width="920" height="480" rx="24" fill="#101012" stroke="#242428"/>
+  <text x="30" y="150" fill="#f2f2f2" font-family="Inter, system-ui, sans-serif" font-size="64" font-weight="700">Arya Wiguna</text>
+  <text x="30" y="205" fill="#ff5926" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="500">Software Engineer · Full-Stack Web & Flutter Mobile</text>
+  <text x="30" y="280" fill="#8f98a2" font-family="ui-monospace, monospace" font-size="18">Bogor, Indonesia · S1 Informatics Engineering · GPA 3.77</text>
+  <text x="30" y="360" fill="#f2f2f2" font-family="Inter, system-ui, sans-serif" font-size="22">
+    <tspan x="30" dy="0">Flutter apps & web backends that people actually use.</tspan>
+    <tspan x="30" dy="30">Design is part of the job — not an afterthought.</tspan>
+  </text>
+  <g font-family="ui-monospace, monospace" font-size="20" fill="#ff5926">
+    <text x="30" y="520">portfolio · arya-wiguna.my.id</text>
+    <text x="30" y="560">github · AryaWgna</text>
+    <text x="30" y="520">linkedin · arya-wgna</text>
+    <text x="30" y="560">email · wgnarya123@gmail.com</text>
+  </g>
+</svg>

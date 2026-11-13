@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="Interactive features">
+  <rect width="1000" height="300" fill="#0a0a0c"/>
+  <text x="40" y="60" fill="#f2f2f2" font-family="Inter, system-ui, sans-serif" font-size="18">
+    <tspan x="40" dy="0">• Custom SVG cursor — replaces the native cursor on fine pointers.</tspan>
+    <tspan x="40" dy="32">• Ambient music — synthesised in-browser via the Web Audio API.</tspan>
+    <tspan x="40" dy="32">• Mini-game “FLY DODGE” — canvas demo from the topbar.</tspan>
+    <tspan x="40" dy="32">• Bilingual UI — English / Bahasa Indonesia.</tspan>
+    <tspan x="40" dy="32">• Live visitor presence telemetry.</tspan>
+  </text>
+  <text x="40" y="270" fill="#ff5926" font-family="ui-monospace, monospace" font-size="18">$ ./features --list</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="Credentials">
+  <rect width="1000" height="300" fill="#0a0a0c"/>
+  <text x="40" y="60" fill="#f2f2f2" font-family="Inter, system-ui, sans-serif" font-size="18">
+    <tspan x="40" dy="0">• BNSP Junior Coder — 2026</tspan>
+    <tspan x="40" dy="32">• S1 Informatics Engineering, GPA 3.77 — 2026</tspan>
+    <tspan x="40" dy="32">• RS UMMI Internship — 2025</tspan>
+    <tspan x="40" dy="32">• Cisco CCNA: Introduction to Networks — 2025</tspan>
+    <tspan x="40" dy="32">• Dicoding SOLID Principles · Python — 2025-2026</tspan>
+  </text>
+  <text x="40" y="270" fill="#ff5926" font-family="ui-monospace, monospace" font-size="18">$ ls certificates/ → 21 archived</text>
+</svg>

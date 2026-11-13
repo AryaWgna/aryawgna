@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" width="480" height="560" role="img" aria-label="Featured work">
+  <rect width="1000" height="460" fill="#0a0a0c"/>
+  <text x="24" y="56" fill="#f2f2f2" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700">SIMARU — RS UMMI Bogor</text>
+  <text x="24" y="96" fill="#8f98a2" font-family="Inter, system-ui, sans-serif" font-size="16">Hospital asset inspection app · Flutter · QR scans, damage reports, push.</text>
+  <text x="24" y="176" fill="#f2f2f2" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700">Digital Skyboard — Airport FIDS</text>
+  <text x="24" y="216" fill="#8f98a2" font-family="Inter, system-ui, sans-serif" font-size="16">Terminal flight displays · Next.js 15, Laravel 11, 5 Docker containers.</text>
+  <text x="24" y="296" fill="#f2f2f2" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700">StreamEly — Self-hosted VOD</text>
+  <text x="24" y="336" fill="#8f98a2" font-family="Inter, system-ui, sans-serif" font-size="16">Catalog aggregator · Bun, Elysia.js · 15k+ records, Jaccard scoring.</text>
+  <text x="24" y="410" fill="#ff5926" font-family="ui-monospace, monospace" font-size="18">$ ls work/ → github.com/AryaWgna</text>
+</svg>
