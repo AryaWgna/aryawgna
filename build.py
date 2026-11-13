@@ -496,7 +496,7 @@ def scrape_pinned():
     return list(dict.fromkeys(names))[:6]
 
 
-def fetch_github():
+def fetch_github(st=None):
     stats = {"repos": None, "stars": None, "followers": None, "contributions": None}
     pinned = []
     if OFFLINE:
@@ -522,6 +522,28 @@ def fetch_github():
                     "languages": [(e["node"]["name"], e["size"] / total) for e in r["languages"]["edges"]],
                     "readme": (r.get("readme") or {}).get("text", ""),
                 })
+            if not pinned and st and st.get("pinned_overrides"):
+                for name in list(st["pinned_overrides"].keys())[:6]:
+                    try:
+                        r_data = json.loads(http(f"https://api.github.com/repos/{USER}/{name}"))
+                        langs = json.loads(http(r_data["languages_url"]))
+                        total = sum(langs.values()) or 1
+                        try:
+                            rd = http(f"https://api.github.com/repos/{USER}/{name}/readme", accept="application/vnd.github.raw")
+                        except Exception:
+                            rd = ""
+                        pinned.append({
+                            "name": name, "url": r_data.get("html_url", f"https://github.com/{USER}/{name}"),
+                            "description": r_data.get("description"),
+                            "stars": r_data.get("stargazers_count", 0), "forks": r_data.get("forks_count", 0),
+                            "pushed": r_data.get("pushed_at", ""),
+                            "fork_of": (r_data.get("parent") or {}).get("full_name"),
+                            "topics": r_data.get("topics", [])[:6],
+                            "languages": [(k, v / total) for k, v in list(langs.items())[:5]],
+                            "readme": rd,
+                        })
+                    except Exception as ex:
+                        print(f"  failed to fetch repo {name}: {ex}", file=sys.stderr)
             return stats, pinned
         except Exception as e:  # fall through to the REST/scrape path
             print(f"  GraphQL failed ({e}); falling back to REST", file=sys.stderr)
@@ -537,7 +559,10 @@ def fetch_github():
         if m:
             stats["contributions"] = int(m.group(1).replace(",", ""))
         by_name = {r["name"]: r for r in repos}
-        for name in scrape_pinned():
+        pinned_names = scrape_pinned()
+        if not pinned_names and st and st.get("pinned_overrides"):
+            pinned_names = list(st["pinned_overrides"].keys())[:6]
+        for name in pinned_names:
             r = by_name.get(name) or json.loads(http(f"https://api.github.com/repos/{USER}/{name}"))
             langs = json.loads(http(r["languages_url"]))
             total = sum(langs.values()) or 1
@@ -1949,7 +1974,7 @@ def main():
     update_snake_colors(active_theme["snake_dots"])
     today = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
     print("fetching GitHub data" + (" (skipped, offline)" if OFFLINE else ""))
-    stats, pinned = fetch_github()
+    stats, pinned = fetch_github(st)
 
     print("rendering cards")
     M = ASSETS / "m"
