@@ -10,7 +10,7 @@
 <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/>
 <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0"/></filter></defs>
 <rect x=".5" y=".5" width="479" height="347" rx="8" fill="#0b0b0b" stroke="#363636"/>
-<text x="20" y="36" class="bebas" font-size="18" fill="#fb923c" text-anchor="start" letter-spacing="4" >PINNED · 04</text>
+<text x="20" y="36" class="bebas" font-size="18" fill="#f472b6" text-anchor="start" letter-spacing="4" >PINNED · 04</text>
 <text x="460" y="35" class="plex" font-size="11" fill="#ff5f2e" text-anchor="end" letter-spacing="1.5" >WORLD LINE 0.650433</text>
 <text x="20" y="80" class="bebas" font-size="40" fill="#f4f2ed" text-anchor="start" letter-spacing="1" >api_tobe_store</text>
 <text x="20" y="110" class="play" font-size="18" fill="#dcdad5" text-anchor="start" letter-spacing="0" >E-commerce backend REST API with</text>
@@ -23,6 +23,6 @@
 <text x="460" y="268" class="plex" font-size="11" fill="#dcdad5" text-anchor="end" letter-spacing="1.5" >2024-07-13</text>
 <rect x="20" y="280" width="440" height="8" fill="#363636"/>
 <text x="20" y="324" class="plex" font-size="12" fill="#dcdad5" text-anchor="start" letter-spacing="1.5" >STARS 1  ·  FORKS 0</text>
-<text x="460" y="324" class="plex" font-size="12" fill="#fb923c" text-anchor="end" letter-spacing="2" >OPEN →</text>
+<text x="460" y="324" class="plex" font-size="12" fill="#f472b6" text-anchor="end" letter-spacing="2" >OPEN →</text>
 <rect x="1" y="1" width="478" height="346" rx="8" filter="url(#grain)" opacity=".045" pointer-events="none"/>
 </svg>

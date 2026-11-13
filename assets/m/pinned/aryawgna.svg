@@ -10,7 +10,7 @@
 <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/>
 <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0"/></filter></defs>
 <rect x=".5" y=".5" width="479" height="371" rx="8" fill="#0b0b0b" stroke="#363636"/>
-<text x="20" y="36" class="bebas" font-size="18" fill="#fb923c" text-anchor="start" letter-spacing="4" >PINNED · 06</text>
+<text x="20" y="36" class="bebas" font-size="18" fill="#f472b6" text-anchor="start" letter-spacing="4" >PINNED · 06</text>
 <text x="460" y="35" class="plex" font-size="11" fill="#ff5f2e" text-anchor="end" letter-spacing="1.5" >WORLD LINE 0.841324</text>
 <text x="20" y="80" class="bebas" font-size="40" fill="#f4f2ed" text-anchor="start" letter-spacing="1" >aryawgna</text>
 <text x="20" y="110" class="play" font-size="18" fill="#dcdad5" text-anchor="start" letter-spacing="0" >Personal profile README generator and</text>
@@ -21,13 +21,13 @@
 <line x1="20" y1="240" x2="460" y2="240" stroke="#363636"/>
 <text x="20" y="268" class="plex" font-size="11" fill="#aaa8a3" text-anchor="start" letter-spacing="3" >COMPOSITION</text>
 <text x="460" y="268" class="plex" font-size="11" fill="#dcdad5" text-anchor="end" letter-spacing="1.5" >2026-11-13</text>
-<rect x="20.0" y="280" width="335.4" height="8" fill="#f97316"/>
-<rect x="355.4" y="280" width="104.6" height="8" fill="#f4f2ed"/>
-<rect x="20" y="304" width="10" height="10" fill="#f97316"/>
-<text x="38" y="314" class="plex" font-size="13" fill="#dcdad5" text-anchor="start" letter-spacing="0" >Python 76.2%</text>
+<rect x="20.0" y="280" width="340.3" height="8" fill="#ec4899"/>
+<rect x="360.3" y="280" width="99.7" height="8" fill="#f4f2ed"/>
+<rect x="20" y="304" width="10" height="10" fill="#ec4899"/>
+<text x="38" y="314" class="plex" font-size="13" fill="#dcdad5" text-anchor="start" letter-spacing="0" >Python 77.3%</text>
 <rect x="240" y="304" width="10" height="10" fill="#f4f2ed"/>
-<text x="258" y="314" class="plex" font-size="13" fill="#dcdad5" text-anchor="start" letter-spacing="0" >JavaScript 23.8%</text>
+<text x="258" y="314" class="plex" font-size="13" fill="#dcdad5" text-anchor="start" letter-spacing="0" >JavaScript 22.7%</text>
 <text x="20" y="348" class="plex" font-size="12" fill="#dcdad5" text-anchor="start" letter-spacing="1.5" >STARS 0  ·  FORKS 0</text>
-<text x="460" y="348" class="plex" font-size="12" fill="#fb923c" text-anchor="end" letter-spacing="2" >OPEN →</text>
+<text x="460" y="348" class="plex" font-size="12" fill="#f472b6" text-anchor="end" letter-spacing="2" >OPEN →</text>
 <rect x="1" y="1" width="478" height="370" rx="8" filter="url(#grain)" opacity=".045" pointer-events="none"/>
 </svg>

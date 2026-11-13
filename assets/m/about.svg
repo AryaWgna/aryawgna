@@ -20,29 +20,29 @@
 <text x="20" y="264" class="plex" font-size="14" fill="#dcdad5" text-anchor="start" letter-spacing="0" >Bogor), airport flight information systems, and</text>
 <text x="20" y="286" class="plex" font-size="14" fill="#dcdad5" text-anchor="start" letter-spacing="0" >high-performance web applications.</text>
 <line x1="20" y1="320" x2="460" y2="320" stroke="#363636" stroke-dasharray="2 4"/>
-<text x="20" y="342" class="plex" font-size="11.5" fill="#fb923c" text-anchor="start" letter-spacing="3" >BASED IN</text>
+<text x="20" y="342" class="plex" font-size="11.5" fill="#f472b6" text-anchor="start" letter-spacing="3" >BASED IN</text>
 <text x="20" y="364" class="plex" font-size="14" fill="#f4f2ed" text-anchor="start" letter-spacing="0" >Bogor, Indonesia</text>
 <line x1="20" y1="391" x2="460" y2="391" stroke="#363636" stroke-dasharray="2 4"/>
-<text x="20" y="413" class="plex" font-size="11.5" fill="#fb923c" text-anchor="start" letter-spacing="3" >STUDYING</text>
+<text x="20" y="413" class="plex" font-size="11.5" fill="#f472b6" text-anchor="start" letter-spacing="3" >STUDYING</text>
 <text x="20" y="435" class="plex" font-size="14" fill="#f4f2ed" text-anchor="start" letter-spacing="0" >S1 Teknik Informatika, Universitas Bina Insani,</text>
 <text x="20" y="456" class="plex" font-size="14" fill="#f4f2ed" text-anchor="start" letter-spacing="0" >2022 to 2026 (Graduated, GPA 3.77)</text>
 <line x1="20" y1="483" x2="460" y2="483" stroke="#363636" stroke-dasharray="2 4"/>
-<text x="20" y="505" class="plex" font-size="11.5" fill="#fb923c" text-anchor="start" letter-spacing="3" >NOW SOLVING</text>
+<text x="20" y="505" class="plex" font-size="11.5" fill="#f472b6" text-anchor="start" letter-spacing="3" >NOW SOLVING</text>
 <text x="20" y="527" class="plex" font-size="14" fill="#f4f2ed" text-anchor="start" letter-spacing="0" >Building production-grade web &amp; mobile</text>
 <text x="20" y="548" class="plex" font-size="14" fill="#f4f2ed" text-anchor="start" letter-spacing="0" >applications, exploring Go &amp; microservices</text>
 <line x1="20" y1="575" x2="460" y2="575" stroke="#363636" stroke-dasharray="2 4"/>
-<text x="20" y="597" class="plex" font-size="11.5" fill="#fb923c" text-anchor="start" letter-spacing="3" >RESEARCH</text>
+<text x="20" y="597" class="plex" font-size="11.5" fill="#f472b6" text-anchor="start" letter-spacing="3" >RESEARCH</text>
 <text x="20" y="619" class="plex" font-size="14" fill="#f4f2ed" text-anchor="start" letter-spacing="0" >Clean architecture, reactive state management, and</text>
 <text x="20" y="640" class="plex" font-size="14" fill="#f4f2ed" text-anchor="start" letter-spacing="0" >containerized topologies</text>
 <line x1="20" y1="667" x2="460" y2="667" stroke="#363636" stroke-dasharray="2 4"/>
-<text x="20" y="689" class="plex" font-size="11.5" fill="#fb923c" text-anchor="start" letter-spacing="3" >EXPLORING</text>
+<text x="20" y="689" class="plex" font-size="11.5" fill="#f472b6" text-anchor="start" letter-spacing="3" >EXPLORING</text>
 <text x="20" y="711" class="plex" font-size="14" fill="#f4f2ed" text-anchor="start" letter-spacing="0" >High-concurrency systems, Flutter internals, and</text>
 <text x="20" y="732" class="plex" font-size="14" fill="#f4f2ed" text-anchor="start" letter-spacing="0" >distributed architectures</text>
-<text x="20" y="773" class="plex" font-size="11.5" fill="#fb923c" text-anchor="start" letter-spacing="3" >STAGED PROTOCOLS / BACKLOG</text>
-<text x="20" y="797" class="plex" font-size="14" fill="#f97316" text-anchor="start" letter-spacing="0" >—</text>
+<text x="20" y="773" class="plex" font-size="11.5" fill="#f472b6" text-anchor="start" letter-spacing="3" >STAGED PROTOCOLS / BACKLOG</text>
+<text x="20" y="797" class="plex" font-size="14" fill="#ec4899" text-anchor="start" letter-spacing="0" >—</text>
 <text x="44" y="797" class="plex" font-size="14" fill="#dcdad5" text-anchor="start" letter-spacing="0" >Multi-service Docker architectures with</text>
 <text x="44" y="818" class="plex" font-size="14" fill="#dcdad5" text-anchor="start" letter-spacing="0" >automated CI/CD pipelines</text>
-<text x="20" y="843" class="plex" font-size="14" fill="#f97316" text-anchor="start" letter-spacing="0" >—</text>
+<text x="20" y="843" class="plex" font-size="14" fill="#ec4899" text-anchor="start" letter-spacing="0" >—</text>
 <text x="44" y="843" class="plex" font-size="14" fill="#dcdad5" text-anchor="start" letter-spacing="0" >Open-source developer utilities and high-</text>
 <text x="44" y="864" class="plex" font-size="14" fill="#dcdad5" text-anchor="start" letter-spacing="0" >performance microservices</text>
 <rect x="1" y="1" width="478" height="901" rx="8" filter="url(#grain)" opacity=".045" pointer-events="none"/>
