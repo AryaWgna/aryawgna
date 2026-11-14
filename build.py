@@ -205,6 +205,16 @@ LAYERS = [
     ("?????", "FINAL MAELSTROM"),
 ]
 
+LAYERS_ID = [
+    ("0 M", "TEPI JURANG ABYSS"),
+    ("1.350 M", "HUTAN COBAAN"),
+    ("2.600 M", "PATAHAN BESAR"),
+    ("7.000 M", "CAWAN RAKSASA"),
+    ("12.000 M", "LAUTAN MAYAT"),
+    ("13.000 M", "IBU KOTA TAK KEMBALI"),
+    ("?????", "PUSARAN TERAKHIR"),
+]
+
 SECTIONS = [
     ("Surface signal", "ABOUT"),
     ("Pinned transmissions", "PINNED REPOSITORIES"),
@@ -212,6 +222,15 @@ SECTIONS = [
     ("The machine", "SYSTEM"),
     ("Signal log", "ACTIVITY"),
     ("Open a channel", "CONTACT"),
+]
+
+SECTIONS_ID = [
+    ("Sinyal permukaan", "TENTANG SAYA"),
+    ("Transmisi pilihan", "REPOSITORI PILIHAN"),
+    ("Instrumen kerja", "TOOLKIT"),
+    ("Spesifikasi mesin", "SISTEM"),
+    ("Log aktivitas", "AKTIVITAS"),
+    ("Buka komunikasi", "KONTAK"),
 ]
 
 
@@ -612,35 +631,59 @@ CURSE = [
     "loss of humanity, or death",
     "certain death",
 ]
+
+CURSE_ID = [
+    "pusing ringan dan mual",
+    "mual berat, sakit kepala, anggota tubuh mati rasa",
+    "semua gejala di atas, ditambah halusinasi",
+    "nyeri seluruh tubuh, pendarahan dari setiap rongga",
+    "hilangnya panca indra, kebingungan, melukai diri",
+    "kehilangan kemanusiaan, atau kematian",
+    "kematian mutlak",
+]
+
 # (rank, contributions needed in the last 12 months, how deep it lets you go)
 WHISTLES = [("Bell", 0, "training only"), ("Red", 50, "cleared to L1"), ("Blue", 200, "cleared to L2"),
             ("Moon", 600, "cleared to L3"), ("Black", 1500, "cleared to L5"), ("White", 4000, "no depth limit")]
 WHISTLE_SHORT = ["TRAINING", "TO L1", "TO L2", "TO L3", "TO L5", "ANY DEPTH"]
 
+WHISTLES_ID = [("Lonceng", 0, "hanya pelatihan"), ("Merah", 50, "izin ke L1"), ("Biru", 200, "izin ke L2"),
+               ("Bulan", 600, "izin ke L3"), ("Hitam", 1500, "izin ke L5"), ("Putih", 4000, "tanpa batas kedalaman")]
+WHISTLE_SHORT_ID = ["PELATIHAN", "KE L1", "KE L2", "KE L3", "KE L5", "SEMUA KEDALAMAN"]
 
-def whistle_rank(contributions):
-    rank = WHISTLES[0]
-    for w in WHISTLES:
+
+def whistle_rank(contributions, lang="en"):
+    w_list = WHISTLES_ID if lang == "id" else WHISTLES
+    rank = w_list[0]
+    for w in w_list:
         if (contributions or 0) >= w[1]:
             rank = w
     return rank[0], rank[2]
 
 
-def relic_grade(stars, forks):
+def relic_grade(stars, forks, lang="en"):
     score = (stars or 0) + 2 * (forks or 0)
-    for threshold, grade in [(20, "Special Grade"), (8, "1st Grade"), (3, "2nd Grade"), (1, "3rd Grade")]:
+    grades = [
+        (20, "Relik Khusus" if lang == "id" else "Special Grade"),
+        (8, "Tingkat 1" if lang == "id" else "1st Grade"),
+        (3, "Tingkat 2" if lang == "id" else "2nd Grade"),
+        (1, "Tingkat 3" if lang == "id" else "3rd Grade"),
+    ]
+    for threshold, grade in grades:
         if score >= threshold:
             return grade
-    return "4th Grade"
+    return "Tingkat 4" if lang == "id" else "4th Grade"
 
 
-def abyss_journey(st):
-    """Seven (step, when, cost) rows from status.yml `abyss:`; falls back to the curse of ascent."""
-    a = st.get("abyss", {}) or {}
+def abyss_journey(st, lang="en"):
+    """Seven (step, when, cost) rows from status.yml; falls back to curse of ascent."""
+    k = "abyss_id" if lang == "id" and st.get("abyss_id") else "abyss"
+    a = st.get(k, {}) or {}
+    curse_table = CURSE_ID if lang == "id" else CURSE
     rows = []
     for i in range(7):
         e = a.get(f"L{i+1}", {}) or {}
-        rows.append((clean(e.get("step")) or CURSE[i], clean(e.get("when")), clean(e.get("cost"))))
+        rows.append((clean(e.get("step")) or curse_table[i], clean(e.get("when")), clean(e.get("cost"))))
     try:
         here = min(7, max(1, int(a.get("here", 0))))
     except ValueError:
@@ -648,7 +691,7 @@ def abyss_journey(st):
     return rows, here
 
 
-def abyss_map(here=0):
+def abyss_map(here=0, lang="en"):
     """The cross-section itself, drawn in a 1000-unit frame between x=30 and x=500."""
     tops = [96, 166, 256, 376, 466, 536, 606]
     bottom = 656
@@ -750,51 +793,62 @@ def abyss_map(here=0):
                  f'<animate attributeName="r" values="5;16" dur="2s" repeatCount="indefinite"/>'
                  f'<animate attributeName="opacity" values="1;0" dur="2s" repeatCount="indefinite"/></circle>')
         b.append(f'<rect x="{cx+14}" y="{y-9}" width="92" height="17" fill="{C["ink"]}" stroke="{C["red"]}"/>')
-        b.append(text(cx + 60, y + 3.5, "YOU ARE HERE", "plex", 8.5, C["paper"], "middle", ls=1.5))
+        here_label = "POSISI ANDA" if lang == "id" else "YOU ARE HERE"
+        b.append(text(cx + 60, y + 3.5, here_label, "plex", 8.5, C["paper"], "middle", ls=1.5))
     return defs, b, tops
 
 
-def abyss_card(st, stats, mobile=False):
-    """An original cross-section of the Abyss; each layer is one step of Harshul's own descent."""
-    rows, here = abyss_journey(st)
-    defs, b, tops = abyss_map(here)
+def abyss_card(st, stats, mobile=False, lang="en"):
+    """An original cross-section of the Abyss; each layer is one step of Arya's own descent."""
+    rows, here = abyss_journey(st, lang=lang)
+    defs, b, tops = abyss_map(here, lang=lang)
     contrib = stats.get("contributions")
-    rank, cleared = whistle_rank(contrib)
-    cur = [w[0] for w in WHISTLES].index(rank)
-    alias = clean(st.get("profile", {}).get("alias", "Arya"))
-    title = (f"The Abyss, a descent map of {alias}'s path. " + "; ".join(
-        f"Layer {i+1}, {LAYERS[i][1].title()}: {r[0]}" + (f" ({r[1]})" if r[1] else "") for i, r in enumerate(rows))
-        + f". Whistle rank: {rank}.")
+    rank, cleared = whistle_rank(contrib, lang=lang)
+    w_list = WHISTLES_ID if lang == "id" else WHISTLES
+    cur = [w[0] for w in w_list].index(rank)
+    p = st.get("profile_id" if lang == "id" else "profile", {})
+    alias = clean(p.get("alias", "Arya"))
+    layers = LAYERS_ID if lang == "id" else LAYERS
+    sections = SECTIONS_ID if lang == "id" else SECTIONS
+    title = (f"The Abyss, a descent map of {alias}'s path. " if lang != "id" else f"Peta perjalanan Abyss {alias}. ") + "; ".join(
+        f"Layer {i+1}, {layers[i][1].title()}: {r[0]}" + (f" ({r[1]})" if r[1] else "") for i, r in enumerate(rows)) + f". Whistle rank: {rank}."
     if mobile:
-        return abyss_mobile(rows, here, defs, b, tops, rank, cleared, cur, contrib, title, alias=alias)
+        return abyss_mobile(rows, here, defs, b, tops, rank, cleared, cur, contrib, title, alias=alias, lang=lang)
     W, H = 1000, 800
 
     # Right side: the layer log
-    b.append(text(540, 54, f"{alias.upper()}'S DESCENT", "bebas", 32, C["paper"], ls=3))
-    b.append(text(964, 46, "DESCENT MAP", "plex", 9, C["red_hi"], "end", ls=3))
-    b.append(text(540, 74, "ONE LAYER PER STEP OF THE WAY DOWN", "plex", 8.5, C["muted"], ls=1))
-    for i, (depth, layer) in enumerate(LAYERS):
+    header_text = f"PERJALANAN {alias.upper()}" if lang == "id" else f"{alias.upper()}'S DESCENT"
+    kicker_text = "PETA PENURUNAN" if lang == "id" else "DESCENT MAP"
+    sub_text = "SATU LAPISAN UNTUK SETIAP LANGKAH KE BAWAH" if lang == "id" else "ONE LAYER PER STEP OF THE WAY DOWN"
+    b.append(text(540, 54, header_text, "bebas", 32, C["paper"], ls=3))
+    b.append(text(964, 46, kicker_text, "plex", 9, C["red_hi"], "end", ls=3))
+    b.append(text(540, 74, sub_text, "plex", 8.5, C["muted"], ls=1))
+    for i, (depth, layer) in enumerate(layers):
         step, when, cost = rows[i]
         y0 = tops[i] + 22
         on = here == i + 1
-        target = f"{i+1:02d} {SECTIONS[i][0].upper()}" if i < len(SECTIONS) else "END OF PAGE"
+        target = f"{i+1:02d} {sections[i][0].upper()}" if i < len(sections) else ("AKHIR HALAMAN" if lang == "id" else "END OF PAGE")
         b.append(f'<path d="M504 {y0-5}H532" stroke="{C["red"] if on else C["line"]}" stroke-dasharray="2 3"/>')
         b.append(text(540, y0, f"L{i+1}", "bebas", 20, C["red_hi"], ls=1))
         b.append(text(574, y0, layer, "bebas", 17, C["paper"], ls=2))
         b.append(text(964, y0, (when or depth).upper(), "plex", 9, C["red_hi"] if on else C["muted"], "end", ls=1))
         b.append(text(574, y0 + 17, clip(step, 62), "plex", 10.5, C["paper"] if on else C["text"]))
         if cost:
-            b.append(f'<text x="574" y="{y0+33}" class="plex" font-size="9"><tspan fill="{C["dim"]}">COST  </tspan>'
+            cost_label = "PENGORBANAN  " if lang == "id" else "COST  "
+            b.append(f'<text x="574" y="{y0+33}" class="plex" font-size="9"><tspan fill="{C["dim"]}">{cost_label}</tspan>'
                      f'<tspan fill="{C["muted"]}">{esc(clip(cost, 44))}</tspan></text>')
         b.append(text(964, y0 + 33, f"→ {target}", "plex", 8.5, C["red_hi"], "end", ls=1))
 
     # Whistle ranks
+    whistle_heading = "PERINGKAT PELUIT" if lang == "id" else "WHISTLE RANK"
+    whistle_desc = f"Peluit {rank.lower()}, {cleared}." if lang == "id" else f"{rank} whistle, {cleared}."
+    contrib_desc = f"Diraih dari {contrib if contrib is not None else '0'} kontribusi dalam 12 bulan terakhir." if lang == "id" else f"Earned from {contrib if contrib is not None else 'unknown'} contributions in 12 months."
     b.append(f'<line x1="36" y1="700" x2="964" y2="700" stroke="{C["line"]}"/>')
-    b.append(text(36, 728, "WHISTLE RANK", "plex", 9, C["red_hi"], ls=3))
-    b.append(text(36, 752, f"{rank} whistle, {cleared}.", "play", 17, C["paper"]))
-    b.append(text(36, 774, f"Earned from {contrib if contrib is not None else 'unknown'} contributions in 12 months.",
-                  "plex", 9, C["muted"]))
-    for k, (name, need, depth_ok) in enumerate(WHISTLES):
+    b.append(text(36, 728, whistle_heading, "plex", 9, C["red_hi"], ls=3))
+    b.append(text(36, 752, whistle_desc, "play", 17, C["paper"]))
+    b.append(text(36, 774, contrib_desc, "plex", 9, C["muted"]))
+    short_table = WHISTLE_SHORT_ID if lang == "id" else WHISTLE_SHORT
+    for k, (name, need, depth_ok) in enumerate(w_list):
         x = 404 + k * 94
         on = k == cur
         col = C["red"] if on else (C["paper"] if k < cur else C["dim"])
@@ -804,14 +858,14 @@ def abyss_card(st, stats, mobile=False):
         b.append(f'<rect x="{x+46}" y="725" width="6" height="3" fill="{col}"/>')
         b.append(text(x, 760, name.upper(), "bebas", 15, C["paper"] if k <= cur else C["dim"], ls=2))
         b.append(text(x, 776, f"{need}+", "plex", 8.5, C["muted"] if k <= cur else C["dim"]))
-        b.append(text(x + 38, 776, WHISTLE_SHORT[k], "plex", 8.5, C["muted"] if k <= cur else C["dim"]))
+        b.append(text(x + 38, 776, short_table[k], "plex", 8.5, C["muted"] if k <= cur else C["dim"]))
 
     return svg_doc(W, H, "\n".join(b), ("Bebas", "Plex", "Playfair"), defs, title)
 
 
-def hero(st, stats, today):
+def hero(st, stats, today, lang="en"):
     W, H = 1000, 560
-    p = st.get("profile", {})
+    p = st.get("profile_id" if lang == "id" else "profile", {})
     sysd = st.get("system", {})
     img = ASSETS / "img"
 
@@ -860,14 +914,16 @@ def hero(st, stats, today):
     first, _, rest = clean(p.get("name", "")).partition("|")
     name_w = 0.42 * 40 * len(clean(p.get("name", "")))
     fit = ' textLength="272" lengthAdjust="spacingAndGlyphs"' if name_w > 272 else ""
+    layer01_kicker = f"@{p.get('handle', USER).upper()}  //  LAPISAN:01" if lang == "id" else f"@{p.get('handle', USER).upper()}  //  LAYER:01 WEIRD"
     body += [
-        text(L, 56, f"@{p.get('handle', USER).upper()}  //  LAYER:01 WEIRD", "plex", 9, C["muted"], ls=2),
+        text(L, 56, layer01_kicker, "plex", 9, C["muted"], ls=2),
         f'<text x="{L}" y="100" class="bebas" font-size="40" letter-spacing="1"{fit}>'
         f'<tspan fill="{C["paper"]}">{esc(first.strip().upper())}</tspan>'
         + (f'<tspan fill="{C["red_hi"]}"> | {esc(rest.strip().upper())}</tspan>' if rest else "") + "</text>",
         text(L, 122, clean(p.get("tagline", "")).upper(), "plex", 9.5, C["text"], ls=2),
     ]
-    for i, lab in enumerate(["PROFILE", "NODE", "SIGNAL"]):
+    profile_pills = ["PROFIL", "NODE", "SINYAL"] if lang == "id" else ["PROFILE", "NODE", "SIGNAL"]
+    for i, lab in enumerate(profile_pills):
         x = L + 6 + i * 84
         fill = C["red"] if i == 0 else "none"
         body.append(f'<circle cx="{x}" cy="146" r="4.5" fill="{fill}" stroke="{C["red"]}"/>')
@@ -878,9 +934,9 @@ def hero(st, stats, today):
     body.append(f'<rect x="{bx}" y="{by}" width="{bw}" height="{bh}" fill="{C["panel"]}" stroke="{C["paper"]}" stroke-width="2.5" filter="url(#shadow)"/>')
     cx = bx + bw / 2
     body += [
-        text(cx, by + 38, p.get("alias", "Navi"), "play", 24, C["paper"], "middle"),
+        text(cx, by + 38, p.get("alias", "Arya"), "play", 24, C["paper"], "middle"),
         f'<text x="{cx}" y="{by+56}" class="plex" font-size="8" text-anchor="middle" letter-spacing="2">'
-        f'<tspan fill="{C["red"]}">• •</tspan><tspan fill="{C["muted"]}"> {esc(clean(p.get("motto", "a node in the wired")).upper())}</tspan></text>',
+        f'<tspan fill="{C["red"]}">• •</tspan><tspan fill="{C["muted"]}"> {esc(clean(p.get("motto", "pragmatic engineering over trends")).upper())}</tspan></text>',
     ]
     os_short = clean(sysd.get("os", "Linux")).split(" ")[0]
     de_short = re.sub(r"\s*[\d.]+.*$", "", clean(sysd.get("desktop", "")))
@@ -912,10 +968,13 @@ def hero(st, stats, today):
     for line in wrap(bio, 39, 7):
         body.append(text(bx + 16, ty, line, "plex", 9.6, C["text"]))
         ty += 14
-    body.append(text(bx + bw - 16, by + bh - 30, "in the wired,", "play", 11.5, C["text"], "end"))
-    body.append(text(bx + bw - 16, by + bh - 15, "always connected.", "play", 11.5, C["dim"], "end"))
+    wired_1 = "di dunia wired," if lang == "id" else "in the wired,"
+    wired_2 = "selalu terhubung." if lang == "id" else "always connected."
+    body.append(text(bx + bw - 16, by + bh - 30, wired_1, "play", 11.5, C["text"], "end"))
+    body.append(text(bx + bw - 16, by + bh - 15, wired_2, "play", 11.5, C["dim"], "end"))
 
-    body.append(text(L, H - 26, f"{clean(p.get('location','')).upper()}  ·  {p.get('timezone','')}",
+    tz_label = "WIB (UTC+07:00)" if lang == "id" else p.get("timezone", "UTC+07:00")
+    body.append(text(L, H - 26, f"{clean(p.get('location','')).upper()}  ·  {tz_label}",
                      "plex", 8, C["dim"], ls=2))
 
     # ---- Framed thumbnails (slide out from under the portrait) -------------
@@ -932,7 +991,8 @@ def hero(st, stats, today):
             f'<rect x="1.5" y="1.5" width="121" height="69" rx="13" fill="none" stroke="{C["paper"]}" stroke-width="2.5"/>'
             f'</g></g>')
         body.append(text(tx + 156, ty2 + 34, cap, "plex", 7.5, C["red_hi"], ls=2))
-        body.append(text(tx + 156, ty2 + 46, f"SYSTEM 0{i+1}", "plex", 7, C["dim"], ls=2))
+        sys_label = f"SISTEM 0{i+1}" if lang == "id" else f"SYSTEM 0{i+1}"
+        body.append(text(tx + 156, ty2 + 46, sys_label, "plex", 7, C["dim"], ls=2))
 
     # ---- Portrait ----------------------------------------------------------
     body.append(f'<g clip-path="url(#pclip)">'
@@ -948,14 +1008,17 @@ def hero(st, stats, today):
                 + text(500, 305, clean(p.get("name", "")).upper(), "cut", 16, C["paper"], "middle", ls=4) + "</g>")
     body.append(text(500, 424, clean(p.get("quote", "close the world, open the next")), "play", 15, C["paper"], "middle",
                      extra='filter="url(#pulse)"'))
-    body.append(text(500, 446, "PROTOCOL 7  ·  ESTABLISHED", "plex", 8, C["muted"], "middle", ls=3))
-    body.append(f'<g transform="rotate(180 494 516)">' + text(494, 520, "NO MATTER WHERE YOU ARE, EVERYONE IS ALWAYS CONNECTED",
+    proto_label = "PROTOKOL 7  ·  TERHUBUNG" if lang == "id" else "PROTOCOL 7  ·  ESTABLISHED"
+    conn_label = "DI MANA PUN KAU BERADA, SEMUA ORANG SELALU TERHUBUNG" if lang == "id" else "NO MATTER WHERE YOU ARE, EVERYONE IS ALWAYS CONNECTED"
+    body.append(text(500, 446, proto_label, "plex", 8, C["muted"], "middle", ls=3))
+    body.append(f'<g transform="rotate(180 494 516)">' + text(494, 520, conn_label,
                 "bebas", 12.5, C["paper"], "middle", ls=1, extra='textLength="250" lengthAdjust="spacingAndGlyphs"') + "</g>")
 
     # ---- Divergence readout (Steins;Gate) ----------------------------------
     dv = str(st.get("signal", {}).get("divergence", "1.048596"))
     rx0 = 684
-    body.append(text(rx0, 58, "WORLD LINE DIVERGENCE", "plex", 8, C["muted"], ls=3))
+    div_label = "DIVERGENSI GARIS DUNIA" if lang == "id" else "WORLD LINE DIVERGENCE"
+    body.append(text(rx0, 58, div_label, "plex", 8, C["muted"], ls=3))
     for i, ch in enumerate(dv[:8]):
         x = rx0 + i * 26
         body.append(f'<rect x="{x}" y="68" width="22" height="50" rx="9" fill="#140806" stroke="#4a2018"/>')
@@ -963,17 +1026,22 @@ def hero(st, stats, today):
         if i in (2, 6):
             flick = f'<animate attributeName="opacity" values="1;.45;1;1;.8;1" keyTimes="0;.04;.08;.6;.63;1" dur="{4+i}s" repeatCount="indefinite"/>'
         body.append(f'<text x="{x+11}" y="104" class="cut" font-size="34" fill="{C["nixie"]}" text-anchor="middle" filter="url(#glow)">{esc(ch)}{flick}</text>')
-    body.append(text(rx0, 138, "STEINS;GATE  ·  FIELD: NONE", "plex", 9, C["red_hi"], ls=2))
+    field_label = "STEINS;GATE  ·  MEDAN: NIHIL" if lang == "id" else "STEINS;GATE  ·  FIELD: NONE"
+    body.append(text(rx0, 138, field_label, "plex", 9, C["red_hi"], ls=2))
     body.append(text(rx0, 158, "El Psy Kongroo.", "play", 12, C["muted"]))
-    sline = "  ·  ".join(f"{k} {v}" for k, v in [("REPOS", stats.get("repos")), ("STARS", stats.get("stars")),
-                                                     ("FOLLOWERS", stats.get("followers"))] if v is not None)
+    sline_keys = [("REPOSITORI", stats.get("repos")), ("BINTANG", stats.get("stars")),
+                  ("PENGIKUT", stats.get("followers"))] if lang == "id" else [("REPOS", stats.get("repos")), ("STARS", stats.get("stars")),
+                                                                               ("FOLLOWERS", stats.get("followers"))]
+    sline = "  ·  ".join(f"{k} {v}" for k, v in sline_keys if v is not None)
     if sline:
         body.append(text(rx0, 196, sline, "plex", 8, C["text"], ls=2))
     if stats.get("contributions") is not None:
-        body.append(text(rx0, 212, f"CONTRIBUTIONS / 12 MO  {stats['contributions']}", "plex", 8, C["text"], ls=2))
+        contrib_lbl = f"KONTRIBUSI / 12 BLN  {stats['contributions']}" if lang == "id" else f"CONTRIBUTIONS / 12 MO  {stats['contributions']}"
+        body.append(text(rx0, 212, contrib_lbl, "plex", 8, C["text"], ls=2))
     body.append(f'<line x1="{rx0}" y1="226" x2="{rx0+210}" y2="226" stroke="{C["line"]}"/>')
-    rank, cleared = whistle_rank(stats.get("contributions"))
-    body.append(f'<text x="{rx0}" y="246" class="plex" font-size="9" letter-spacing="2"><tspan fill="{C["muted"]}">WHISTLE </tspan>'
+    rank, cleared = whistle_rank(stats.get("contributions"), lang=lang)
+    whistle_pfx = "PELUIT " if lang == "id" else "WHISTLE "
+    body.append(f'<text x="{rx0}" y="246" class="plex" font-size="9" letter-spacing="2"><tspan fill="{C["muted"]}">{whistle_pfx}</tspan>'
                 f'<tspan fill="{C["red_hi"]}">{rank.upper()}</tspan><tspan fill="{C["muted"]}">  \u00b7  {cleared.upper()}</tspan></text>')
     # Kaneki's count: 1000 - 7, cycling
     n, frames = 1000, []
@@ -988,9 +1056,11 @@ def hero(st, stats, today):
 
     # ---- Abyss depth gauge -------------------------------------------------
     gx = 966
+    depth_title = "KEDALAMAN" if lang == "id" else "DEPTH"
     body.append(f'<line x1="{gx}" y1="40" x2="{gx}" y2="{H-30}" stroke="{C["line"]}"/>')
-    body.append(text(gx, 30, "DEPTH", "plex", 7, C["dim"], "middle", ls=2))
-    for i, (depth, _) in enumerate(LAYERS):
+    body.append(text(gx, 30, depth_title, "plex", 7, C["dim"], "middle", ls=2))
+    cur_layers = LAYERS_ID if lang == "id" else LAYERS
+    for i, (depth, _) in enumerate(cur_layers):
         y = 56 + i * 72
         body.append(f'<line x1="{gx-4}" y1="{y}" x2="{gx+4}" y2="{y}" stroke="{C["red"]}"/>')
         body.append(text(gx - 9, y + 3, f"L{i+1}", "bebas", 11, C["red_hi"], "end", ls=1))
@@ -1002,17 +1072,20 @@ def hero(st, stats, today):
     return svg_doc(W, H, "\n".join(body), ("Bebas", "Plex", "Playfair", "Cutive"), duo, title)
 
 
-def section_header(n):
+def section_header(n, lang="en"):
     W, H = 1000, 86
-    depth, layer = LAYERS[n - 1]
-    title, kicker = SECTIONS[n - 1]
+    cur_layers = LAYERS_ID if lang == "id" else LAYERS
+    cur_sections = SECTIONS_ID if lang == "id" else SECTIONS
+    depth, layer = cur_layers[n - 1]
+    title, kicker = cur_sections[n - 1]
+    layer_tag = f"LAPISAN:{n:02d}" if lang == "id" else f"LAYER:{n:02d}"
     stitches = " ".join(f"M{x} 66l7 12" for x in range(34, 966, 14))
     body = [
-        text(28, 37, f"LAYER:{n:02d}", "bebas", 17, C["red_hi"], ls=4),
+        text(28, 37, layer_tag, "bebas", 17, C["red_hi"], ls=4),
         text(28, 56, f"{depth} — {layer}", "plex", 8.5, C["muted"], ls=2),
         text(300, 51, title, "play", 29, C["paper"]),
         text(972, 37, kicker, "plex", 8.5, C["text"], "end", ls=3),
-        text(972, 56, f"{n:02d} / {len(SECTIONS):02d}", "plex", 8, C["dim"], "end", ls=2),
+        text(972, 56, f"{n:02d} / {len(cur_sections):02d}", "plex", 8, C["dim"], "end", ls=2),
         f'<path d="M28 72H972" stroke="{C["line"]}" stroke-width="1.5"/>',
         f'<path d="{stitches}" stroke="{C["dim"]}" stroke-width="1.3" stroke-linecap="round"/>',
         f'<rect x="28" y="70" width="{40 + n*16}" height="3" fill="{C["red"]}"/>',
@@ -1021,8 +1094,8 @@ def section_header(n):
     return svg_doc(W, H, "\n".join(body), ("Bebas", "Plex", "Playfair"), title=f"Layer {n:02d}: {title} ({kicker.lower()})")
 
 
-def about_card(st):
-    a = st.get("about", {})
+def about_card(st, lang="en"):
+    a = st.get("about_id" if lang == "id" else "about", {})
     W = 1000
     body, ly = [], 64
     for line in wrap(clean(a.get("statement", "")), 44):
@@ -1033,10 +1106,11 @@ def about_card(st):
         body.append(text(40, ly, line, "plex", 10.5, C["text"]))
         ly += 17
 
-    backlog = st.get("backlog", []) or []
+    backlog = st.get("backlog_id" if lang == "id" else "backlog", []) or []
     if backlog:
         ly += 20
-        body.append(text(40, ly, "STAGED PROTOCOLS / BACKLOG", "plex", 8, C["red_hi"], ls=3))
+        backlog_title = "PROTOKOL TERENCANA / TUNGGAKAN" if lang == "id" else "STAGED PROTOCOLS / BACKLOG"
+        body.append(text(40, ly, backlog_title, "plex", 8, C["red_hi"], ls=3))
         ly += 20
         for item in backlog:
             for j, line in enumerate(wrap(clean(item), 78)):
@@ -1046,8 +1120,11 @@ def about_card(st):
             ly += 4
 
     rx, ry = 610, 56
-    for key, label in [("based_in", "BASED IN"), ("studying", "STUDYING"), ("now", "NOW SOLVING"),
-                       ("research", "RESEARCH"), ("exploring", "EXPLORING")]:
+    labels = [("based_in", "BERDOMISILI"), ("studying", "PENDIDIKAN"), ("now", "FOKUS SAAT INI"),
+              ("research", "RISET"), ("exploring", "EKSPLORASI")] if lang == "id" else [
+              ("based_in", "BASED IN"), ("studying", "STUDYING"), ("now", "NOW SOLVING"),
+              ("research", "RESEARCH"), ("exploring", "EXPLORING")]
+    for key, label in labels:
         if not a.get(key):
             continue
         body.append(text(rx, ry, label, "plex", 8, C["red_hi"], ls=3))
@@ -1058,7 +1135,8 @@ def about_card(st):
         ry += 14
     H = max(ly, ry) + 26
     body.insert(0, f'<line x1="580" y1="40" x2="580" y2="{H-30}" stroke="{C["line"]}"/>')
-    body.append(text(972, H - 18, "0 M — SURFACE", "plex", 7.5, C["dim"], "end", ls=2))
+    surf_label = "0 M — PERMUKAAN" if lang == "id" else "0 M — SURFACE"
+    body.append(text(972, H - 18, surf_label, "plex", 7.5, C["dim"], "end", ls=2))
     desc = " ".join(clean(a.get(k, "")) for k in ("statement", "detail", "based_in", "studying", "now", "research", "exploring"))
     return svg_doc(W, H, "\n".join(body), ("Bebas", "Plex", "Playfair"), title=f"About: {desc}")
 
@@ -1066,7 +1144,7 @@ def about_card(st):
 RAMP = ["#c8102e", "#f4f2ed", "#9e9c97", "#5f5d59", "#7d0e1b"]
 
 
-def project_card(i, r, override, mobile=False):
+def project_card(i, r, override, mobile=False, lang="en"):
     W = 1000
     rd_tag, rd_sum = readme_summary(r.get("readme", ""), r["name"])
     desc = clean(r.get("description"))
@@ -1090,20 +1168,23 @@ def project_card(i, r, override, mobile=False):
     if summary == tagline:
         summary = ""
     if not tagline and not summary:
-        tagline = "No transmission recorded."
+        tagline = "Tidak ada transmisi tercatat." if lang == "id" else "No transmission recorded."
     tagline = clip(tagline, 78)
     if mobile:
-        return project_m(i, r, tagline, summary, f"{r['name']}: {tagline}. {summary}")
+        return project_m(i, r, tagline, summary, f"{r['name']}: {tagline}. {summary}", lang=lang)
     sum_lines = wrap(summary, 96, 3) if summary else []
     H = 178 + 16 * max(0, len(sum_lines) - 1) + (30 if r.get("topics") else 0)
     n_lang = len(r.get("languages") or [])
     H = max(H, 166 + 18 * ((min(n_lang, 4) + 1) // 2))
 
     pushed = (r.get("pushed") or "")[:10]
+    wl_lbl = f"GARIS DUNIA {world_line(r['name'])}" if lang == "id" else f"WORLD LINE {world_line(r['name'])}"
+    rg = relic_grade(r.get('stars'), r.get('forks'), lang=lang).upper()
+    relic_lbl = f"PENINGGALAN  {rg}" if lang == "id" else f"RELIC  {rg}"
     body = [
         text(36, 46, f"PINNED · {i:02d}", "bebas", 14, C["red_hi"], ls=4),
-        text(160, 45, f"WORLD LINE {world_line(r['name'])}", "plex", 9, C["nixie"], ls=2),
-        text(380, 45, f"RELIC  {relic_grade(r.get('stars'), r.get('forks')).upper()}", "plex", 9, C["muted"], ls=2),
+        text(160, 45, wl_lbl, "plex", 9, C["nixie"], ls=2),
+        text(380, 45, relic_lbl, "plex", 9, C["muted"], ls=2),
         text(36, 90, r["name"], "bebas", 42, C["paper"], ls=1),
         text(36, 118, tagline, "play", 15.5, C["text"]),
     ]
@@ -1124,9 +1205,11 @@ def project_card(i, r, override, mobile=False):
     # Right panel: composition bar in bronze tones + meta
     px, pw = 690, 274
     body.append(f'<line x1="666" y1="30" x2="666" y2="{H-30}" stroke="{C["line"]}"/>')
-    body.append(text(px, 46, "LAST TRANSMISSION", "plex", 8, C["muted"], ls=3))
+    trans_lbl = "TRANSMISI TERAKHIR" if lang == "id" else "LAST TRANSMISSION"
+    comp_lbl = "KOMPOSISI" if lang == "id" else "COMPOSITION"
+    body.append(text(px, 46, trans_lbl, "plex", 8, C["muted"], ls=3))
     body.append(text(px + pw, 46, pushed, "plex", 8, C["text"], "end", ls=2))
-    body.append(text(px, 80, "COMPOSITION", "plex", 8, C["muted"], ls=3))
+    body.append(text(px, 80, comp_lbl, "plex", 8, C["muted"], ls=3))
     langs = r.get("languages") or []
     x = px
     for j, (name, frac) in enumerate(langs):
@@ -1140,14 +1223,15 @@ def project_card(i, r, override, mobile=False):
         ly = 114 + (j // 2) * 18
         body.append(f'<rect x="{lx}" y="{ly-7}" width="7" height="7" fill="{RAMP[j % 5]}"/>')
         body.append(text(lx + 13, ly, f"{clean(name)} {frac*100:.1f}%", "plex", 9.5, C["text"]))
-    meta = f"STARS {r.get('stars',0)}  ·  FORKS {r.get('forks',0)}"
+    meta = f"BINTANG {r.get('stars',0)}  ·  FORK {r.get('forks',0)}" if lang == "id" else f"STARS {r.get('stars',0)}  ·  FORKS {r.get('forks',0)}"
+    open_lbl = "BUKA →" if lang == "id" else "OPEN →"
     body.append(text(px, H - 34, meta, "plex", 8.5, C["text"], ls=2))
-    body.append(text(px + pw, H - 34, "OPEN →", "plex", 8.5, C["red_hi"], "end", ls=2))
+    body.append(text(px + pw, H - 34, open_lbl, "plex", 8.5, C["red_hi"], "end", ls=2))
     title = f"{r['name']}: {tagline}. {summary}"
     return svg_doc(W, H, "\n".join(body), ("Bebas", "Plex", "Playfair"), title=title)
 
 
-def toolkit_card(st):
+def toolkit_card(st, lang="en"):
     groups = st.get("toolkit", {})
     W = 1000
     body, y = [], 52
@@ -1171,12 +1255,14 @@ def toolkit_card(st):
             body.append(f'<line x1="36" y1="{y-8}" x2="964" y2="{y-8}" stroke="{C["line"]}" stroke-dasharray="2 4"/>')
             y += 24
     H = y + 14
-    body.append(text(964, H - 16, "OUTLINED = PRIMARY", "plex", 7.5, C["dim"], "end", ls=2))
+    outlined_lbl = "GARIS TEBAL = UTAMA" if lang == "id" else "OUTLINED = PRIMARY"
+    body.append(text(964, H - 16, outlined_lbl, "plex", 7.5, C["dim"], "end", ls=2))
     flat = "; ".join(f"{g}: " + ", ".join(i.rstrip('*') for i in v) for g, v in groups.items())
-    return svg_doc(W, H, "\n".join(body), ("Bebas", "Plex"), title=f"Toolkit. {flat}")
+    title_pfx = "Peralatan. " if lang == "id" else "Toolkit. "
+    return svg_doc(W, H, "\n".join(body), ("Bebas", "Plex"), title=f"{title_pfx}{flat}")
 
 
-def system_card(st):
+def system_card(st, lang="en"):
     s = st.get("system", {})
     W = 1000
     rows = [(k, s.get(v)) for k, v in [("OS", "os"), ("KERNEL", "kernel"), ("MACHINE", "machine"), ("DESKTOP", "desktop"),
@@ -1206,11 +1292,15 @@ def system_card(st):
     fx = 736
     body.append(f'<rect x="{fx}" y="44" width="228" height="132" fill="{C["panel"]}" stroke="{C["line"]}"/>')
     body.append(text(fx + 14, 66, "LORE", "plex", 8, C["red_hi"], ls=3))
-    for j, (k, v) in enumerate([("host", "layer 07 // the wired"), ("uptime", "always connected"),
-                                ("time", "present day, present time"), ("protocol", "seven")]):
+    lore_items = [("host", "lapisan 07 // the wired"), ("status", "selalu terhubung"),
+                  ("waktu", "saat ini, detik ini"), ("protokol", "tujuh")] if lang == "id" else [
+                  ("host", "layer 07 // the wired"), ("uptime", "always connected"),
+                  ("time", "present day, present time"), ("protocol", "seven")]
+    for j, (k, v) in enumerate(lore_items):
         body.append(text(fx + 14, 92 + j * 20, k, "plex", 9, C["dim"]))
         body.append(text(fx + 70, 92 + j * 20, v, "plex", 9, C["text"]))
-    body.append(text(964, H - 18, "SPECS READ FROM FASTFETCH · " + clean(s.get("synced", "")), "plex", 7.5, C["dim"], "end", ls=2))
+    sync_pfx = "SPESIFIKASI DARI FASTFETCH · " if lang == "id" else "SPECS READ FROM FASTFETCH · "
+    body.append(text(964, H - 18, sync_pfx + clean(s.get("synced", "")), "plex", 7.5, C["dim"], "end", ls=2))
     duo = f"""<filter id="duo2" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/>
 <feComponentTransfer><feFuncR type="table" tableValues=".04 .95"/><feFuncG type="table" tableValues=".04 .15"/>
 <feFuncB type="table" tableValues=".04 .25"/></feComponentTransfer></filter>"""
@@ -1298,9 +1388,11 @@ def nixie_row(dv, x0, top, tw, th, gap, fs, seed="meter"):
     return "".join(out), total
 
 
-def signal_card(st, stats, today, mobile=False):
+def signal_card(st, stats, today, mobile=False, lang="en"):
     dv = str(st.get("signal", {}).get("divergence", "1.048596"))[:8]
-    cells = [("PUBLIC REPOS", stats.get("repos")), ("STARS EARNED", stats.get("stars")), ("FOLLOWERS", stats.get("followers")),
+    cells = [("REPOSITORI PUBLIK", stats.get("repos")), ("BINTANG DIDAPAT", stats.get("stars")), ("PENGIKUT", stats.get("followers")),
+             ("KONTRIBUSI / 12 BLN", stats.get("contributions")), ("SINKRONISASI", today)] if lang == "id" else [
+             ("PUBLIC REPOS", stats.get("repos")), ("STARS EARNED", stats.get("stars")), ("FOLLOWERS", stats.get("followers")),
              ("CONTRIBUTIONS / 12 MO", stats.get("contributions")), ("LAST SYNC", today)]
     title = f"World line divergence {dv}. " + ", ".join(f"{k.lower()} {v}" for k, v in cells if v is not None)
     if mobile:
@@ -1309,15 +1401,17 @@ def signal_card(st, stats, today, mobile=False):
         x0 = (W - (8 * tw + 7 * gap)) / 2
         row, _ = nixie_row(dv, x0, 34, tw, 104, gap, 58)
         body = [wires(W, 6, ".35", signal=False), row]
-        body.append(text(W / 2, 192, "WORLD LINE DIVERGENCE", "plex", 12, C["muted"], "middle", ls=3))
-        body.append(text(W / 2, 210, "STEINS;GATE  ·  ATTRACTOR FIELD: NONE", "plex", 11, C["dim"], "middle", ls=1.5))
+        m_div_lbl = "DIVERGENSI GARIS DUNIA" if lang == "id" else "WORLD LINE DIVERGENCE"
+        m_field_lbl = "STEINS;GATE  ·  MEDAN ATRAKTOR: NIHIL" if lang == "id" else "STEINS;GATE  ·  ATTRACTOR FIELD: NONE"
+        body.append(text(W / 2, 192, m_div_lbl, "plex", 12, C["muted"], "middle", ls=3))
+        body.append(text(W / 2, 210, m_field_lbl, "plex", 11, C["dim"], "middle", ls=1.5))
         body.append(f'<line x1="20" y1="226" x2="460" y2="226" stroke="{C["line"]}"/>')
         y = 270
         for i, (k, v) in enumerate(cells):
             cx = 20 + (i % 2) * 226
             if i % 2 == 0 and i:
                 y += 70
-            size = 28 if k == "LAST SYNC" else 40
+            size = 28 if "SYNC" in k or "SINKRONISASI" in k else 40
             body.append(text(cx, y, "—" if v is None else v, "bebas", size, C["paper"], ls=1))
             body.append(text(cx, y + 20, k, "plex", 11, C["muted"], ls=1.5))
         H = y + 46
@@ -1327,14 +1421,15 @@ def signal_card(st, stats, today, mobile=False):
     x0 = (W - (8 * tw + 7 * gap)) / 2
     row, _ = nixie_row(dv, x0, 30, tw, 150, gap, 84)
     body = [wires(W, 6, ".35", signal=False), row]
-    body.append(text(W / 2, 228, "WORLD LINE DIVERGENCE  ·  STEINS;GATE  ·  ATTRACTOR FIELD: NONE", "plex", 9, C["muted"], "middle", ls=3))
+    d_div_lbl = "DIVERGENSI GARIS DUNIA  ·  STEINS;GATE  ·  MEDAN ATRAKTOR: NIHIL" if lang == "id" else "WORLD LINE DIVERGENCE  ·  STEINS;GATE  ·  ATTRACTOR FIELD: NONE"
+    body.append(text(W / 2, 228, d_div_lbl, "plex", 9, C["muted"], "middle", ls=3))
     body.append(f'<line x1="36" y1="246" x2="964" y2="246" stroke="{C["line"]}"/>')
     cw = (W - 72) / len(cells)
     for i, (k, v) in enumerate(cells):
         cx = 36 + i * cw
         if i:
             body.append(f'<line x1="{cx}" y1="264" x2="{cx}" y2="316" stroke="{C["line"]}"/>')
-        size = 22 if k == "LAST SYNC" else 36
+        size = 22 if "SYNC" in k or "SINKRONISASI" in k else 36
         body.append(text(cx + 20, 300, "—" if v is None else v, "bebas", size, C["paper"], ls=1))
         body.append(text(cx + 20, 318, k, "plex", 7.5, C["muted"], ls=2))
     return svg_doc(W, H, "\n".join(body), ("Bebas", "Plex", "Cutive"), NIXIE_DEFS, title)
@@ -1508,32 +1603,37 @@ def kakugan(ex, ey, s=1.0, uid="k"):
     return defs, eye_svg
 
 
-def footer_card(mobile=False):
-    depth, layer = LAYERS[6]
+def footer_card(mobile=False, lang="en"):
+    cur_layers = LAYERS_ID if lang == "id" else LAYERS
+    depth, layer = cur_layers[6]
+    layer_tag = f"LAPISAN:07  ·  {layer}" if lang == "id" else f"LAYER:07  ·  {layer}"
+    depth_tag = f"KEDALAMAN {depth}  ·  TIADA PENDAKIAN TANPA PENGORBANAN" if lang == "id" else f"DEPTH {depth}  ·  NO ASCENT WITHOUT A PRICE"
+    lain_quote = "TUTUP DUNIA INI, BUKA BERIKUTNYA" if lang == "id" else "CLOSE THE WORLD, OPEN THE NEXT"
+    title_str = "El Psy Kongroo. Tutup dunia ini, buka berikutnya." if lang == "id" else "El Psy Kongroo. Close the world, open the next."
     if mobile:
         W, H = 480, 420
         defs, eye = kakugan(240, 130, 1.35)
         body = [
             wires(W, 10, ".4"), eye,
             text(W / 2, 282, "El Psy Kongroo.", "play", 32, C["paper"], "middle"),
-            f'<g transform="rotate(180 240 316)">' + text(240, 321, "CLOSE THE WORLD, OPEN THE NEXT", "bebas", 18, C["muted"], "middle", ls=3) + "</g>",
-            text(W / 2, 360, f"LAYER:07  ·  {layer}", "plex", 11.5, C["dim"], "middle", ls=2),
-            text(W / 2, 378, f"DEPTH {depth}  ·  NO ASCENT WITHOUT A PRICE", "plex", 11, C["dim"], "middle", ls=1),
+            f'<g transform="rotate(180 240 316)">' + text(240, 321, lain_quote, "bebas", 18, C["muted"], "middle", ls=3) + "</g>",
+            text(W / 2, 360, layer_tag, "plex", 11.5, C["dim"], "middle", ls=2),
+            text(W / 2, 378, depth_tag, "plex", 11, C["dim"], "middle", ls=1),
             f'<line x1="90" y1="398" x2="390" y2="398" stroke="{C["line"]}"/>',
             f'<rect x="236" y="395" width="8" height="6" fill="{C["red"]}"/>',
         ]
-        return svg_doc(W, H, "\n".join(body), ("Bebas", "Plex", "Playfair"), defs, title="El Psy Kongroo. Close the world, open the next.")
+        return svg_doc(W, H, "\n".join(body), ("Bebas", "Plex", "Playfair"), defs, title=title_str)
     W, H = 1000, 370
     defs, eye = kakugan(500, 132, 1.6)
     body = [
         wires(W, 10, ".4"), eye,
         text(W / 2, 270, "El Psy Kongroo.", "play", 28, C["paper"], "middle"),
-        f'<g transform="rotate(180 500 298)">' + text(500, 303, "CLOSE THE WORLD, OPEN THE NEXT", "bebas", 15, C["muted"], "middle", ls=4) + "</g>",
-        text(W / 2, 334, f"LAYER:07  ·  {layer}  ·  DEPTH {depth}  ·  NO ASCENT WITHOUT A PRICE", "plex", 9, C["dim"], "middle", ls=2),
+        f'<g transform="rotate(180 500 298)">' + text(500, 303, lain_quote, "bebas", 15, C["muted"], "middle", ls=4) + "</g>",
+        text(W / 2, 334, f"{layer_tag}  ·  {depth_tag}", "plex", 9, C["dim"], "middle", ls=2),
         f'<line x1="300" y1="350" x2="700" y2="350" stroke="{C["line"]}"/>',
         f'<rect x="496" y="347" width="8" height="6" fill="{C["red"]}"/>',
     ]
-    return svg_doc(W, H, "\n".join(body), ("Bebas", "Plex", "Playfair"), defs, title="El Psy Kongroo. Close the world, open the next.")
+    return svg_doc(W, H, "\n".join(body), ("Bebas", "Plex", "Playfair"), defs, title=title_str)
 
 
 # --------------------------------------------------------------------------- #
@@ -1545,7 +1645,14 @@ CONTACT = [
     ("email", "EMAIL", "wgnarya123@gmail.com", "SEND DISPATCH"),
     ("github", "GITHUB", "AryaWgna", "VIEW PROFILE"),
 ]
+CONTACT_ID = [
+    ("website", "PORTOFOLIO", "arya-wiguna.my.id", "KUNJUNGI NODE"),
+    ("linkedin", "LINKEDIN", "in/arya-wgna", "HUBUNGKAN"),
+    ("email", "SUREL", "wgnarya123@gmail.com", "KIRIM PESAN"),
+    ("github", "GITHUB", "AryaWgna", "LIHAT PROFIL"),
+]
 RING = [("ring-prev", "← PREV"), ("ring-home", "OCTO RING"), ("ring-random", "RANDOM"), ("ring-next", "NEXT →")]
+RING_ID = [("ring-prev", "← SEBELUMNYA"), ("ring-home", "OCTO RING"), ("ring-random", "ACAK"), ("ring-next", "SELANJUTNYA →")]
 
 
 def contact_button(label, value, verb):
@@ -1581,8 +1688,8 @@ def ring_button(label):
 MW = 480
 
 
-def hero_m(st, stats):
-    p = st.get("profile", {})
+def hero_m(st, stats, lang="en"):
+    p = st.get("profile_id" if lang == "id" else "profile", {})
     sysd = st.get("system", {})
     img = ASSETS / "img"
     W = MW
@@ -1607,7 +1714,8 @@ def hero_m(st, stats):
     b.append(f'<g transform="rotate(-6 240 262)"><rect x="10" y="246" width="460" height="32" fill="{C["red"]}" opacity=".92"/>'
              + text(240, 268, clean(p.get("name", "")).upper(), "cut", 18, C["paper"], "middle", ls=3) + "</g>")
     y = 372
-    b.append(text(20, y, f"@{p.get('handle', USER).upper()}  //  LAYER:01", "plex", 12, C["muted"], ls=2))
+    layer01_kicker = f"@{p.get('handle', USER).upper()}  //  LAPISAN:01" if lang == "id" else f"@{p.get('handle', USER).upper()}  //  LAYER:01"
+    b.append(text(20, y, layer01_kicker, "plex", 12, C["muted"], ls=2))
     first, _, rest = clean(p.get("name", "")).partition("|")
     b.append(f'<text x="20" y="{y+46}" class="bebas" font-size="46" letter-spacing="1"><tspan fill="{C["paper"]}">{esc(first.strip().upper())}</tspan>'
              + (f'<tspan fill="{C["red_hi"]}"> | {esc(rest.strip().upper())}</tspan>' if rest else "") + "</text>")
@@ -1625,25 +1733,31 @@ def hero_m(st, stats):
         y += 22
     y += 14
     dv = str(st.get("signal", {}).get("divergence", "1.048596"))[:8]
-    rank, cleared = whistle_rank(stats.get("contributions"))
-    b.append(f'<text x="20" y="{y}" class="plex" font-size="12" letter-spacing="1.5"><tspan fill="{C["muted"]}">DIVERGENCE </tspan>'
-             f'<tspan fill="{C["nixie"]}">{esc(dv)}</tspan><tspan fill="{C["muted"]}">  ·  WHISTLE </tspan>'
+    rank, cleared = whistle_rank(stats.get("contributions"), lang=lang)
+    div_lbl = "DIVERGENSI " if lang == "id" else "DIVERGENCE "
+    whistle_lbl = "  ·  PELUIT " if lang == "id" else "  ·  WHISTLE "
+    b.append(f'<text x="20" y="{y}" class="plex" font-size="12" letter-spacing="1.5"><tspan fill="{C["muted"]}">{div_lbl}</tspan>'
+             f'<tspan fill="{C["nixie"]}">{esc(dv)}</tspan><tspan fill="{C["muted"]}">{whistle_lbl}</tspan>'
              f'<tspan fill="{C["red_hi"]}">{rank.upper()}</tspan></text>')
     y += 22
-    b.append(text(20, y, f"{clean(p.get('location','')).upper()}  ·  {p.get('timezone','')}", "plex", 12, C["dim"], ls=2))
+    tz_lbl = "WIB (UTC+07:00)" if lang == "id" else p.get("timezone", "")
+    b.append(text(20, y, f"{clean(p.get('location','')).upper()}  ·  {tz_lbl}", "plex", 12, C["dim"], ls=2))
     H = y + 26
     title = f"{p.get('name','')} ({USER}): {clean(p.get('bio',''))}"
     return svg_doc(W, H, "\n".join(b), ("Bebas", "Plex", "Playfair", "Cutive"), defs, title)
 
 
-def section_header_m(n):
+def section_header_m(n, lang="en"):
     W, H = MW, 112
-    depth, layer = LAYERS[n - 1]
-    title, kicker = SECTIONS[n - 1]
+    cur_layers = LAYERS_ID if lang == "id" else LAYERS
+    cur_sections = SECTIONS_ID if lang == "id" else SECTIONS
+    depth, layer = cur_layers[n - 1]
+    title, kicker = cur_sections[n - 1]
+    layer_tag = f"LAPISAN:{n:02d}" if lang == "id" else f"LAYER:{n:02d}"
     stitches = " ".join(f"M{x} 94l6 10" for x in range(22, 458, 13))
     body = [
-        text(20, 34, f"LAYER:{n:02d}", "bebas", 22, C["red_hi"], ls=4),
-        text(460, 33, f"{n:02d} / {len(SECTIONS):02d}  ·  {kicker}", "plex", 11, C["text"], "end", ls=1.5),
+        text(20, 34, layer_tag, "bebas", 22, C["red_hi"], ls=4),
+        text(460, 33, f"{n:02d} / {len(cur_sections):02d}  ·  {kicker}", "plex", 11, C["text"], "end", ls=1.5),
         text(20, 70, title, "play", 30, C["paper"]),
         text(460, 70, depth, "plex", 11, C["muted"], "end", ls=1),
         f'<path d="M20 98H460" stroke="{C["line"]}" stroke-width="1.5"/>',
@@ -1653,8 +1767,8 @@ def section_header_m(n):
     return svg_doc(W, H, "\n".join(body), ("Bebas", "Plex", "Playfair"), title=f"Layer {n:02d}: {title} ({kicker.lower()}), {layer.lower()}")
 
 
-def about_m(st):
-    a = st.get("about", {})
+def about_m(st, lang="en"):
+    a = st.get("about_id" if lang == "id" else "about", {})
     W, b, y = MW, [], 52
     for line in wrap(clean(a.get("statement", "")), 34):
         b.append(text(20, y, line, "play", 23, C["paper"]))
@@ -1664,8 +1778,11 @@ def about_m(st):
         b.append(text(20, y, line, "plex", 14, C["text"]))
         y += 22
     y += 18
-    for key, label in [("based_in", "BASED IN"), ("studying", "STUDYING"), ("now", "NOW SOLVING"),
-                       ("research", "RESEARCH"), ("exploring", "EXPLORING")]:
+    labels = [("based_in", "BERDOMISILI"), ("studying", "PENDIDIKAN"), ("now", "FOKUS SAAT INI"),
+              ("research", "RISET"), ("exploring", "EKSPLORASI")] if lang == "id" else [
+              ("based_in", "BASED IN"), ("studying", "STUDYING"), ("now", "NOW SOLVING"),
+              ("research", "RESEARCH"), ("exploring", "EXPLORING")]
+    for key, label in labels:
         if not a.get(key):
             continue
         b.append(f'<line x1="20" y1="{y-6}" x2="460" y2="{y-6}" stroke="{C["line"]}" stroke-dasharray="2 4"/>')
@@ -1676,10 +1793,11 @@ def about_m(st):
             b.append(text(20, y, line, "plex", 14, C["paper"]))
             y += 21
         y += 12
-    backlog = st.get("backlog", []) or []
+    backlog = st.get("backlog_id" if lang == "id" else "backlog", []) or []
     if backlog:
         y += 8
-        b.append(text(20, y, "STAGED PROTOCOLS / BACKLOG", "plex", 11.5, C["red_hi"], ls=3))
+        backlog_title = "PROTOKOL TERENCANA / TUNGGAKAN" if lang == "id" else "STAGED PROTOCOLS / BACKLOG"
+        b.append(text(20, y, backlog_title, "plex", 11.5, C["red_hi"], ls=3))
         y += 24
         for item in backlog:
             for j, line in enumerate(wrap(clean(item), 46)):
@@ -1693,7 +1811,7 @@ def about_m(st):
     return svg_doc(W, H, "\n".join(b), ("Bebas", "Plex", "Playfair"), title=f"About: {desc}")
 
 
-def toolkit_m(st):
+def toolkit_m(st, lang="en"):
     groups = st.get("toolkit", {})
     W, b, y = MW, [], 40
     for gi, (group, items) in enumerate(groups.items()):
@@ -1714,12 +1832,14 @@ def toolkit_m(st):
             x += w + 8
         y += 46
     H = y + 4
-    b.append(text(460, H - 16, "OUTLINED = PRIMARY", "plex", 10, C["dim"], "end", ls=2))
+    outlined_lbl = "GARIS TEBAL = UTAMA" if lang == "id" else "OUTLINED = PRIMARY"
+    b.append(text(460, H - 16, outlined_lbl, "plex", 10, C["dim"], "end", ls=2))
     flat = "; ".join(f"{g}: " + ", ".join(i.rstrip('*') for i in v) for g, v in groups.items())
-    return svg_doc(W, H, "\n".join(b), ("Bebas", "Plex"), title=f"Toolkit. {flat}")
+    title_pfx = "Peralatan. " if lang == "id" else "Toolkit. "
+    return svg_doc(W, H, "\n".join(b), ("Bebas", "Plex"), title=f"{title_pfx}{flat}")
 
 
-def system_m(st):
+def system_m(st, lang="en"):
     s = st.get("system", {})
     rows = [(k, s.get(v)) for k, v in [("OS", "os"), ("KERNEL", "kernel"), ("MACHINE", "machine"), ("DESKTOP", "desktop"),
                                          ("SHELL", "shell"), ("TERMINAL", "terminal"), ("CPU", "cpu"), ("GPU", "gpu"),
@@ -1742,19 +1862,21 @@ def system_m(st):
     for i, col in enumerate([C["ink"], C["dim"], C["red"], C["red_hi"], C["muted"], C["text"], C["paper"], C["nixie"]]):
         b.append(f'<rect x="{20 + i*30}" y="{y-8}" width="26" height="12" fill="{col}" stroke="{C["line"]}"/>')
     y += 34
-    b.append(text(20, y, "SPECS READ FROM FASTFETCH · " + clean(s.get("synced", "")), "plex", 10.5, C["dim"], ls=1.5))
+    sync_pfx = "SPESIFIKASI DARI FASTFETCH · " if lang == "id" else "SPECS READ FROM FASTFETCH · "
+    b.append(text(20, y, sync_pfx + clean(s.get("synced", "")), "plex", 10.5, C["dim"], ls=1.5))
     H = y + 22
     duo = f"""<filter id="duo2" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/>
 <feComponentTransfer><feFuncR type="table" tableValues=".04 .95"/><feFuncG type="table" tableValues=".04 .15"/>
 <feFuncB type="table" tableValues=".04 .25"/></feComponentTransfer></filter>"""
-    title = "System. " + "; ".join(f"{k.title()}: {v}" for k, v in rows)
+    title = ("Sistem. " if lang == "id" else "System. ") + "; ".join(f"{k.title()}: {v}" for k, v in rows)
     return svg_doc(W, H, "\n".join(b), ("Bebas", "Plex"), duo, title)
 
 
-def project_m(i, r, tagline, summary, title):
+def project_m(i, r, tagline, summary, title, lang="en"):
     W = MW
+    wl_lbl = f"GARIS DUNIA {world_line(r['name'])}" if lang == "id" else f"WORLD LINE {world_line(r['name'])}"
     b = [text(20, 36, f"PINNED · {i:02d}", "bebas", 18, C["red_hi"], ls=4),
-         text(460, 35, f"WORLD LINE {world_line(r['name'])}", "plex", 11, C["nixie"], "end", ls=1.5)]
+         text(460, 35, wl_lbl, "plex", 11, C["nixie"], "end", ls=1.5)]
     name_fs = 40 if len(r["name"]) <= 18 else 34
     b.append(text(20, 80, r["name"], "bebas", name_fs, C["paper"], ls=1))
     y = 110
@@ -1779,7 +1901,8 @@ def project_m(i, r, tagline, summary, title):
     y += 18
     b.append(f'<line x1="20" y1="{y}" x2="460" y2="{y}" stroke="{C["line"]}"/>')
     y += 28
-    b.append(text(20, y, "COMPOSITION", "plex", 11, C["muted"], ls=3))
+    comp_lbl = "KOMPOSISI" if lang == "id" else "COMPOSITION"
+    b.append(text(20, y, comp_lbl, "plex", 11, C["muted"], ls=3))
     b.append(text(460, y, (r.get("pushed") or "")[:10], "plex", 11, C["text"], "end", ls=1.5))
     y += 12
     langs = r.get("languages") or []
@@ -1796,20 +1919,25 @@ def project_m(i, r, tagline, summary, title):
         b.append(f'<rect x="{lx}" y="{ly-10}" width="10" height="10" fill="{RAMP[j % 5]}"/>')
         b.append(text(lx + 18, ly, f"{clean(name)} {frac*100:.1f}%", "plex", 13, C["text"]))
     y += 24 * ((min(len(langs), 4) + 1) // 2) + 10
-    b.append(text(20, y, f"STARS {r.get('stars',0)}  ·  FORKS {r.get('forks',0)}", "plex", 12, C["text"], ls=1.5))
-    b.append(text(460, y, "OPEN →", "plex", 12, C["red_hi"], "end", ls=2))
+    meta = f"BINTANG {r.get('stars',0)}  ·  FORK {r.get('forks',0)}" if lang == "id" else f"STARS {r.get('stars',0)}  ·  FORKS {r.get('forks',0)}"
+    open_lbl = "BUKA →" if lang == "id" else "OPEN →"
+    b.append(text(20, y, meta, "plex", 12, C["text"], ls=1.5))
+    b.append(text(460, y, open_lbl, "plex", 12, C["red_hi"], "end", ls=2))
     H = y + 24
     return svg_doc(W, H, "\n".join(b), ("Bebas", "Plex", "Playfair"), title=title)
 
 
-def abyss_mobile(rows, here, defs, mapb, tops, rank, cleared, cur, contrib, title, alias="Arya"):
+def abyss_mobile(rows, here, defs, mapb, tops, rank, cleared, cur, contrib, title, alias="Arya", lang="en"):
     W = MW
     # the map spans x 30..500 of the desktop frame; shift it into the phone frame
-    b = [text(20, 40, f"{alias.upper()}'S DESCENT", "bebas", 32, C["paper"], ls=2),
-         text(20, 60, "ONE LAYER PER STEP OF THE WAY DOWN", "plex", 11, C["muted"], ls=1),
+    h_text = f"PENURUNAN {alias.upper()}" if lang == "id" else f"{alias.upper()}'S DESCENT"
+    sub_text = "SATU LAPISAN SETIAP LANGKAH KE BAWAH" if lang == "id" else "ONE LAYER PER STEP OF THE WAY DOWN"
+    b = [text(20, 40, h_text, "bebas", 32, C["paper"], ls=2),
+         text(20, 60, sub_text, "plex", 11, C["muted"], ls=1),
          f'<g transform="translate(-25 50)">' + "".join(mapb) + "</g>"]
     y = 800
-    for i, (depth, layer) in enumerate(LAYERS):
+    cur_layers = LAYERS_ID if lang == "id" else LAYERS
+    for i, (depth, layer) in enumerate(cur_layers):
         step, when, cost = rows[i]
         on = here == i + 1
         b.append(f'<line x1="20" y1="{y-24}" x2="460" y2="{y-24}" stroke="{C["red"] if on else C["line"]}" stroke-dasharray="2 4"/>')
@@ -1821,19 +1949,24 @@ def abyss_mobile(rows, here, defs, mapb, tops, rank, cleared, cur, contrib, titl
             b.append(text(58, y, line, "plex", 14, C["paper"] if on else C["text"]))
             y += 21
         if cost:
-            b.append(f'<text x="58" y="{y}" class="plex" font-size="12"><tspan fill="{C["dim"]}">COST  </tspan>'
+            cost_lbl = "BEBAN  " if lang == "id" else "COST  "
+            b.append(f'<text x="58" y="{y}" class="plex" font-size="12"><tspan fill="{C["dim"]}">{cost_lbl}</tspan>'
                      f'<tspan fill="{C["muted"]}">{esc(clip(cost, 44))}</tspan></text>')
             y += 20
         y += 26
     b.append(f'<line x1="20" y1="{y-10}" x2="460" y2="{y-10}" stroke="{C["line"]}"/>')
     y += 18
-    b.append(text(20, y, "WHISTLE RANK", "plex", 12, C["red_hi"], ls=3))
+    whistle_heading = "PERINGKAT PELUIT" if lang == "id" else "WHISTLE RANK"
+    b.append(text(20, y, whistle_heading, "plex", 12, C["red_hi"], ls=3))
     y += 30
-    b.append(text(20, y, f"{rank} whistle, {cleared}.", "play", 22, C["paper"]))
+    whistle_desc = f"Peluit {rank.lower()}, {cleared}." if lang == "id" else f"{rank} whistle, {cleared}."
+    b.append(text(20, y, whistle_desc, "play", 22, C["paper"]))
     y += 22
-    b.append(text(20, y, f"From {contrib if contrib is not None else 'unknown'} contributions in 12 months.", "plex", 12, C["muted"]))
+    contrib_desc = f"Dari {contrib if contrib is not None else 'tidak diketahui'} kontribusi dalam 12 bulan." if lang == "id" else f"From {contrib if contrib is not None else 'unknown'} contributions in 12 months."
+    b.append(text(20, y, contrib_desc, "plex", 12, C["muted"]))
     y += 34
-    for k, (name, need, _) in enumerate(WHISTLES):
+    w_list = WHISTLES_ID if lang == "id" else WHISTLES
+    for k, (name, need, _) in enumerate(w_list):
         x, yy = 20 + (k % 3) * 150, y + (k // 3) * 64
         col = C["red"] if k == cur else (C["paper"] if k < cur else C["dim"])
         b.append(f'<circle cx="{x+6}" cy="{yy}" r="6" fill="none" stroke="{col}" stroke-width="1.6"/>')
@@ -1847,15 +1980,17 @@ def abyss_mobile(rows, here, defs, mapb, tops, rank, cleared, cur, contrib, titl
 # --------------------------------------------------------------------------- #
 # README pinned block
 # --------------------------------------------------------------------------- #
-def picture(path, alt):
+def picture(path, alt, lang="en"):
     """Phone card by default; wide screens opt into the desktop card. Viewers that ignore
     <source> (the GitHub app) then get the readable phone card, not a shrunken desktop one."""
-    return (f'<picture><source media="(min-width: 701px)" srcset="assets/{path}">'
-            f'<img src="assets/m/{path}" width="100%" alt="{alt}"></picture>')
+    prefix = "assets/id/" if lang == "id" else "assets/"
+    m_prefix = "assets/id/m/" if lang == "id" else "assets/m/"
+    return (f'<picture><source media="(min-width: 701px)" srcset="{prefix}{path}">'
+            f'<img src="{m_prefix}{path}" width="100%" alt="{alt}"></picture>')
 
 
 def update_readme_pinned(pinned):
-    for readme_path in [README, ROOT / "README.id.md"]:
+    for readme_path, lang in [(README, "en"), (ROOT / "README.id.md", "id")]:
         if not readme_path.exists():
             continue
         src = readme_path.read_text(encoding="utf-8")
@@ -1867,10 +2002,12 @@ def update_readme_pinned(pinned):
             for r in pinned:
                 rname = r["name"]
                 rurl = r["url"]
-                parts.append(f'<a href="{rurl}">{picture("pinned/" + rname + ".svg", esc(rname) + " repository card")}</a>')
+                alt_suffix = " kartu repositori" if lang == "id" else " repository card"
+                parts.append(f'<a href="{rurl}">{picture("pinned/" + rname + ".svg", esc(rname) + alt_suffix, lang=lang)}</a>')
             block = "\n" + "\n".join(parts) + "\n"
         else:
-            block = "\n<sub>No pinned repositories right now.</sub>\n"
+            no_pinned = "\n<sub>Tidak ada repositori yang disematkan saat ini.</sub>\n" if lang == "id" else "\n<sub>No pinned repositories right now.</sub>\n"
+            block = no_pinned
         new = re.sub(re.escape(start) + ".*?" + re.escape(end), lambda _: start + block + end, src, flags=re.S)
         if new != src:
             readme_path.write_text(new, encoding="utf-8")
@@ -1976,43 +2113,64 @@ def main():
     print("fetching GitHub data" + (" (skipped, offline)" if OFFLINE else ""))
     stats, pinned = fetch_github(st)
 
-    print("rendering cards")
-    M = ASSETS / "m"
-    write(ASSETS / "hero.svg", hero(st, stats, today))
-    write(M / "hero.svg", hero_m(st, stats))
-    write(ASSETS / "abyss.svg", abyss_card(st, stats))
-    write(M / "abyss.svg", abyss_card(st, stats, mobile=True))
-    for n in range(1, len(SECTIONS) + 1):
-        write(ASSETS / f"layer-{n:02d}.svg", section_header(n))
-        write(M / f"layer-{n:02d}.svg", section_header_m(n))
-    write(ASSETS / "about.svg", about_card(st))
-    write(M / "about.svg", about_m(st))
-    write(ASSETS / "toolkit.svg", toolkit_card(st))
-    write(M / "toolkit.svg", toolkit_m(st))
-    write(ASSETS / "system.svg", system_card(st))
-    write(M / "system.svg", system_m(st))
-    write(ASSETS / "signal.svg", signal_card(st, stats, today))
-    write(M / "signal.svg", signal_card(st, stats, today, mobile=True))
-    write(ASSETS / "footer.svg", footer_card())
-    write(M / "footer.svg", footer_card(mobile=True))
-    for name, label, value, verb in CONTACT:
-        write(ASSETS / "contact" / f"{name}.svg", contact_button(label, value, verb))
-    for name, label in RING:
-        write(ASSETS / "contact" / f"{name}.svg", ring_button(label))
+    print("rendering cards (en & id)")
+    for lang, assets_dir in [("en", ASSETS), ("id", ASSETS / "id")]:
+        m_dir = assets_dir / "m"
+        c_dir = assets_dir / "contact"
+        cur_sections = SECTIONS_ID if lang == "id" else SECTIONS
+        contact_items = CONTACT_ID if lang == "id" else CONTACT
+        ring_items = RING_ID if lang == "id" else RING
+
+        write(assets_dir / "hero.svg", hero(st, stats, today, lang=lang))
+        write(m_dir / "hero.svg", hero_m(st, stats, lang=lang))
+        write(assets_dir / "abyss.svg", abyss_card(st, stats, lang=lang))
+        write(m_dir / "abyss.svg", abyss_card(st, stats, mobile=True, lang=lang))
+        for n in range(1, len(cur_sections) + 1):
+            write(assets_dir / f"layer-{n:02d}.svg", section_header(n, lang=lang))
+            write(m_dir / f"layer-{n:02d}.svg", section_header_m(n, lang=lang))
+        write(assets_dir / "about.svg", about_card(st, lang=lang))
+        write(m_dir / "about.svg", about_m(st, lang=lang))
+        write(assets_dir / "toolkit.svg", toolkit_card(st, lang=lang))
+        write(m_dir / "toolkit.svg", toolkit_m(st, lang=lang))
+        write(assets_dir / "system.svg", system_card(st, lang=lang))
+        write(m_dir / "system.svg", system_m(st, lang=lang))
+        write(assets_dir / "signal.svg", signal_card(st, stats, today, lang=lang))
+        write(m_dir / "signal.svg", signal_card(st, stats, today, mobile=True, lang=lang))
+        write(assets_dir / "footer.svg", footer_card(lang=lang))
+        write(m_dir / "footer.svg", footer_card(mobile=True, lang=lang))
+        for name, label, value, verb in contact_items:
+            write(c_dir / f"{name}.svg", contact_button(label, value, verb))
+        for name, label in ring_items:
+            write(c_dir / f"{name}.svg", ring_button(label))
 
     if pinned is not None:
-        overrides = st.get("pinned_overrides", {}) or {}
-        keep = set()
+        overrides_en = st.get("pinned_overrides", {}) or {}
+        overrides_id = st.get("pinned_overrides_id", {}) or {}
+        keep_en = set()
+        keep_id = set()
         for i, r in enumerate(pinned, 1):
-            ov = overrides.get(r["name"], {}) or {}
-            write(PINNED_DIR / f"{r['name']}.svg", project_card(i, r, ov))
-            write(ASSETS / "m" / "pinned" / f"{r['name']}.svg", project_card(i, r, ov, mobile=True))
-            keep.add(f"{r['name']}.svg")
+            ov_en = overrides_en.get(r["name"], {}) or {}
+            ov_id = overrides_id.get(r["name"], ov_en) or {}
+            write(PINNED_DIR / f"{r['name']}.svg", project_card(i, r, ov_en, lang="en"))
+            write(ASSETS / "m" / "pinned" / f"{r['name']}.svg", project_card(i, r, ov_en, mobile=True, lang="en"))
+            keep_en.add(f"{r['name']}.svg")
+
+            write(ASSETS / "id" / "pinned" / f"{r['name']}.svg", project_card(i, r, ov_id, lang="id"))
+            write(ASSETS / "id" / "m" / "pinned" / f"{r['name']}.svg", project_card(i, r, ov_id, mobile=True, lang="id"))
+            keep_id.add(f"{r['name']}.svg")
+
         for d in (PINNED_DIR, ASSETS / "m" / "pinned"):
             for f in (d.glob("*.svg") if d.exists() else []):
-                if f.name not in keep:
+                if f.name not in keep_en:
                     f.unlink()
                     print(f"  removed stale {f.relative_to(ROOT)}")
+
+        for d in (ASSETS / "id" / "pinned", ASSETS / "id" / "m" / "pinned"):
+            for f in (d.glob("*.svg") if d.exists() else []):
+                if f.name not in keep_id:
+                    f.unlink()
+                    print(f"  removed stale {f.relative_to(ROOT)}")
+
         update_readme_pinned(pinned)
     print("done")
 

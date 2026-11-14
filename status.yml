@@ -12,24 +12,49 @@ profile:
   alias: "Arya"
   motto: "pragmatic engineering over trends"
   tagline: "Full-Stack Web · Flutter Mobile · Cloud & Systems"
-  school_line: "S1 Informatika · Universitas Bina Insani"
+  school_line: "S1 Informatics · Universitas Binaniaga Indonesia"
   location: "Bogor, ID"
   timezone: "UTC+07:00"
   quote: "clear schemas, predictable state, real system boundaries"
-  bio: "Informatics Engineering graduate (GPA 3.77) and software engineer from Bogor, Indonesia. Building production-grade Flutter mobile apps and containerized web backends with Next.js, Laravel, and Bun."
+  bio: "Informatics Engineering graduate (GPA 3.77) from Universitas Binaniaga Indonesia, vocational background in Computer & Network Engineering at SMK Geo Informatika, and software engineer from Bogor, Indonesia. Building production-grade Flutter mobile apps and containerized web backends with Next.js, Laravel, and Bun."
+
+profile_id:
+  name: "Arya Wiguna"
+  handle: "AryaWgna"
+  alias: "Arya"
+  motto: "rekayasa pragmatis di atas tren"
+  tagline: "Web Full-Stack · Mobile Flutter · Cloud & Sistem"
+  school_line: "S1 Informatika · Universitas Binaniaga Indonesia"
+  location: "Bogor, ID"
+  timezone: "WIB (UTC+07:00)"
+  quote: "skema jelas, state terprediksi, batasan sistem nyata"
+  bio: "Lulusan S1 Teknik Informatika (IPK 3.77) Universitas Binaniaga Indonesia, alumni Teknik Komputer dan Jaringan SMK Geo Informatika, dan software engineer dari Bogor, Indonesia. Membangun aplikasi mobile Flutter production-grade dan backend web terkontainerisasi dengan Next.js, Laravel, dan Bun."
 
 about:
   statement: "I build software that balances technical precision with real-world utility: predictable state management, clear schemas, and clean boundaries."
   detail: "BNSP Junior Coder certified, with experience building hospital asset management (RS UMMI Bogor), airport flight information systems, and high-performance web applications."
   based_in: "Bogor, Indonesia"
-  studying: "S1 Teknik Informatika, Universitas Bina Insani, 2022 to 2026 (Graduated, GPA 3.77)"
+  studying: "S1 Teknik Informatika, Universitas Binaniaga Indonesia, 2022 to 2026 (Graduated, GPA 3.77)"
   now: "Building production-grade web & mobile applications, exploring Go & microservices"
   research: "Clean architecture, reactive state management, and containerized topologies"
   exploring: "High-concurrency systems, Flutter internals, and distributed architectures"
 
+about_id:
+  statement: "Saya membangun perangkat lunak yang menyeimbangkan presisi teknis dengan kegunaan nyata: state management yang terprediksi, skema data yang jelas, dan batasan sistem yang rapi."
+  detail: "Tersertifikasi BNSP Junior Coder, berpengalaman mengembangkan manajemen aset medis RS UMMI Bogor, display informasi penerbangan bandara, serta aplikasi web performa tinggi."
+  based_in: "Bogor, Indonesia"
+  studying: "S1 Teknik Informatika, Universitas Binaniaga Indonesia, 2022 s.d. 2026 (Lulus, IPK 3.77)"
+  now: "Mengembangkan aplikasi web & mobile production-grade, mendalami Go & microservices"
+  research: "Clean architecture, reactive state management, dan topologi terkontainerisasi"
+  exploring: "Sistem konkurensi tinggi, internal Flutter, dan arsitektur terdistribusi"
+
 backlog:
   - "Multi-service Docker architectures with automated CI/CD pipelines"
   - "Open-source developer utilities and high-performance microservices"
+
+backlog_id:
+  - "Arsitektur Docker multi-service dengan pipeline otomatisasi CI/CD"
+  - "Utilitas pengembang open-source dan microservice performa tinggi"
 
 # Items ending in * are drawn as primary.
 toolkit:
@@ -70,11 +95,11 @@ toolkit:
 abyss:
   here: "6"
   L1:
-    step: "Vocational Software Engineering at SMKN 1 Ciomas"
+    step: "Computer & Network Engineering at SMK Geo Informatika"
     when: "2019"
-    cost: "first loops, syntax errors, and late night debugging"
+    cost: "crimping LAN cables, network routing, and foundational logic"
   L2:
-    step: "Enrolled in S1 Teknik Informatika at Universitas Bina Insani"
+    step: "Enrolled in S1 Teknik Informatika at Universitas Binaniaga Indonesia"
     when: "2022"
     cost: "data structures, discrete mathematics, and algorithms"
   L3:
@@ -97,6 +122,37 @@ abyss:
     step: "Designing resilient full-stack systems and cloud solutions"
     when: "NOW"
     cost: "the endless pursuit of engineering craftsmanship"
+
+abyss_id:
+  here: "6"
+  L1:
+    step: "Teknik Komputer dan Jaringan di SMK Geo Informatika"
+    when: "2019"
+    cost: "crimping kabel LAN, routing jaringan, dan logika pemrograman"
+  L2:
+    step: "Masuk S1 Teknik Informatika di Universitas Binaniaga Indonesia"
+    when: "2022"
+    cost: "struktur data, matematika diskrit, dan algoritma"
+  L3:
+    step: "Rekayasa mobile dengan Flutter & arsitektur full-stack"
+    when: "2024"
+    cost: "reactive state management dan widget lifecycle"
+  L4:
+    step: "Magang di RS UMMI Bogor — merancang & membangun SIMARU"
+    when: "2025"
+    cost: "audit bangsal rumah sakit, scanner QR code, pengguna nyata"
+  L5:
+    step: "Meraih sertifikasi Cisco CCNA & Dicoding software engineering"
+    when: "2025"
+    cost: "subnetting, inspeksi paket jaringan, dan refaktor prinsip SOLID"
+  L6:
+    step: "Tersertifikasi BNSP Junior Coder & lulus S1 (IPK 3.77)"
+    when: "2026"
+    cost: "sidang skripsi, pertahanan arsitektur multi-kontainer"
+  L7:
+    step: "Merancang arsitektur sistem full-stack tangguh & solusi cloud"
+    when: "SEKARANG"
+    cost: "eksplorasi tanpa henti untuk standar rekayasa tertinggi"
 
 signal:
   divergence: "1.048596"
@@ -122,6 +178,26 @@ pinned_overrides:
     tagline: "Personal profile README generator and telemetry engine"
     summary: "Multi-layered SVG generator rendering aesthetic cards with live GitHub statistics and automated contribution tracking."
 
+pinned_overrides_id:
+  SIMARU-Mobile-App:
+    tagline: "Pelacakan aset medis & inventaris RS UMMI Bogor"
+    summary: "Aplikasi Flutter production dengan pemindai QR code, siklus mutasi aset, permintaan perbaikan, dan Firebase Cloud Messaging untuk teknisi RS."
+  Digital-Skyboard-Announcement:
+    tagline: "Display informasi penerbangan bandara & pengumuman audio"
+    summary: "Topologi 5-service Docker Compose dengan Next.js 15, Laravel 11 API, MySQL, dan reverse proxy Nginx yang menyajikan jadwal penerbangan real-time."
+  streamely:
+    tagline: "Katalog VOD mandiri & layanan streaming performa tinggi"
+    summary: "Dibangun di atas Bun runtime dengan Elysia.js dan Svelte, mengindeks 15.000+ judul secara in-memory dengan rekomendasi Jaccard similarity."
+  api_tobe_store:
+    tagline: "REST API backend e-commerce dengan autentikasi & kelola toko"
+    summary: "Layanan backend tangguh dengan autentikasi aman, pemrosesan transaksi pesanan, dan skema basis data relasional."
+  go-restapi-gin:
+    tagline: "RESTful API throughput tinggi menggunakan Go & Gin framework"
+    summary: "Microservice backend ringan dan konkuren yang menerapkan pola clean architecture dan routing HTTP super cepat."
+  aryawgna:
+    tagline: "Mesin telemetri & generator SVG README profil GitHub"
+    summary: "Generator SVG multi-layer yang merender kartu profil estetik dengan statistik GitHub live dan rotasi warna harian otomatis."
+
 system:  # written by `python build.py --sync-system`
   user: "Arya"
   host: "latitude3420"
@@ -135,4 +211,3 @@ system:  # written by `python build.py --sync-system`
   memory: "32 GiB"
   filesystem: "NTFS / ext4"
   synced: "2026-11-13"
-

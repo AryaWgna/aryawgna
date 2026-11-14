@@ -10,7 +10,7 @@
 <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/>
 <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0"/></filter></defs>
 <rect x=".5" y=".5" width="479" height="395" rx="8" fill="#0b0b0b" stroke="#363636"/>
-<text x="20" y="36" class="bebas" font-size="18" fill="#fb923c" text-anchor="start" letter-spacing="4" >PINNED · 01</text>
+<text x="20" y="36" class="bebas" font-size="18" fill="#f472b6" text-anchor="start" letter-spacing="4" >PINNED · 02</text>
 <text x="460" y="35" class="plex" font-size="11" fill="#ff5f2e" text-anchor="end" letter-spacing="1.5" >WORLD LINE 1.464769</text>
 <text x="20" y="80" class="bebas" font-size="40" fill="#f4f2ed" text-anchor="start" letter-spacing="1" >SIMARU-Mobile-App</text>
 <text x="20" y="110" class="play" font-size="18" fill="#dcdad5" text-anchor="start" letter-spacing="0" >Hospital medical asset tracking &amp;</text>
@@ -21,12 +21,12 @@
 <line x1="20" y1="240" x2="460" y2="240" stroke="#363636"/>
 <text x="20" y="268" class="plex" font-size="11" fill="#aaa8a3" text-anchor="start" letter-spacing="3" >COMPOSITION</text>
 <text x="460" y="268" class="plex" font-size="11" fill="#dcdad5" text-anchor="end" letter-spacing="1.5" >2026-11-07</text>
-<rect x="20.0" y="280" width="433.2" height="8" fill="#f97316"/>
+<rect x="20.0" y="280" width="433.2" height="8" fill="#ec4899"/>
 <rect x="453.2" y="280" width="2.8" height="8" fill="#f4f2ed"/>
 <rect x="456.0" y="280" width="2.0" height="8" fill="#9e9c97"/>
 <rect x="458.0" y="280" width="2.0" height="8" fill="#5f5d59"/>
-<rect x="460.0" y="280" width="2.0" height="8" fill="#7c2d12"/>
-<rect x="20" y="304" width="10" height="10" fill="#f97316"/>
+<rect x="460.0" y="280" width="2.0" height="8" fill="#831843"/>
+<rect x="20" y="304" width="10" height="10" fill="#ec4899"/>
 <text x="38" y="314" class="plex" font-size="13" fill="#dcdad5" text-anchor="start" letter-spacing="0" >Dart 98.4%</text>
 <rect x="240" y="304" width="10" height="10" fill="#f4f2ed"/>
 <text x="258" y="314" class="plex" font-size="13" fill="#dcdad5" text-anchor="start" letter-spacing="0" >CMake 0.6%</text>
@@ -35,6 +35,6 @@
 <rect x="240" y="328" width="10" height="10" fill="#5f5d59"/>
 <text x="258" y="338" class="plex" font-size="13" fill="#dcdad5" text-anchor="start" letter-spacing="0" >Swift 0.4%</text>
 <text x="20" y="372" class="plex" font-size="12" fill="#dcdad5" text-anchor="start" letter-spacing="1.5" >STARS 1  ·  FORKS 0</text>
-<text x="460" y="372" class="plex" font-size="12" fill="#fb923c" text-anchor="end" letter-spacing="2" >OPEN →</text>
+<text x="460" y="372" class="plex" font-size="12" fill="#f472b6" text-anchor="end" letter-spacing="2" >OPEN →</text>
 <rect x="1" y="1" width="478" height="394" rx="8" filter="url(#grain)" opacity=".045" pointer-events="none"/>
 </svg>
