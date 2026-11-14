@@ -16,12 +16,12 @@
 
 <picture><source media="(min-width: 701px)" srcset="assets/id/layer-02.svg"><img src="assets/id/m/layer-02.svg" width="100%" alt="Layer 02, Hutan Godaan: Repositori Pilihan"></picture>
 <!--PINNED:START-->
-<a href="https://github.com/AryaWgna/api_tobe_store"><picture><source media="(min-width: 701px)" srcset="assets/id/pinned/api_tobe_store.svg"><img src="assets/id/m/pinned/api_tobe_store.svg" width="100%" alt="api_tobe_store kartu repositori"></picture></a>
 <a href="https://github.com/AryaWgna/SIMARU-Mobile-App"><picture><source media="(min-width: 701px)" srcset="assets/id/pinned/SIMARU-Mobile-App.svg"><img src="assets/id/m/pinned/SIMARU-Mobile-App.svg" width="100%" alt="SIMARU-Mobile-App kartu repositori"></picture></a>
-<a href="https://github.com/AryaWgna/PMB"><picture><source media="(min-width: 701px)" srcset="assets/id/pinned/PMB.svg"><img src="assets/id/m/pinned/PMB.svg" width="100%" alt="PMB kartu repositori"></picture></a>
-<a href="https://github.com/AryaWgna/Program-PMB"><picture><source media="(min-width: 701px)" srcset="assets/id/pinned/Program-PMB.svg"><img src="assets/id/m/pinned/Program-PMB.svg" width="100%" alt="Program-PMB kartu repositori"></picture></a>
+<a href="https://github.com/AryaWgna/Digital-Skyboard-Announcement"><picture><source media="(min-width: 701px)" srcset="assets/id/pinned/Digital-Skyboard-Announcement.svg"><img src="assets/id/m/pinned/Digital-Skyboard-Announcement.svg" width="100%" alt="Digital-Skyboard-Announcement kartu repositori"></picture></a>
+<a href="https://github.com/AryaWgna/streamely"><picture><source media="(min-width: 701px)" srcset="assets/id/pinned/streamely.svg"><img src="assets/id/m/pinned/streamely.svg" width="100%" alt="streamely kartu repositori"></picture></a>
+<a href="https://github.com/AryaWgna/api_tobe_store"><picture><source media="(min-width: 701px)" srcset="assets/id/pinned/api_tobe_store.svg"><img src="assets/id/m/pinned/api_tobe_store.svg" width="100%" alt="api_tobe_store kartu repositori"></picture></a>
 <a href="https://github.com/AryaWgna/go-restapi-gin"><picture><source media="(min-width: 701px)" srcset="assets/id/pinned/go-restapi-gin.svg"><img src="assets/id/m/pinned/go-restapi-gin.svg" width="100%" alt="go-restapi-gin kartu repositori"></picture></a>
-<a href="https://github.com/AryaWgna/revou_tes_day1"><picture><source media="(min-width: 701px)" srcset="assets/id/pinned/revou_tes_day1.svg"><img src="assets/id/m/pinned/revou_tes_day1.svg" width="100%" alt="revou_tes_day1 kartu repositori"></picture></a>
+<a href="https://github.com/AryaWgna/aryawgna"><picture><source media="(min-width: 701px)" srcset="assets/id/pinned/aryawgna.svg"><img src="assets/id/m/pinned/aryawgna.svg" width="100%" alt="aryawgna kartu repositori"></picture></a>
 <!--PINNED:END-->
 
 <picture><source media="(min-width: 701px)" srcset="assets/id/layer-03.svg"><img src="assets/id/m/layer-03.svg" width="100%" alt="Layer 03, Patahan Besar: Perangkat"></picture>
