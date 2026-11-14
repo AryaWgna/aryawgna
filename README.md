@@ -1,3 +1,7 @@
+<div align="right">
+  <a href="README.id.md"><img src="https://img.shields.io/badge/%F0%9F%87%AE%F0%9F%87%A9%20Beralih%20ke-Bahasa%20Indonesia-ec4899?style=flat-square&labelColor=111111" alt="Beralih ke Bahasa Indonesia"></a>
+</div>
+
 <a href="https://arya-wiguna.my.id">
   <picture><source media="(min-width: 701px)" srcset="assets/hero.svg"><img src="assets/m/hero.svg" width="100%" alt="Arya Wiguna (AryaWgna). Software Engineer & Full-Stack Developer based in Bogor, Indonesia."></picture>
 </a>
@@ -6,7 +10,7 @@
   <a href="https://arya-wiguna.my.id"><img src="https://img.shields.io/badge/Portfolio-arya--wiguna.my.id-ec4899?style=for-the-badge&labelColor=0b0b0b" alt="Portfolio arya-wiguna.my.id"></a>
   <a href="https://www.linkedin.com/in/arya-wgna"><img src="https://img.shields.io/badge/LinkedIn-arya--wgna-ec4899?style=for-the-badge&labelColor=0b0b0b&logo=linkedin&logoColor=f4f2ed" alt="LinkedIn arya-wgna"></a>
   <a href="mailto:wgnarya123@gmail.com"><img src="https://img.shields.io/badge/Email-wgnarya123@gmail.com-ec4899?style=for-the-badge&labelColor=0b0b0b&logo=gmail&logoColor=f4f2ed" alt="Email wgnarya123@gmail.com"></a>
-  <a href="README.id.md"><img src="https://img.shields.io/badge/Lang-Bahasa%20Indonesia-ec4899?style=for-the-badge&labelColor=0b0b0b" alt="Bahasa Indonesia"></a>
+  <a href="README.id.md"><img src="https://img.shields.io/badge/%F0%9F%87%AE%F0%9F%87%A9%20Language-Bahasa%20Indonesia-ec4899?style=for-the-badge&labelColor=0b0b0b" alt="Bahasa Indonesia"></a>
 </p>
 
 <picture><source media="(min-width: 701px)" srcset="assets/abyss.svg"><img src="assets/m/abyss.svg" width="100%" alt="Arya's descent, drawn as a Made in Abyss cross-section: seven layers from SMK Geo Informatika (Computer & Network Engineering) to Universitas Binaniaga Indonesia, RS UMMI Bogor, CCNA, BNSP certification, and beyond."></picture>
