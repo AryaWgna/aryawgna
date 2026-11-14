@@ -12,7 +12,7 @@ profile:
   alias: "Arya"
   motto: "pragmatic engineering over trends"
   tagline: "Full-Stack Web · Flutter Mobile · Cloud & Systems"
-  school_line: "S1 Informatics · Universitas Binaniaga Indonesia"
+  school_line: "B.S. Informatics · Universitas Binaniaga Indonesia"
   location: "Bogor, ID"
   timezone: "UTC+07:00"
   quote: "clear schemas, predictable state, real system boundaries"
@@ -34,7 +34,7 @@ about:
   statement: "I build software that balances technical precision with real-world utility: predictable state management, clear schemas, and clean boundaries."
   detail: "BNSP Junior Coder certified, with experience building hospital asset management (RS UMMI Bogor), airport flight information systems, and high-performance web applications."
   based_in: "Bogor, Indonesia"
-  studying: "S1 Teknik Informatika, Universitas Binaniaga Indonesia, 2022 to 2026 (Graduated, GPA 3.77)"
+  studying: "B.S. in Informatics Engineering, Universitas Binaniaga Indonesia, 2022 to 2026 (Graduated, GPA 3.77)"
   now: "Building production-grade web & mobile applications, exploring Go & microservices"
   research: "Clean architecture, reactive state management, and containerized topologies"
   exploring: "High-concurrency systems, Flutter internals, and distributed architectures"
@@ -99,7 +99,7 @@ abyss:
     when: "2019"
     cost: "crimping LAN cables, network routing, and foundational logic"
   L2:
-    step: "Enrolled in S1 Teknik Informatika at Universitas Binaniaga Indonesia"
+    step: "Enrolled in Informatics Engineering at Universitas Binaniaga Indonesia"
     when: "2022"
     cost: "data structures, discrete mathematics, and algorithms"
   L3:
@@ -115,7 +115,7 @@ abyss:
     when: "2025"
     cost: "subnetting, packet inspection, and SOLID refactoring"
   L6:
-    step: "BNSP Junior Coder certified & graduated S1 (GPA 3.77)"
+    step: "BNSP Junior Coder certified & graduated with B.S. (GPA 3.77)"
     when: "2026"
     cost: "final thesis, multi-container architecture defense"
   L7:
