@@ -16,16 +16,16 @@
 <picture><source media="(min-width: 701px)" srcset="assets/abyss.svg"><img src="assets/m/abyss.svg" width="100%" alt="Arya's descent, drawn as a Made in Abyss cross-section: seven layers from SMK Geo Informatika (Computer & Network Engineering) to Universitas Binaniaga Indonesia, RS UMMI Bogor, CCNA, BNSP certification, and beyond."></picture>
 
 <picture><source media="(min-width: 701px)" srcset="assets/layer-01.svg"><img src="assets/m/layer-01.svg" width="100%" alt="Layer 01, Edge of the Abyss: about"></picture>
-<picture><source media="(min-width: 701px)" srcset="assets/about.svg"><img src="assets/m/about.svg" width="100%" alt="About Arya: Informatics graduate (GPA 3.77), BNSP Junior Coder certified, building production Flutter apps and containerized web backends."></picture>
+<picture><source media="(min-width: 701px)" srcset="assets/about.svg"><img src="assets/m/about.svg" width="100%" alt="About Arya: Computer Science graduate (GPA 3.77), BNSP Junior Coder certified, building production Flutter apps and containerized web backends."></picture>
 
 <picture><source media="(min-width: 701px)" srcset="assets/layer-02.svg"><img src="assets/m/layer-02.svg" width="100%" alt="Layer 02, Forest of Temptation: pinned repositories"></picture>
 <!--PINNED:START-->
-<a href="https://github.com/AryaWgna/SIMARU-Mobile-App"><picture><source media="(min-width: 701px)" srcset="assets/pinned/SIMARU-Mobile-App.svg"><img src="assets/m/pinned/SIMARU-Mobile-App.svg" width="100%" alt="SIMARU-Mobile-App repository card"></picture></a>
-<a href="https://github.com/AryaWgna/Digital-Skyboard-Announcement"><picture><source media="(min-width: 701px)" srcset="assets/pinned/Digital-Skyboard-Announcement.svg"><img src="assets/m/pinned/Digital-Skyboard-Announcement.svg" width="100%" alt="Digital-Skyboard-Announcement repository card"></picture></a>
-<a href="https://github.com/AryaWgna/streamely"><picture><source media="(min-width: 701px)" srcset="assets/pinned/streamely.svg"><img src="assets/m/pinned/streamely.svg" width="100%" alt="streamely repository card"></picture></a>
 <a href="https://github.com/AryaWgna/api_tobe_store"><picture><source media="(min-width: 701px)" srcset="assets/pinned/api_tobe_store.svg"><img src="assets/m/pinned/api_tobe_store.svg" width="100%" alt="api_tobe_store repository card"></picture></a>
+<a href="https://github.com/AryaWgna/SIMARU-Mobile-App"><picture><source media="(min-width: 701px)" srcset="assets/pinned/SIMARU-Mobile-App.svg"><img src="assets/m/pinned/SIMARU-Mobile-App.svg" width="100%" alt="SIMARU-Mobile-App repository card"></picture></a>
+<a href="https://github.com/AryaWgna/PMB"><picture><source media="(min-width: 701px)" srcset="assets/pinned/PMB.svg"><img src="assets/m/pinned/PMB.svg" width="100%" alt="PMB repository card"></picture></a>
+<a href="https://github.com/AryaWgna/Program-PMB"><picture><source media="(min-width: 701px)" srcset="assets/pinned/Program-PMB.svg"><img src="assets/m/pinned/Program-PMB.svg" width="100%" alt="Program-PMB repository card"></picture></a>
 <a href="https://github.com/AryaWgna/go-restapi-gin"><picture><source media="(min-width: 701px)" srcset="assets/pinned/go-restapi-gin.svg"><img src="assets/m/pinned/go-restapi-gin.svg" width="100%" alt="go-restapi-gin repository card"></picture></a>
-<a href="https://github.com/AryaWgna/aryawgna"><picture><source media="(min-width: 701px)" srcset="assets/pinned/aryawgna.svg"><img src="assets/m/pinned/aryawgna.svg" width="100%" alt="aryawgna repository card"></picture></a>
+<a href="https://github.com/AryaWgna/revou_tes_day1"><picture><source media="(min-width: 701px)" srcset="assets/pinned/revou_tes_day1.svg"><img src="assets/m/pinned/revou_tes_day1.svg" width="100%" alt="revou_tes_day1 repository card"></picture></a>
 <!--PINNED:END-->
 
 <picture><source media="(min-width: 701px)" srcset="assets/layer-03.svg"><img src="assets/m/layer-03.svg" width="100%" alt="Layer 03, Great Fault: toolkit"></picture>
