@@ -38,7 +38,7 @@
 <text x="20" y="636" class="plex" font-size="14" fill="#dcdad5" text-anchor="start" letter-spacing="0" >Bogor, Indonesia. Building production-grade</text>
 <text x="20" y="658" class="plex" font-size="14" fill="#dcdad5" text-anchor="start" letter-spacing="0" >Flutter mobile apps and containerized web backends</text>
 <text x="20" y="680" class="plex" font-size="14" fill="#dcdad5" text-anchor="start" letter-spacing="0" >with Next.js, Laravel, and Bun.</text>
-<text x="20" y="716" class="plex" font-size="12" letter-spacing="1.5"><tspan fill="#aaa8a3">DIVERGENCE </tspan><tspan fill="#ff5f2e">1.048596</tspan><tspan fill="#aaa8a3">  ·  WHISTLE </tspan><tspan fill="#f472b6">BELL</tspan></text>
+<text x="20" y="716" class="plex" font-size="12" letter-spacing="1.5"><tspan fill="#aaa8a3">DIVERGENCE </tspan><tspan fill="#ff5f2e">1.048596</tspan><tspan fill="#aaa8a3">  ·  WHISTLE </tspan><tspan fill="#f472b6">BLUE</tspan></text>
 <text x="20" y="738" class="plex" font-size="12" fill="#7c7a75" text-anchor="start" letter-spacing="2" >BOGOR, ID  ·  UTC+07:00</text>
 <rect x="1" y="1" width="478" height="762" rx="8" filter="url(#grain)" opacity=".045" pointer-events="none"/>
 </svg>
