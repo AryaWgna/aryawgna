@@ -10,7 +10,7 @@
 <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/>
 <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0"/></filter></defs>
 <rect x=".5" y=".5" width="999" height="193" rx="8" fill="#0b0b0b" stroke="#363636"/>
-<text x="36" y="46" class="bebas" font-size="14" fill="#f0384b" text-anchor="start" letter-spacing="4" >PINNED · 06</text>
+<text x="36" y="46" class="bebas" font-size="14" fill="#38d9f0" text-anchor="start" letter-spacing="4" >PINNED · 06</text>
 <text x="160" y="45" class="plex" font-size="9" fill="#ff5f2e" text-anchor="start" letter-spacing="2" >GARIS DUNIA 0.841324</text>
 <text x="380" y="45" class="plex" font-size="9" fill="#aaa8a3" text-anchor="start" letter-spacing="2" >PENINGGALAN  TINGKAT 4</text>
 <text x="36" y="90" class="bebas" font-size="42" fill="#f4f2ed" text-anchor="start" letter-spacing="1" >aryawgna</text>
@@ -21,13 +21,13 @@
 <text x="690" y="46" class="plex" font-size="8.5" fill="#aaa8a3" text-anchor="start" letter-spacing="3" >TRANSMISI TERAKHIR</text>
 <text x="964" y="46" class="plex" font-size="8.5" fill="#dcdad5" text-anchor="end" letter-spacing="2" >2026-11-16</text>
 <text x="690" y="80" class="plex" font-size="8.5" fill="#aaa8a3" text-anchor="start" letter-spacing="3" >KOMPOSISI</text>
-<rect x="690.0" y="88" width="216.3" height="6" fill="#c8102e"/>
+<rect x="690.0" y="88" width="216.3" height="6" fill="#00b4d8"/>
 <rect x="906.3" y="88" width="57.7" height="6" fill="#f4f2ed"/>
-<rect x="690" y="107" width="7" height="7" fill="#c8102e"/>
+<rect x="690" y="107" width="7" height="7" fill="#00b4d8"/>
 <text x="703" y="114" class="plex" font-size="9.5" fill="#dcdad5" text-anchor="start" letter-spacing="0" >Python 78.9%</text>
 <rect x="830" y="107" width="7" height="7" fill="#f4f2ed"/>
 <text x="843" y="114" class="plex" font-size="9.5" fill="#dcdad5" text-anchor="start" letter-spacing="0" >JavaScript 21.1%</text>
 <text x="690" y="160" class="plex" font-size="8.5" fill="#dcdad5" text-anchor="start" letter-spacing="2" >BINTANG 0  ·  FORK 0</text>
-<text x="964" y="160" class="plex" font-size="8.5" fill="#f0384b" text-anchor="end" letter-spacing="2" >BUKA →</text>
+<text x="964" y="160" class="plex" font-size="8.5" fill="#38d9f0" text-anchor="end" letter-spacing="2" >BUKA →</text>
 <rect x="1" y="1" width="998" height="192" rx="8" filter="url(#grain)" opacity=".045" pointer-events="none"/>
 </svg>
