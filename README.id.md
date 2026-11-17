@@ -1,5 +1,5 @@
 <div align="right">
-  <a href="README.md"><img src="https://img.shields.io/badge/%F0%9F%87%AC%F0%9F%87%A7%20Switch%20to-English-00b4d8?style=flat-square&labelColor=111111" alt="Switch to English"></a>
+  <a href="README.md"><img src="https://img.shields.io/badge/%F0%9F%87%AC%F0%9F%87%A7%20Switch%20to-English-10b981?style=flat-square&labelColor=111111" alt="Switch to English"></a>
 </div>
 
 <a href="https://arya-wiguna.my.id">
@@ -7,10 +7,10 @@
 </a>
 
 <p align="center">
-  <a href="https://arya-wiguna.my.id"><img src="https://img.shields.io/badge/Portofolio-arya--wiguna.my.id-00b4d8?style=for-the-badge&labelColor=0b0b0b" alt="Portofolio arya-wiguna.my.id"></a>
-  <a href="https://www.linkedin.com/in/arya-wgna"><img src="https://img.shields.io/badge/LinkedIn-arya--wgna-00b4d8?style=for-the-badge&labelColor=0b0b0b&logo=linkedin&logoColor=f4f2ed" alt="LinkedIn arya-wgna"></a>
-  <a href="mailto:wgnarya123@gmail.com"><img src="https://img.shields.io/badge/Surel-wgnarya123@gmail.com-00b4d8?style=for-the-badge&labelColor=0b0b0b&logo=gmail&logoColor=f4f2ed" alt="Surel wgnarya123@gmail.com"></a>
-  <a href="README.md"><img src="https://img.shields.io/badge/%F0%9F%87%AC%F0%9F%87%A7%20Bahasa-English-00b4d8?style=for-the-badge&labelColor=0b0b0b" alt="English"></a>
+  <a href="https://arya-wiguna.my.id"><img src="https://img.shields.io/badge/Portofolio-arya--wiguna.my.id-10b981?style=for-the-badge&labelColor=0b0b0b" alt="Portofolio arya-wiguna.my.id"></a>
+  <a href="https://www.linkedin.com/in/arya-wgna"><img src="https://img.shields.io/badge/LinkedIn-arya--wgna-10b981?style=for-the-badge&labelColor=0b0b0b&logo=linkedin&logoColor=f4f2ed" alt="LinkedIn arya-wgna"></a>
+  <a href="mailto:wgnarya123@gmail.com"><img src="https://img.shields.io/badge/Surel-wgnarya123@gmail.com-10b981?style=for-the-badge&labelColor=0b0b0b&logo=gmail&logoColor=f4f2ed" alt="Surel wgnarya123@gmail.com"></a>
+  <a href="README.md"><img src="https://img.shields.io/badge/%F0%9F%87%AC%F0%9F%87%A7%20Bahasa-English-10b981?style=for-the-badge&labelColor=0b0b0b" alt="English"></a>
 </p>
 
 <picture><source media="(min-width: 701px)" srcset="assets/id/abyss.svg"><img src="assets/id/m/abyss.svg" width="100%" alt="Peta perjalanan rekayasa Arya: 7 lapisan mulai dari SMK Geo Informatika (Teknik Komputer dan Jaringan), S1 Universitas Binaniaga Indonesia, magang RS UMMI Bogor, sertifikasi CCNA & BNSP, hingga eksplorasi sistem terkontainerisasi."></picture>
